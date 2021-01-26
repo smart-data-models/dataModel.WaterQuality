@@ -1,11 +1,11 @@
 Entity: WaterQualityObserved  
 ============================  
-[Open License](https://github.com/smart-data-models//dataModel.Environment/blob/master/WaterQualityObserved/LICENSE.md)  
+[Open License](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
 Global description: **Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section**  
 
 ## List of properties  
 
-- `Chla`: Concentration of chlorophyll A.  - `Cl-`: Concentration of chlorides.  - `NH3`: Concentration of ammonium.  - `NH4`: Concentration of ammonium.  - `NO3`: Concentration of nitrates.  - `O2`: Level of free, non-compound oxygen present.  - `PC`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `conductance`: Specific Conductance.  - `conductivity`: Electrical Conductivity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `measurand`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name`: The name of this item.  - `orp`: Oxidation-Reduction potential.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `salinity`: Amount of salts dissolved in water.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`: Total dissolved solids.   - `temperature`: Temperature  - `tss`: Total suspended solids.  - `turbidity`: Amount of light scattered by particles in the water column  - `type`: NGSI Entity type    
+- `Chla`: Concentration of chlorophyll A.  - `Cl-`: Concentration of chlorides.  - `NH3`: Concentration of ammonium.  - `NH4`: Concentration of ammonium.  - `NO3`: Concentration of nitrates.  - `O2`: Level of free, non-compound oxygen present.  - `PC`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `PO4`: Concentration of phosphates.  - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period  - `cod`: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution  - `conductance`: Specific Conductance.  - `conductivity`: Electrical Conductivity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `measurand`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name`: The name of this item.  - `orp`: Oxidation-Reduction potential.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `salinity`: Amount of salts dissolved in water.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`: Total dissolved solids.   - `temperature`: Temperature  - `tss`: Total suspended solids.  - `turbidity`: Amount of light scattered by particles in the water column  - `type`: NGSI Entity type    
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -46,6 +46,10 @@ WaterQualityObserved:
       description: 'Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.'    
       minimum: 0    
       type: Property    
+    PO4:    
+      description: 'Concentration of phosphates.'    
+      minimum: 0    
+      type: Property    
     address:    
       description: 'The mailing address.'    
       properties:    
@@ -79,6 +83,18 @@ WaterQualityObserved:
       type: Property    
       x-ngsi:    
         model: https://schema.org/Text    
+    bod:    
+      description: 'Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period'    
+      minimum: 0    
+      type: Property    
+      x-ngsi:    
+        units: mg/l    
+    cod:    
+      description: 'Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution'    
+      minimum: 0    
+      type: Property    
+      x-ngsi:    
+        units: mg/l    
     conductance:    
       description: 'Specific Conductance.'    
       minimum: 0    
