@@ -33,6 +33,10 @@ WaterQualityObserved:
       description: 'Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.'
       minimum: 0
       type: Property
+    PO4:
+      description: 'Concentration of phosphates.'
+      minimum: 0
+      type: Property
     address:
       description: 'The mailing address.'
       properties:
@@ -66,6 +70,18 @@ WaterQualityObserved:
       type: Property
       x-ngsi:
         model: https://schema.org/Text
+    bod:
+      description: 'Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period'
+      minimum: 0
+      type: Property
+      x-ngsi:
+        units: mg/l
+    cod:
+      description: 'Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution'
+      minimum: 0
+      type: Property
+      x-ngsi:
+        units: mg/l
     conductance:
       description: 'Specific Conductance.'
       minimum: 0
