@@ -1,11 +1,11 @@
 Entité : WaterQualityObserved  
 =============================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.Environment/blob/master/WaterQualityObserved/LICENSE.md)  
+[Licence ouverte](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
 Description globale : **Le modèle de données sur la qualité de l'eau est destiné à représenter les paramètres de qualité de l'eau pour une certaine masse d'eau (rivière, lac, mer, etc.) section**  
 
 ## Liste des biens  
 
-- `Chla`: Concentration de chlorophylle A.  - `Cl-`: Concentration des chlorures.  - `NH3`: Concentration d'ammonium.  - `NH4`: Concentration d'ammonium.  - `NO3`: Concentration de nitrates.  - `O2`: Niveau d'oxygène libre, non composé, présent.  - `PC`: Concentration de phycocyanine pigmentaire qui peut être mesurée pour estimer spécifiquement les concentrations de cyanobactéries.  - `PE`: Concentration de phycoérythrine pigmentaire qui peut être mesurée pour estimer spécifiquement les concentrations de cyanobactéries.  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `conductance`: Conduite spécifique.  - `conductivity`: Conductivité électrique.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateObserved`: La date et l'heure de cette observation au format UTC ISO8601. Elle peut être représentée par un instant précis ou par un intervalle ISO8601.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `measurand`: Un ensemble de chaînes de caractères contenant des détails (voir le format ci-dessous) sur les mesurandes supplémentaires fournis par cette observation.  - `name`: Le nom de cet article.  - `orp`: Potentiel d'oxydation-réduction.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `pH`: Acidité ou basicité d'une solution aqueuse.  - `refPointOfInterest`: Une référence à un point d'intérêt associé à cette observation.  - `salinity`: Quantité de sels dissous dans l'eau.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `tds`: Total des solides dissous.  - `temperature`: Température  - `tss`: Total des solides en suspension.  - `turbidity`: Quantité de lumière diffusée par les particules dans la colonne d'eau  - `type`: NGSI Type d'entité    
+- `Chla`: Concentration de chlorophylle A.  - `Cl-`: Concentration des chlorures.  - `NH3`: Concentration d'ammonium.  - `NH4`: Concentration d'ammonium.  - `NO3`: Concentration de nitrates.  - `O2`: Niveau d'oxygène libre, non composé, présent.  - `PC`: Concentration de phycocyanine pigmentaire qui peut être mesurée pour estimer spécifiquement les concentrations de cyanobactéries.  - `PE`: Concentration de phycoérythrine pigmentaire qui peut être mesurée pour estimer spécifiquement les concentrations de cyanobactéries.  - `PO4`: Concentration des phosphates.  - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `bod`: La demande biochimique en oxygène (DBO) est la quantité d'oxygène dissous (DO) nécessaire (c'est-à-dire exigée) par les organismes biologiques aérobies pour décomposer la matière organique présente dans un échantillon d'eau donné, à une certaine température et pendant une période de temps déterminée  - `cod`: La demande chimique en oxygène (DCO) est une mesure indicative de la quantité d'oxygène qui peut être consommée par les réactions dans une solution mesurée  - `conductance`: Conduite spécifique.  - `conductivity`: Conductivité électrique.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateObserved`: La date et l'heure de cette observation au format UTC ISO8601. Elle peut être représentée par un instant précis ou par un intervalle ISO8601.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `measurand`: Un ensemble de chaînes de caractères contenant des détails (voir le format ci-dessous) sur les mesurandes supplémentaires fournis par cette observation.  - `name`: Le nom de cet article.  - `orp`: Potentiel d'oxydation-réduction.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `pH`: Acidité ou basicité d'une solution aqueuse.  - `refPointOfInterest`: Une référence à un point d'intérêt associé à cette observation.  - `salinity`: Quantité de sels dissous dans l'eau.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `tds`: Total des solides dissous.  - `temperature`: Température  - `tss`: Total des solides en suspension.  - `turbidity`: Quantité de lumière diffusée par les particules dans la colonne d'eau  - `type`: NGSI Type d'entité    
 Propriétés requises  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Modèle de données description des biens  
 Classement par ordre alphabétique (cliquez pour plus de détails)  
@@ -46,6 +46,10 @@ WaterQualityObserved:
       description: 'Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.'    
       minimum: 0    
       type: Property    
+    PO4:    
+      description: 'Concentration of phosphates.'    
+      minimum: 0    
+      type: Property    
     address:    
       description: 'The mailing address.'    
       properties:    
@@ -79,6 +83,18 @@ WaterQualityObserved:
       type: Property    
       x-ngsi:    
         model: https://schema.org/Text    
+    bod:    
+      description: 'Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period'    
+      minimum: 0    
+      type: Property    
+      x-ngsi:    
+        units: mg/l    
+    cod:    
+      description: 'Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution'    
+      minimum: 0    
+      type: Property    
+      x-ngsi:    
+        units: mg/l    
     conductance:    
       description: 'Specific Conductance.'    
       minimum: 0    
@@ -367,7 +383,7 @@ WaterQualityObserved:
 }  
 ```  
 #### WaterQualityObserved NGSI V2 normalisé Exemple  
-Voici un exemple de qualité de l'eau observée au format JSON, telle qu'elle est normalisée. Ce format est compatible avec la version 2 du NGSI lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple de qualité de l'eau observée au format JSON, telle que normalisée. Ce format est compatible avec la version 2 du NGSI lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
