@@ -1,7 +1,7 @@
 Entité : WaterQualityObserved  
 =============================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
-Ce document est généré automatiquement à partir de schema.json. Ne faites pas de RP dessus mais dans les descriptions du schema.json.  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Le modèle de données sur la qualité de l'eau est destiné à représenter les paramètres de la qualité de l'eau dans une certaine section de la masse d'eau (rivière, lac, mer, etc.)**.  
 
 ## Liste des propriétés  
