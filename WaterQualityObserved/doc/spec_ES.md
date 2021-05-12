@@ -1,6 +1,7 @@
 Entidad: Calidad del aguaObservada  
 ==================================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
+Este documento se genera automáticamente a partir de schema.json. No haga PR en él sino en las descripciones de schema.json  
 Descripción global: **El modelo de datos de calidad del agua está destinado a representar los parámetros de calidad del agua en una determinada masa de agua (río, lago, mar, etc.) sección**  
 
 ## Lista de propiedades  
@@ -445,7 +446,7 @@ WaterQualityObserved:
   "type": "WaterQualityObserved"  
 }  
 ```  
-#### WaterQualityObserved NGSI-LD normalizado Ejemplo  
+#### Calidad del aguaObservada NGSI-LD normalizada Ejemplo  
 Este es un ejemplo de WaterQualityObserved en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
