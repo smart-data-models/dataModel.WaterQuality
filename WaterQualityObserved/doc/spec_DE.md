@@ -5,7 +5,7 @@ Entität: WaterQualityObserved
 
 ## Liste der Eigenschaften  
 
-- `Chla`: Konzentration von Chlorophyll A.  - `Cl-`: Konzentration der Chloride.  - `NH3`: Konzentration von Ammonium.  - `NH4`: Konzentration von Ammonium.  - `NO3`: Konzentration von Nitraten.  - `O2`: Gehalt an freiem, nicht gebundenem Sauerstoff.  - `PC`: Konzentration des Pigments Phycocyanin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PE`: Konzentration des Pigments Phycoerythrin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PO4`: Konzentration von Phosphaten.  - `address`: Die Postanschrift.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Der biochemische Sauerstoffbedarf (BSB) ist die Menge an gelöstem Sauerstoff (DO), die von aeroben biologischen Organismen benötigt (d. h. gefordert) wird, um das in einer bestimmten Wasserprobe vorhandene organische Material bei einer bestimmten Temperatur über einen bestimmten Zeitraum abzubauen  - `cod`: Der chemische Sauerstoffbedarf (CSB) ist ein indikatives Maß für die Menge an Sauerstoff, die durch Reaktionen in einer gemessenen Lösung verbraucht werden kann  - `conductance`: Spezifische Leitfähigkeit.  - `conductivity`: Elektrische Leitfähigkeit.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `measurand`: Ein Array mit Strings, die Details (siehe Format unten) über zusätzliche Messwerte dieser Beobachtung enthalten.  - `name`: Der Name dieses Elements.  - `orp`: Oxidations-Reduktionspotential.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Azidität oder Basizität einer wässrigen Lösung.  - `refPointOfInterest`: Ein Verweis auf ein Sonderziel, das mit dieser Beobachtung verbunden ist.  - `salinity`: Menge der in Wasser gelösten Salze.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tds`: Gelöste Feststoffe insgesamt.  - `temperature`: Temperatur  - `tss`: Schwebende Feststoffe insgesamt.  - `turbidity`: Menge des von Partikeln in der Wassersäule gestreuten Lichts  - `type`: NGSI Entity-Typ    
+- `Chla`: Konzentration von Chlorophyll A.  - `Cl-`: Konzentration der Chloride.  - `NH3`: Konzentration von Ammonium.  - `NH4`: Konzentration von Ammonium.  - `NO3`: Konzentration von Nitraten.  - `O2`: Gehalt an freiem, nicht gebundenem Sauerstoff.  - `PC`: Konzentration des Pigments Phycocyanin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PE`: Konzentration des Pigments Phycoerythrin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PO4`: Konzentration von Phosphaten.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Der biochemische Sauerstoffbedarf (BSB) ist die Menge an gelöstem Sauerstoff (DO), die von aeroben biologischen Organismen benötigt (d. h. gefordert) wird, um das in einer bestimmten Wasserprobe vorhandene organische Material bei einer bestimmten Temperatur über einen bestimmten Zeitraum abzubauen  - `cod`: Der chemische Sauerstoffbedarf (CSB) ist ein indikatives Maß für die Menge an Sauerstoff, die durch Reaktionen in einer gemessenen Lösung verbraucht werden kann  - `conductance`: Spezifische Leitfähigkeit.  - `conductivity`: Elektrische Leitfähigkeit.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `measurand`: Ein Array mit Strings, die Details (siehe Format unten) über zusätzliche Messwerte dieser Beobachtung enthalten.  - `name`: Der Name dieses Elements.  - `orp`: Oxidations-Reduktionspotential.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Azidität oder Basizität einer wässrigen Lösung.  - `refPointOfInterest`: Ein Verweis auf ein Sonderziel, das mit dieser Beobachtung verbunden ist.  - `salinity`: Menge der in Wasser gelösten Salze.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tds`: Gelöste Feststoffe insgesamt.  - `temperature`: Temperatur  - `tss`: Schwebende Feststoffe insgesamt.  - `turbidity`: Menge des von Partikeln in der Wassersäule gestreuten Lichts  - `type`: NGSI Entity-Typ    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -23,7 +23,7 @@ WaterQualityObserved:
       minimum: 0    
       type: Property    
     NH3:    
-      description: 'Concentration of ammonium.'    
+      description: 'Concentration of ammonia.'    
       minimum: 0    
       type: Property    
     NH4:    
@@ -51,30 +51,29 @@ WaterQualityObserved:
       minimum: 0    
       type: Property    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -325,8 +324,8 @@ WaterQualityObserved:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
