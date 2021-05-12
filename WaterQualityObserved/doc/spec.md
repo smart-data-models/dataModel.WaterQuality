@@ -5,7 +5,7 @@ Entity: WaterQualityObserved
 
 ## List of properties  
 
-- `Chla`: Concentration of chlorophyll A.  - `Cl-`: Concentration of chlorides.  - `NH3`: Concentration of ammonium.  - `NH4`: Concentration of ammonium.  - `NO3`: Concentration of nitrates.  - `O2`: Level of free, non-compound oxygen present.  - `PC`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `PO4`: Concentration of phosphates.  - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period  - `cod`: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution  - `conductance`: Specific Conductance.  - `conductivity`: Electrical Conductivity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `measurand`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name`: The name of this item.  - `orp`: Oxidation-Reduction potential.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `salinity`: Amount of salts dissolved in water.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`: Total dissolved solids.   - `temperature`: Temperature  - `tss`: Total suspended solids.  - `turbidity`: Amount of light scattered by particles in the water column  - `type`: NGSI Entity type    
+- `Chla`: Concentration of chlorophyll A.  - `Cl-`: Concentration of chlorides.  - `NH3`: Concentration of ammonium.  - `NH4`: Concentration of ammonium.  - `NO3`: Concentration of nitrates.  - `O2`: Level of free, non-compound oxygen present.  - `PC`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `PO4`: Concentration of phosphates.  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period  - `cod`: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution  - `conductance`: Specific Conductance.  - `conductivity`: Electrical Conductivity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `measurand`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name`: The name of this item.  - `orp`: Oxidation-Reduction potential.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `salinity`: Amount of salts dissolved in water.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`: Total dissolved solids.   - `temperature`: Temperature  - `tss`: Total suspended solids.  - `turbidity`: Amount of light scattered by particles in the water column  - `type`: NGSI Entity type    
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -23,7 +23,7 @@ WaterQualityObserved:
       minimum: 0    
       type: Property    
     NH3:    
-      description: 'Concentration of ammonium.'    
+      description: 'Concentration of ammonia.'    
       minimum: 0    
       type: Property    
     NH4:    
@@ -51,30 +51,29 @@ WaterQualityObserved:
       minimum: 0    
       type: Property    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -325,8 +324,8 @@ WaterQualityObserved:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -364,8 +363,8 @@ WaterQualityObserved:
 ```  
 </details>    
 ## Example payloads    
-#### WaterQualityObserved NGSI V2 key-values Example    
-Here is an example of a WaterQualityObserved in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-v2 key-values Example    
+Here is an example of a WaterQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -382,8 +381,8 @@ WaterQualityObserved:
   "NO3": 0.01  
 }  
 ```  
-#### WaterQualityObserved NGSI V2 normalized Example    
-Here is an example of a WaterQualityObserved in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-v2 normalized Example    
+Here is an example of a WaterQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -419,66 +418,81 @@ WaterQualityObserved:
 #### WaterQualityObserved NGSI-LD key-values Example    
 Here is an example of a WaterQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "NO3": 0.01,  
- "conductivity": 0.005,  
- "dateObserved": {"@type": "DateTime", "@value": "2017-01-31T06:45:00Z"},  
- "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
- "location": {"coordinates": [-5.993307, 37.362882], "type": "Point"},  
- "measurand": ["NO3, 0.01, M1, Concentration of Nitrates"],  
- "pH": 7.4,  
- "temperature": 24.4,  
- "type": "WaterQualityObserved"}  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "NO3": 0.01,  
+  "conductivity": 0.005,  
+  "dateObserved": {  
+    "@type": "DateTime",  
+    "@value": "2017-01-31T06:45:00Z"  
+  },  
+  "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
+  "location": {  
+    "coordinates": [  
+      -5.993307,  
+      37.362882  
+    ],  
+    "type": "Point"  
+  },  
+  "measurand": [  
+    "NO3, 0.01, M1, Concentration of Nitrates"  
+  ],  
+  "pH": 7.4,  
+  "temperature": 24.4,  
+  "type": "WaterQualityObserved"  
+}  
 ```  
 #### WaterQualityObserved NGSI-LD normalized Example    
 Here is an example of a WaterQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
-    "type": "WaterQualityObserved",  
-    "dateObserved": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2017-01-31T06:45:00Z"  
-        }  
-    },  
-    "temperature": {  
-        "type": "Property",  
-        "value": 24.4  
-    },  
-    "NO3": {  
-        "type": "Property",  
-        "value": 0.01  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -5.993307,  
-                37.362882  
-            ]  
-        }  
-    },  
-    "pH": {  
-        "type": "Property",  
-        "value": 7.4  
-    },  
-    "measurand": {  
-        "type": "Property",  
-        "value": [  
-            "NO3, 0.01, M1, Concentration of Nitrates"  
-        ]  
-    },  
-    "conductivity": {  
-        "type": "Property",  
-        "value": 0.005  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
+  "type": "WaterQualityObserved",  
+  "dateObserved": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2017-01-31T06:45:00Z"  
+    }  
+  },  
+  "temperature": {  
+    "type": "Property",  
+    "value": 24.4  
+  },  
+  "NO3": {  
+    "type": "Property",  
+    "value": 0.01  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -5.993307,  
+        37.362882  
+      ]  
+    }  
+  },  
+  "pH": {  
+    "type": "Property",  
+    "value": 7.4  
+  },  
+  "measurand": {  
+    "type": "Property",  
+    "value": [  
+      "NO3, 0.01, M1, Concentration of Nitrates"  
     ]  
+  },  
+  "conductivity": {  
+    "type": "Property",  
+    "value": 0.005  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
