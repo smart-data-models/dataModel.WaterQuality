@@ -1,5 +1,4 @@
 # dataModel.WaterQuality
-This repo is under construction and no data models have been released.
 
 ### List of data models
 
@@ -14,5 +13,3 @@ The following entity types are available:
 
 ### Contribution
 You can raise an [issue](https://github.com/smart-data-models/dataModel.WaterQuality/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.WaterQuality/pulls) on existing data models
-
-

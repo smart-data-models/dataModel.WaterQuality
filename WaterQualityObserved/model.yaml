@@ -337,7 +337,7 @@ WaterQualityObserved:
       minimum: 0
       type: Property
     type:
-      description: 'NGSI Entity type'
+      description: 'NGSI Entity type. It has to be WaterQualityObserved'
       enum:
         - WaterQualityObserved
       type: Property
