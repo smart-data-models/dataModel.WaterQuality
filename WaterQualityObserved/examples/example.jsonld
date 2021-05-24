@@ -5,10 +5,7 @@
   ],
   "NO3": 0.01,
   "conductivity": 0.005,
-  "dateObserved": {
-    "@type": "DateTime",
-    "@value": "2017-01-31T06:45:00Z"
-  },
+  "dateObserved": "2017-01-31T06:45:00Z",
   "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",
   "location": {
     "coordinates": [
