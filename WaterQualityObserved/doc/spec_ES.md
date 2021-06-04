@@ -6,7 +6,7 @@ Entidad: Calidad del aguaObservada
 
 ## Lista de propiedades  
 
-- `Chla`: Concentración de clorofila A.  - `Cl-`: Concentración de cloruros.  - `NH3`: Concentración de amoníaco.  - `NH4`: Concentración de amonio.  - `NO3`: Concentración de nitratos.  - `O2`: Nivel de oxígeno libre no compuesto presente.  - `PC`: Concentración del pigmento ficocianina que puede medirse para estimar específicamente las concentraciones de cianobacterias.  - `PE`: Concentración del pigmento ficoeritrina que puede medirse para estimar específicamente las concentraciones de cianobacterias.  - `PO4`: Concentración de fosfatos.  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bod`: La demanda bioquímica de oxígeno (DBO) es la cantidad de oxígeno disuelto (OD) que necesitan (es decir, que demandan) los organismos biológicos aeróbicos para descomponer la materia orgánica presente en una muestra de agua determinada a cierta temperatura durante un periodo de tiempo específico  - `cod`: La demanda química de oxígeno (DQO) es una medida indicativa de la cantidad de oxígeno que pueden consumir las reacciones en una solución medida  - `conductance`: Conductancia específica.  - `conductivity`: Conductividad eléctrica.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC. Puede ser representada por un instante de tiempo específico o por un intervalo ISO8601.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `measurand`: Una matriz de cadenas que contiene detalles (véase el formato más abajo) sobre los medidores adicionales proporcionados por esta observación.  - `name`: El nombre de este artículo.  - `orp`: Potencial de Oxidación-Reducción.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Acidez o basicidad de una solución acuosa.  - `refPointOfInterest`: Una referencia a un punto de interés asociado a esta observación.  - `salinity`: Cantidad de sales disueltas en el agua.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `tds`: Sólidos disueltos totales.  - `temperature`: Temperatura  - `tss`: Sólidos suspendidos totales.  - `turbidity`: Cantidad de luz dispersada por las partículas de la columna de agua  - `type`: Tipo de entidad NGSI. Debe ser WaterQualityObserved    
+- `Chla`: Concentración de clorofila A.  - `Cl-`: Concentración de cloruros.  - `NH3`: Concentración de amoníaco.  - `NH4`: Concentración de amonio.  - `NO3`: Concentración de nitratos.  - `O2`: Nivel de oxígeno libre no compuesto presente.  - `PC`: Concentración del pigmento ficocianina que puede medirse para estimar específicamente las concentraciones de cianobacterias.  - `PE`: Concentración del pigmento ficoeritrina que puede medirse para estimar específicamente las concentraciones de cianobacterias.  - `PO4`: Concentración de fosfatos.  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `bod`: La demanda bioquímica de oxígeno (DBO) es la cantidad de oxígeno disuelto (OD) que necesitan (es decir, que demandan) los organismos biológicos aeróbicos para descomponer la materia orgánica presente en una muestra de agua determinada a cierta temperatura durante un periodo de tiempo específico  - `cod`: La demanda química de oxígeno (DQO) es una medida indicativa de la cantidad de oxígeno que pueden consumir las reacciones en una solución medida  - `conductance`: Conductancia específica.  - `conductivity`: Conductividad eléctrica.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC. Puede ser representada por un instante de tiempo específico o por un intervalo ISO8601.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measurand`: Una matriz de cadenas que contiene detalles (véase el formato más abajo) sobre los medidores adicionales proporcionados por esta observación.  - `name`: El nombre de este artículo.  - `orp`: Potencial de Oxidación-Reducción.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pH`: Acidez o basicidad de una solución acuosa.  - `refPointOfInterest`: Una referencia a un punto de interés asociado a esta observación.  - `salinity`: Cantidad de sales disueltas en el agua.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `tds`: Sólidos disueltos totales.  - `temperature`: Temperatura  - `tss`: Sólidos suspendidos totales.  - `turbidity`: Cantidad de luz dispersada por las partículas de la columna de agua  - `type`: Tipo de entidad NGSI. Debe ser WaterQualityObserved    
 Propiedades requeridas  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -135,10 +135,10 @@ WaterQualityObserved:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     measurand:    
       description: 'An array of strings containing details (see format below) about extra measurands provided by this observation.'    
       items:    
