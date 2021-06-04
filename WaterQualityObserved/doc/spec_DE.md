@@ -6,7 +6,7 @@ Entität: WaterQualityObserved
 
 ## Liste der Eigenschaften  
 
-- `Chla`: Konzentration von Chlorophyll A.  - `Cl-`: Konzentration der Chloride.  - `NH3`: Konzentration von Ammoniak.  - `NH4`: Konzentration von Ammonium.  - `NO3`: Konzentration von Nitraten.  - `O2`: Gehalt an freiem, nicht gebundenem Sauerstoff.  - `PC`: Konzentration des Pigments Phycocyanin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PE`: Konzentration des Pigments Phycoerythrin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PO4`: Konzentration von Phosphaten.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Der biochemische Sauerstoffbedarf (BSB) ist die Menge an gelöstem Sauerstoff (DO), die von aeroben biologischen Organismen benötigt (d. h. gefordert) wird, um das in einer bestimmten Wasserprobe vorhandene organische Material bei einer bestimmten Temperatur über einen bestimmten Zeitraum abzubauen  - `cod`: Der chemische Sauerstoffbedarf (CSB) ist ein indikatives Maß für die Menge an Sauerstoff, die durch Reaktionen in einer gemessenen Lösung verbraucht werden kann  - `conductance`: Spezifische Leitfähigkeit.  - `conductivity`: Elektrische Leitfähigkeit.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `measurand`: Ein Array mit Strings, die Details (siehe Format unten) über zusätzliche Messwerte dieser Beobachtung enthalten.  - `name`: Der Name dieses Elements.  - `orp`: Oxidations-Reduktionspotential.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Azidität oder Basizität einer wässrigen Lösung.  - `refPointOfInterest`: Ein Verweis auf ein Sonderziel, das mit dieser Beobachtung verbunden ist.  - `salinity`: Menge der in Wasser gelösten Salze.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tds`: Gelöste Feststoffe insgesamt.  - `temperature`: Temperatur  - `tss`: Schwebende Feststoffe insgesamt.  - `turbidity`: Menge des von Partikeln in der Wassersäule gestreuten Lichts  - `type`: NGSI Entity-Typ. Es muss WaterQualityObserved sein    
+- `Chla`: Konzentration von Chlorophyll A.  - `Cl-`: Konzentration der Chloride.  - `NH3`: Konzentration von Ammoniak.  - `NH4`: Konzentration von Ammonium.  - `NO3`: Konzentration von Nitraten.  - `O2`: Gehalt an freiem, nicht gebundenem Sauerstoff.  - `PC`: Konzentration des Pigments Phycocyanin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PE`: Konzentration des Pigments Phycoerythrin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PO4`: Konzentration von Phosphaten.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Der biochemische Sauerstoffbedarf (BSB) ist die Menge an gelöstem Sauerstoff (DO), die von aeroben biologischen Organismen benötigt (d. h. gefordert) wird, um das in einer bestimmten Wasserprobe vorhandene organische Material bei einer bestimmten Temperatur über einen bestimmten Zeitraum abzubauen  - `cod`: Der chemische Sauerstoffbedarf (CSB) ist ein indikatives Maß für die Menge an Sauerstoff, die durch Reaktionen in einer gemessenen Lösung verbraucht werden kann  - `conductance`: Spezifische Leitfähigkeit.  - `conductivity`: Elektrische Leitfähigkeit.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurand`: Ein Array mit Strings, die Details (siehe Format unten) über zusätzliche Messwerte dieser Beobachtung enthalten.  - `name`: Der Name dieses Elements.  - `orp`: Oxidations-Reduktionspotential.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Azidität oder Basizität einer wässrigen Lösung.  - `refPointOfInterest`: Ein Verweis auf ein Sonderziel, das mit dieser Beobachtung verbunden ist.  - `salinity`: Menge der in Wasser gelösten Salze.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tds`: Gelöste Feststoffe insgesamt.  - `temperature`: Temperatur  - `tss`: Schwebende Feststoffe insgesamt.  - `turbidity`: Menge des von Partikeln in der Wassersäule gestreuten Lichts  - `type`: NGSI Entity-Typ. Es muss WaterQualityObserved sein    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -135,10 +135,10 @@ WaterQualityObserved:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -158,7 +158,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -181,7 +182,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +208,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -228,7 +231,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +257,8 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +285,7 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     measurand:    
       description: 'An array of strings containing details (see format below) about extra measurands provided by this observation.'    
       items:    
