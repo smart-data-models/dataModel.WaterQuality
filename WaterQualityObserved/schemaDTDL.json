@@ -1,0 +1,334 @@
+{
+    "@id": "dtmi:com:ngsi-ld:WaterQualityObserved;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " - Water quality observed schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/WaterQualityObserved/schema.json",
+    "description": "Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section",
+    "displayName": "WaterQualityObserved",
+    "contents": [
+        {
+            "name": "Chla",
+            "writable": true,
+            "displayName": "Chla",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of chlorophyll A."
+        },
+        {
+            "name": "Cl-",
+            "writable": true,
+            "displayName": "Cl-",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of chlorides."
+        },
+        {
+            "name": "NH3",
+            "writable": true,
+            "displayName": "NH3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of ammonia."
+        },
+        {
+            "name": "NH4",
+            "writable": true,
+            "displayName": "NH4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of ammonium."
+        },
+        {
+            "name": "NO3",
+            "writable": true,
+            "displayName": "NO3",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of nitrates."
+        },
+        {
+            "name": "O2",
+            "writable": true,
+            "displayName": "O2",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Level of free, non-compound oxygen present."
+        },
+        {
+            "name": "PC",
+            "writable": true,
+            "displayName": "PC",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically."
+        },
+        {
+            "name": "PE",
+            "writable": true,
+            "displayName": "PE",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically."
+        },
+        {
+            "name": "PO4",
+            "writable": true,
+            "displayName": "PO4",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Concentration of phosphates."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "bod",
+            "writable": true,
+            "displayName": "bod",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period"
+        },
+        {
+            "name": "cod",
+            "writable": true,
+            "displayName": "cod",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution"
+        },
+        {
+            "name": "conductance",
+            "writable": true,
+            "displayName": "conductance",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Specific Conductance."
+        },
+        {
+            "name": "conductivity",
+            "writable": true,
+            "displayName": "conductivity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electrical Conductivity."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateObserved",
+            "writable": true,
+            "displayName": "dateObserved",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "orp",
+            "writable": true,
+            "displayName": "orp",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Oxidation-Reduction potential."
+        },
+        {
+            "name": "pH",
+            "writable": true,
+            "displayName": "pH",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Acidity or basicity of an aqueous solution."
+        },
+        {
+            "name": "refPointOfInterest",
+            "writable": true,
+            "displayName": "refPointOfInterest"
+        },
+        {
+            "name": "salinity",
+            "writable": true,
+            "displayName": "salinity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Amount of salts dissolved in water."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "tds",
+            "writable": true,
+            "displayName": "tds",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total dissolved solids. "
+        },
+        {
+            "name": "temperature",
+            "writable": true,
+            "displayName": "temperature",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Temperature"
+        },
+        {
+            "name": "tss",
+            "writable": true,
+            "displayName": "tss",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total suspended solids."
+        },
+        {
+            "name": "turbidity",
+            "writable": true,
+            "displayName": "turbidity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Amount of light scattered by particles in the water column"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "measurand",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "An array of strings containing details (see format below) about extra measurands provided by this observation.",
+            "displayName": "measurand"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
