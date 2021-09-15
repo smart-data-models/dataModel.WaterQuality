@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.3",
     "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json"
+    "$id": "https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json",
+    "title": " - Water quality observed schema"
 }
