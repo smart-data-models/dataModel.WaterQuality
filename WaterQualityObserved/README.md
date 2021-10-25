@@ -6,7 +6,7 @@ Version: 0.0.3
 Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/WaterQualityObserved/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/doc/spec.md)
 
