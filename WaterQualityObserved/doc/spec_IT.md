@@ -1,15 +1,15 @@
-Entity: WaterQualityObserved  
+Entità: WaterQualityObserved  
 ============================  
-[Open License](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Global description: **Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section**  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Il modello di dati sulla qualità dell'acqua ha lo scopo di rappresentare i parametri di qualità dell'acqua in una certa sezione di massa d'acqua (fiume, lago, mare, ecc.)**  
 
-## List of properties  
+## Elenco delle proprietà  
 
-- `Chla`: Concentration of chlorophyll A.  - `Cl-`: Concentration of chlorides.  - `NH3`: Concentration of ammonia.  - `NH4`: Concentration of ammonium.  - `NO3`: Concentration of nitrates.  - `O2`: Level of free, non-compound oxygen present.  - `PC`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `PO4`: Concentration of phosphates.  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period  - `cod`: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution  - `conductance`: Specific Conductance.  - `conductivity`: Electrical Conductivity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name`: The name of this item.  - `orp`: Oxidation-Reduction potential.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `salinity`: Amount of salts dissolved in water.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`: Total dissolved solids.   - `temperature`: Temperature  - `tss`: Total suspended solids.  - `turbidity`: Amount of light scattered by particles in the water column  - `type`: NGSI Entity type. It has to be WaterQualityObserved    
-Required properties  
-- `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
-Sorted alphabetically (click for details)  
+- `Chla`: Concentrazione di clorofilla A.  - `Cl-`: Concentrazione di cloruri.  - `NH3`: Concentrazione di ammoniaca.  - `NH4`: Concentrazione di ammonio.  - `NO3`: Concentrazione di nitrati.  - `O2`: Livello di ossigeno libero e non composto presente.  - `PC`: Concentrazione del pigmento ficocianina che può essere misurata per stimare specificamente le concentrazioni di cianobatteri.  - `PE`: Concentrazione del pigmento ficoeritrina che può essere misurato per stimare specificamente le concentrazioni di cianobatteri.  - `PO4`: Concentrazione di fosfati.  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `bod`: La domanda biochimica di ossigeno (BOD) è la quantità di ossigeno disciolto (DO) necessaria (cioè richiesta) dagli organismi biologici aerobici per decomporre il materiale organico presente in un dato campione d'acqua a una certa temperatura per un determinato periodo di tempo  - `cod`: La domanda chimica di ossigeno (COD) è una misura indicativa della quantità di ossigeno che può essere consumata dalle reazioni in una soluzione misurata  - `conductance`: Conduttanza specifica.  - `conductivity`: Conducibilità elettrica.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateObserved`: La data e l'ora di questa osservazione in formato ISO8601 UTC. Può essere rappresentato da un istante di tempo specifico o da un intervallo ISO8601.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `measurand`: Una matrice di stringhe contenenti dettagli (vedi formato sotto) sui misurandi extra forniti da questa osservazione.  - `name`: Il nome di questo articolo.  - `orp`: Potenziale di ossidoriduzione.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `pH`: Acidità o basicità di una soluzione acquosa.  - `refPointOfInterest`: Un riferimento a un punto di interesse associato a questa osservazione.  - `salinity`: Quantità di sali disciolti in acqua.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `tds`: Solidi totali disciolti.  - `temperature`: Temperatura  - `tss`: Solidi sospesi totali.  - `turbidity`: Quantità di luce diffusa dalle particelle nella colonna d'acqua  - `type`: Tipo di entità NGSI. Deve essere WaterQualityObserved    
+Proprietà richieste  
+- `dateObserved`  - `id`  - `location`  - `type`  ## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterQualityObserved:    
@@ -431,11 +431,17 @@ WaterQualityObserved:
     - dateObserved    
     - location    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.3    
 ```  
 </details>    
-## Example payloads    
-#### WaterQualityObserved NGSI-v2 key-values Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## Esempio di payloads  
+#### WaterQualityObserved NGSI-v2 valori chiave Esempio  
+Ecco un esempio di WaterQualityObserved in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -452,8 +458,8 @@ WaterQualityObserved:
   "NO3": 0.01  
 }  
 ```  
-#### WaterQualityObserved NGSI-v2 normalized Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-v2 normalizzato Esempio  
+Ecco un esempio di WaterQualityObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -486,8 +492,8 @@ WaterQualityObserved:
   }  
 }  
 ```  
-#### WaterQualityObserved NGSI-LD key-values Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-LD valori chiave Esempio  
+Ecco un esempio di WaterQualityObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": [  
@@ -513,8 +519,8 @@ WaterQualityObserved:
   "type": "WaterQualityObserved"  
 }  
 ```  
-#### WaterQualityObserved NGSI-LD normalized Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-LD normalizzato Esempio  
+Ecco un esempio di WaterQualityObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  

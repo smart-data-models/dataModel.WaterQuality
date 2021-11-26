@@ -1,15 +1,15 @@
-Entity: WaterQualityObserved  
-============================  
-[Open License](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
+エンティティWaterQualityObserved  
+==========================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Global description: **Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section**  
+グローバルな記述です。**水質データモデルは、ある水塊（河川、湖沼、海など）の水質パラメータを表現することを目的としています。  
 
-## List of properties  
+## プロパティのリスト  
 
-- `Chla`: Concentration of chlorophyll A.  - `Cl-`: Concentration of chlorides.  - `NH3`: Concentration of ammonia.  - `NH4`: Concentration of ammonium.  - `NO3`: Concentration of nitrates.  - `O2`: Level of free, non-compound oxygen present.  - `PC`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `PO4`: Concentration of phosphates.  - `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `bod`: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period  - `cod`: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution  - `conductance`: Specific Conductance.  - `conductivity`: Electrical Conductivity.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name`: The name of this item.  - `orp`: Oxidation-Reduction potential.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest`: A reference to a point of interest associated to this observation.  - `salinity`: Amount of salts dissolved in water.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds`: Total dissolved solids.   - `temperature`: Temperature  - `tss`: Total suspended solids.  - `turbidity`: Amount of light scattered by particles in the water column  - `type`: NGSI Entity type. It has to be WaterQualityObserved    
-Required properties  
-- `dateObserved`  - `id`  - `location`  - `type`  ## Data Model description of properties  
-Sorted alphabetically (click for details)  
+- `Chla`: クロロフィルAの濃度  - `Cl-`: 塩化物の濃度。  - `NH3`: アンモニアの濃度。  - `NH4`: アンモニウムの濃度。  - `NO3`: 硝酸塩の濃度。  - `O2`: 化合物を含まない自由な酸素の存在レベル。  - `PC`: 藍藻類の濃度を特異的に推定するために測定可能な色素フィコシアニンの濃度。  - `PE`: 藍藻類の濃度を特異的に推定するために測定可能な色素フィコエリスリンの濃度。  - `PO4`: リン酸塩の濃度。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `bod`: 生物化学的酸素要求量（BOD）とは、一定の温度の水を一定時間かけて採取した際に、好気性生物が有機物を分解するのに必要な溶存酸素量（DO）のこと。  - `cod`: 化学的酸素要求量（COD）とは、測定した溶液中の反応で消費される酸素の量を示す指標である。  - `conductance`: 比誘電率。  - `conductivity`: 電気伝導率。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: この観測の日付と時刻をISO8601 UTC形式で表したもの。これは、特定の時間の瞬間、またはISO8601の間隔で表すことができる。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `measurand`: この観測で提供された追加の測定値に関する詳細（以下のフォーマットを参照）を含む文字列の配列。  - `name`: このアイテムの名前です。  - `orp`: 酸化・還元電位。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水溶液の酸味や塩基性のこと。  - `refPointOfInterest`: この観測に関連した興味のあるポイントへの参照です。  - `salinity`: 水に溶けている塩分の量。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tds`: 全溶存物質。  - `temperature`: 温度  - `tss`: 全浮遊物質。  - `turbidity`: 水柱の中の粒子によって散乱される光の量  - `type`: NGSI Entityタイプ。それはWaterQualityObservedでなければならない。    
+必須項目  
+- `dateObserved`  - `id`  - `location`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterQualityObserved:    
@@ -431,11 +431,17 @@ WaterQualityObserved:
     - dateObserved    
     - location    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.3    
 ```  
 </details>    
-## Example payloads    
-#### WaterQualityObserved NGSI-v2 key-values Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## ペイロードの例  
+#### WaterQualityObserved NGSI-v2 key-values の例。  
+WaterQualityObservedをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -452,8 +458,8 @@ WaterQualityObserved:
   "NO3": 0.01  
 }  
 ```  
-#### WaterQualityObserved NGSI-v2 normalized Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-v2を正規化した例。  
+ここでは、正規化されたJSON-LD形式のWaterQualityObservedの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -486,8 +492,8 @@ WaterQualityObserved:
   }  
 }  
 ```  
-#### WaterQualityObserved NGSI-LD key-values Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-LD key-values 例  
+WaterQualityObservedをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": [  
@@ -513,8 +519,8 @@ WaterQualityObserved:
   "type": "WaterQualityObserved"  
 }  
 ```  
-#### WaterQualityObserved NGSI-LD normalized Example    
-Here is an example of a WaterQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### WaterQualityObserved NGSI-LDの正規化例  
+ここでは、正規化されたJSON-LD形式のWaterQualityObservedの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
