@@ -1,23 +1,23 @@
 {
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ],
-  "NO3": 0.01,
-  "conductivity": 0.005,
-  "dateObserved": "2017-01-31T06:45:00Z",
-  "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",
-  "location": {
-    "coordinates": [
-      -5.993307,
-      37.362882
+    "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",
+    "type": "WaterQualityObserved",
+    "NO3": 0.01,
+    "conductivity": 0.005,
+    "dateObserved": "2017-01-31T06:45:00Z",
+    "location": {
+        "coordinates": [
+            -5.993307,
+            37.362882
+        ],
+        "type": "Point"
+    },
+    "measurand": [
+        "NO3, 0.01, M1, Concentration of Nitrates"
     ],
-    "type": "Point"
-  },
-  "measurand": [
-    "NO3, 0.01, M1, Concentration of Nitrates"
-  ],
-  "pH": 7.4,
-  "temperature": 24.4,
-  "type": "WaterQualityObserved"
+    "pH": 7.4,
+    "temperature": 24.4,
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"
+    ]
 }
