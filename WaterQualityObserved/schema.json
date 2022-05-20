@@ -134,6 +134,16 @@
                     "minimum": 0,
                     "description": "Property. Concentration of phosphates."
                 },
+                "EscherichiaColi": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Concentration of Escherichia coli. Units:'Total number of bacteria/100mL'"
+                },
+                "Enterococci": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Concentration of Enterococci. Units:'Total number of bacteria/100mL'"
+                },
                 "refPointOfInterest": {
                     "anyOf": [
                         {
