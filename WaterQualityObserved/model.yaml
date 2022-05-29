@@ -145,6 +145,20 @@ WaterQualityObserved:
       type: string
       x-ngsi:
         type: Property
+    enterococci:
+      description: 'Concentration of Enterococci'
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: 'Total number of bacteria/100mL'
+    escherichiaColi:
+      description: 'Concentration of Escherichia coli'
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: 'Total number of bacteria/100mL'
     id:
       anyOf: &waterqualityobserved_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -422,4 +436,4 @@ WaterQualityObserved:
   x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json
   x-model-tags: ""
-  x-version: 0.0.3
+  x-version: 0.0.4
