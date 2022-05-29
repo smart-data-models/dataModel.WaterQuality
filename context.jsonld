@@ -21,6 +21,8 @@
         "dateModified": "https://smartdatamodels.org/dateModified",
         "dateObserved": "https://smartdatamodels.org/dateObserved",
         "description": "http://purl.org/dc/terms/description",
+        "enterococci": "https://smartdatamodels.org/dataModel.WaterQuality/enterococci",
+        "escherichiaColi": "https://smartdatamodels.org/dataModel.WaterQuality/escherichiaColi",
         "id": "@id",
         "location": "ngsi-ld:location",
         "measurand": "https://smartdatamodels.org/dataModel.WaterQuality/measurand",
