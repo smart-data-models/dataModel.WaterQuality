@@ -1,12 +1,14 @@
-Entität: WaterQualityObserved  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: WaterQualityObserved  
 =============================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Das Datenmodell für die Wasserqualität dient der Darstellung von Wasserqualitätsparametern in einem bestimmten Abschnitt der Wassermasse (Fluss, See, Meer usw.)**  
+Globale Beschreibung: **Das Datenmodell für die Wasserqualität dient der Darstellung von Wasserqualitätsparametern in einem bestimmten Gewässerabschnitt (Fluss, See, Meer usw.)**  
+Version: 0.0.4  
 
 ## Liste der Eigenschaften  
 
-- `Chla`: Konzentration von Chlorophyll A.  - `Cl-`: Konzentration der Chloride.  - `NH3`: Konzentration von Ammoniak.  - `NH4`: Konzentration von Ammonium.  - `NO3`: Konzentration von Nitraten.  - `O2`: Gehalt an freiem, nicht gebundenem Sauerstoff.  - `PC`: Konzentration des Pigments Phycocyanin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PE`: Konzentration des Pigments Phycoerythrin, das gemessen werden kann, um die Konzentration von Cyanobakterien gezielt abzuschätzen.  - `PO4`: Konzentration von Phosphaten.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Der biochemische Sauerstoffbedarf (BSB) ist die Menge an gelöstem Sauerstoff (DO), die von aeroben biologischen Organismen benötigt (d. h. gefordert) wird, um das in einer bestimmten Wasserprobe vorhandene organische Material bei einer bestimmten Temperatur über einen bestimmten Zeitraum abzubauen  - `cod`: Der chemische Sauerstoffbedarf (CSB) ist ein indikatives Maß für die Menge an Sauerstoff, die durch Reaktionen in einer gemessenen Lösung verbraucht werden kann  - `conductance`: Spezifische Leitfähigkeit.  - `conductivity`: Elektrische Leitfähigkeit.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurand`: Ein Array mit Strings, die Details (siehe Format unten) über zusätzliche Messwerte dieser Beobachtung enthalten.  - `name`: Der Name dieses Elements.  - `orp`: Oxidations-Reduktionspotential.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pH`: Azidität oder Basizität einer wässrigen Lösung.  - `refPointOfInterest`: Ein Verweis auf ein Sonderziel, das mit dieser Beobachtung verbunden ist.  - `salinity`: Menge der in Wasser gelösten Salze.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `tds`: Gelöste Feststoffe insgesamt.  - `temperature`: Temperatur  - `tss`: Schwebende Feststoffe insgesamt.  - `turbidity`: Menge des von Partikeln in der Wassersäule gestreuten Lichts  - `type`: NGSI Entity-Typ. Es muss WaterQualityObserved sein    
+- `Chla`: Konzentration von Chlorophyll A.  - `Cl-`: Konzentration von Chloriden.  - `NH3`: Ammoniak-Konzentration.  - `NH4`: Ammonium-Konzentration.  - `NO3`: Konzentration von Nitraten.  - `O2`: Gehalt an freiem, nicht gebundenem Sauerstoff.  - `PC`: Konzentration des Pigments Phycocyanin, das gemessen werden kann, um die spezifische Konzentration von Cyanobakterien abzuschätzen.  - `PE`: Konzentration des Pigments Phycoerythrin, das gemessen werden kann, um die spezifische Konzentration von Cyanobakterien abzuschätzen.  - `PO4`: Konzentration von Phosphaten.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `bod`: Der biochemische Sauerstoffbedarf (BSB) ist die Menge an gelöstem Sauerstoff (DO), die von aeroben biologischen Organismen benötigt (d. h. gefordert) wird, um das in einer bestimmten Wasserprobe vorhandene organische Material bei einer bestimmten Temperatur über einen bestimmten Zeitraum abzubauen.  - `cod`: Der chemische Sauerstoffbedarf (CSB) ist ein indikatives Maß für die Menge an Sauerstoff, die durch Reaktionen in einer gemessenen Lösung verbraucht werden kann.  - `conductance`: Spezifische Leitfähigkeit.  - `conductivity`: Elektrische Leitfähigkeit.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie können durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden.  - `description`: Eine Beschreibung dieses Artikels  - `enterococci`: Konzentration von Enterokokken  - `escherichiaColi`: Konzentration von Escherichia coli  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `measurand`: Ein Array von Strings mit Details (siehe Format unten) über zusätzliche Messwerte, die von dieser Beobachtung geliefert werden.  - `name`: Der Name dieses Artikels.  - `orp`: Oxidations-Reduktionspotential.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pH`: Azidität oder Basizität einer wässrigen Lösung.  - `refPointOfInterest`: Ein Verweis auf einen Punkt von Interesse, der mit dieser Beobachtung verbunden ist.  - `salinity`: Menge der in Wasser gelösten Salze.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `tds`: Gelöste Feststoffe insgesamt.  - `temperature`: Temperatur  - `tss`: Schwebende Feststoffe insgesamt.  - `turbidity`: Menge des von den Partikeln in der Wassersäule gestreuten Lichts  - `type`: NGSI-Entitätstyp. Es muss WaterQualityObserved sein    
 Erforderliche Eigenschaften  
 - `dateObserved`  - `id`  - `location`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -18,39 +20,57 @@ WaterQualityObserved:
     Chla:    
       description: 'Concentration of chlorophyll A.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     Cl-:    
       description: 'Concentration of chlorides.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     NH3:    
       description: 'Concentration of ammonia.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     NH4:    
       description: 'Concentration of ammonium.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     NO3:    
       description: 'Concentration of nitrates.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     O2:    
       description: 'Level of free, non-compound oxygen present.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     PC:    
       description: 'Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     PE:    
       description: 'Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     PO4:    
       description: 'Concentration of phosphates.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -72,56 +92,89 @@ WaterQualityObserved:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     bod:    
       description: 'Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
+        type: Property    
         units: mg/l    
     cod:    
       description: 'Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
+        type: Property    
         units: mg/l    
     conductance:    
       description: 'Specific Conductance.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     conductivity:    
       description: 'Electrical Conductivity.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateObserved:    
       description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    enterococci:    
+      description: 'Concentration of Enterococci'    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: 'Total number of bacteria/100mL'    
+    escherichiaColi:    
+      description: 'Concentration of Escherichia coli'    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: 'Total number of bacteria/100mL'    
     id:    
       anyOf: &waterqualityobserved_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -133,7 +186,8 @@ WaterQualityObserved:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -285,31 +339,42 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     measurand:    
       description: 'An array of strings containing details (see format below) about extra measurands provided by this observation.'    
       items:    
         type: string    
       minItems: 1    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     orp:    
       description: 'Oxidation-Reduction potential.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *waterqualityobserved_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pH:    
       description: 'Acidity or basicity of an aqueous solution.'    
       maximum: 14    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     refPointOfInterest:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -321,11 +386,14 @@ WaterQualityObserved:
           format: uri    
           type: string    
       description: 'A reference to a point of interest associated to this observation.'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     salinity:    
       description: 'Amount of salts dissolved in water.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -336,41 +404,60 @@ WaterQualityObserved:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     tds:    
       description: 'Total dissolved solids. '    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     temperature:    
       description: Temperature    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     tss:    
       description: 'Total suspended solids.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     turbidity:    
       description: 'Amount of light scattered by particles in the water column'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be WaterQualityObserved'    
       enum:    
         - WaterQualityObserved    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
     - dateObserved    
     - location    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.4    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
 #### WaterQualityObserved NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für eine WaterQualityObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel einer WaterQualityObserved im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -388,7 +475,7 @@ WaterQualityObserved:
 }  
 ```  
 #### WaterQualityObserved NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein WaterQualityObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein WaterQualityObserved im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -422,81 +509,80 @@ WaterQualityObserved:
 }  
 ```  
 #### WaterQualityObserved NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für eine WaterQualityObserved im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel einer WaterQualityObserved im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "NO3": 0.01,  
-  "conductivity": 0.005,  
-  "dateObserved": "2017-01-31T06:45:00Z",  
-  "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
-  "location": {  
-    "coordinates": [  
-      -5.993307,  
-      37.362882  
+    "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
+    "type": "WaterQualityObserved",  
+    "NO3": 0.01,  
+    "conductivity": 0.005,  
+    "dateObserved": "2017-01-31T06:45:00Z",  
+    "location": {  
+        "coordinates": [  
+            -5.993307,  
+            37.362882  
+        ],  
+        "type": "Point"  
+    },  
+    "measurand": [  
+        "NO3, 0.01, M1, Concentration of Nitrates"  
     ],  
-    "type": "Point"  
-  },  
-  "measurand": [  
-    "NO3, 0.01, M1, Concentration of Nitrates"  
-  ],  
-  "pH": 7.4,  
-  "temperature": 24.4,  
-  "type": "WaterQualityObserved"  
+    "pH": 7.4,  
+    "temperature": 24.4,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### WaterQualityObserved NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein WaterQualityObserved im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+#### WaterQualityObserved NGSI-LD normalized Beispiel  
+Hier ist ein Beispiel für ein WaterQualityObserved im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
-  "type": "WaterQualityObserved",  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-01-31T06:45:00Z"  
-    }  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 24.4  
-  },  
-  "NO3": {  
-    "type": "Property",  
-    "value": 0.01  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -5.993307,  
-        37.362882  
-      ]  
-    }  
-  },  
-  "pH": {  
-    "type": "Property",  
-    "value": 7.4  
-  },  
-  "measurand": {  
-    "type": "Property",  
-    "value": [  
-      "NO3, 0.01, M1, Concentration of Nitrates"  
+    "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
+    "type": "WaterQualityObserved",  
+    "NO3": {  
+        "type": "Property",  
+        "value": 0.01  
+    },  
+    "conductivity": {  
+        "type": "Property",  
+        "value": 0.005  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-01-31T06:45:00Z"  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -5.993307,  
+                37.362882  
+            ]  
+        }  
+    },  
+    "measurand": {  
+        "type": "Property",  
+        "value": [  
+            "NO3, 0.01, M1, Concentration of Nitrates"  
+        ]  
+    },  
+    "pH": {  
+        "type": "Property",  
+        "value": 7.4  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 24.4  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
     ]  
-  },  
-  "conductivity": {  
-    "type": "Property",  
-    "value": 0.005  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
