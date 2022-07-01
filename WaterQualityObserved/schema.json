@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.4",
+  "$schemaVersion": "0.0.5",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json",
   "title": " - Water quality observed schema",
@@ -160,6 +160,10 @@
             }
           ],
           "description": "Relationship. A reference to a point of interest associated to this observation."
+        },
+        "flow": {
+          "type": "number",
+          "description": "Property. Units:'cubic meters/hour'. Water Flow observed. "
         }
       }
     }

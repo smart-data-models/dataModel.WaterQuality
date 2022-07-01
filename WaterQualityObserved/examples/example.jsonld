@@ -16,6 +16,7 @@
     ],
     "pH": 7.4,
     "temperature": 24.4,
+     "flow": 127.53,
     "@context": [
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"

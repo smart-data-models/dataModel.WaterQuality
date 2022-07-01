@@ -6,25 +6,39 @@
     "value": "2017-01-31T06:45:00Z"
   },
   "temperature": {
+    "type": "Number",
     "value": 24.4
   },
   "NO3": {
+    "type": "Number",
     "value": 0.01
   },
   "location": {
     "type": "geo:json",
     "value": {
       "type": "Point",
-      "coordinates": [-5.993307, 37.362882]
+      "coordinates": [
+        -5.993307,
+        37.362882
+      ]
     }
   },
   "pH": {
+    "type": "Number",
     "value": 7.4
   },
   "measurand": {
-    "value": ["NO3, 0.01, M1, Concentration of Nitrates"]
+    "type": "array",
+    "value": [
+      "NO3, 0.01, M1, Concentration of Nitrates"
+    ]
   },
   "conductivity": {
+    "type": "Number",
     "value": 0.005
+  },
+  "flow": {
+    "type": "Number",
+    "value": 127.53
   }
 }
