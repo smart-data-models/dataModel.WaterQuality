@@ -8,4 +8,11 @@ currentAdopters:
  project: 
  comments: 
  startDate: 
- 
+-
+ adopter: SCOREwater
+ description: The SCOREwater project uses the Water Quality Observed data model to distribute results from water quality observations from a) water going in and out of construction sites and b) sewer systems. 
+ mail: 
+ organization: IVL, Talkpool, BCASA, s::can, Civity
+ project: SCOREwater
+ comments: Flow property of WaterQualityObserved
+ startDate: 
