@@ -1,16 +1,16 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
--
- name: Stephane
- surname: Roux
- mail: stephane.roux@nicecotedazur.org
- organization: Nice cote d'azur
- project:
- comments:
--
- name: Bas
- surname: Vanmeulebrouk
- mail: bas@civity.nl
- organization: Civity
- project: SCOREwater
- comments: Flow property of WaterQualityObserved
+- name: Stephane
+  surname: Roux
+  mail: stephane.roux@nicecotedazur.org
+  organization: Nice cote d'azur
+  project: 
+  comments: 
+  year: 2022
+- name: Bas
+  surname: Vanmeulebrouk
+  mail: bas@civity.nl
+  organization: Civity
+  project: SCOREwater
+  comments: Flow property of WaterQualityObserved
+  year: 2022
