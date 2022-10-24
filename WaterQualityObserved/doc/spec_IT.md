@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: AcquaQualitàOsservata  
-=============================  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Il modello di dati sulla qualità dell'acqua è destinato a rappresentare i parametri di qualità dell'acqua in una determinata sezione di massa d'acqua (fiume, lago, mare, ecc.)**.  
 versione: 0.0.4  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `Chla`: Concentrazione di clorofilla A.  - `Cl-`: Concentrazione di cloruri.  - `NH3`: Concentrazione di ammoniaca.  - `NH4`: Concentrazione di ammonio.  - `NO3`: Concentrazione di nitrati.  - `O2`: Livello di ossigeno libero e non composto presente.  - `PC`: Concentrazione del pigmento ficocianina che può essere misurata per stimare le concentrazioni di cianobatteri in modo specifico.  - `PE`: Concentrazione del pigmento ficoeritrina che può essere misurata per stimare le concentrazioni di cianobatteri in modo specifico.  - `PO4`: Concentrazione di fosfati.  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `bod`: La domanda biochimica di ossigeno (BOD) è la quantità di ossigeno disciolto (DO) necessaria (cioè richiesta) dagli organismi biologici aerobici per scomporre il materiale organico presente in un determinato campione d'acqua a una certa temperatura per un periodo di tempo specifico.  - `cod`: La domanda chimica di ossigeno (COD) è una misura indicativa della quantità di ossigeno che può essere consumata dalle reazioni in una soluzione misurata.  - `conductance`: Conduttanza specifica.  - `conductivity`: Conducibilità elettrica.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateObserved`: La data e l'ora di questa osservazione in formato ISO8601 UTC. Può essere rappresentata da un istante temporale specifico o da un intervallo ISO8601.  - `description`: Descrizione dell'articolo  - `enterococci`: Concentrazione di enterococchi  - `escherichiaColi`: Concentrazione di Escherichia coli  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measurand`: Un array di stringhe contenenti dettagli (si veda il formato sotto) sui misurandi extra forniti da questa osservazione.  - `name`: Il nome di questo elemento.  - `orp`: Potenziale di ossidoriduzione.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pH`: Acidità o basicità di una soluzione acquosa.  - `refPointOfInterest`: Riferimento a un punto di interesse associato a questa osservazione.  - `salinity`: Quantità di sali disciolti in acqua.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tds`: Solidi totali disciolti.  - `temperature`: Temperatura  - `tss`: Solidi sospesi totali.  - `turbidity`: Quantità di luce diffusa dalle particelle nella colonna d'acqua  - `type`: Tipo di entità NGSI. Deve essere WaterQualityObserved (Qualità dell'acqua osservata).    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `Chla[number]`: Concentrazione di clorofilla A.  - `Cl-[number]`: Concentrazione di cloruri.  - `NH3[number]`: Concentrazione di ammoniaca.  - `NH4[number]`: Concentrazione di ammonio.  - `NO3[number]`: Concentrazione di nitrati.  - `O2[number]`: Livello di ossigeno libero e non composto presente.  - `PC[number]`: Concentrazione del pigmento ficocianina che può essere misurata per stimare le concentrazioni di cianobatteri in modo specifico.  - `PE[number]`: Concentrazione del pigmento ficoeritrina che può essere misurata per stimare le concentrazioni di cianobatteri in modo specifico.  - `PO4[number]`: Concentrazione di fosfati.  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: La domanda biochimica di ossigeno (BOD) è la quantità di ossigeno disciolto (DO) necessaria (cioè richiesta) dagli organismi biologici aerobici per scomporre il materiale organico presente in un determinato campione d'acqua a una certa temperatura per un periodo di tempo specifico.  - `cod[number]`: La domanda chimica di ossigeno (COD) è una misura indicativa della quantità di ossigeno che può essere consumata dalle reazioni in una soluzione misurata.  - `conductance[number]`: Conduttanza specifica.  - `conductivity[number]`: Conducibilità elettrica.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateObserved[string]`: La data e l'ora di questa osservazione in formato ISO8601 UTC. Può essere rappresentata da un istante temporale specifico o da un intervallo ISO8601.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Descrizione dell'articolo  - `enterococci[number]`: Concentrazione di enterococchi  - `escherichiaColi[number]`: Concentrazione di Escherichia coli  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `measurand[array]`: Un array di stringhe contenenti dettagli (si veda il formato sotto) sui misurandi extra forniti da questa osservazione.  - `name[string]`: Il nome di questo elemento.  - `orp[number]`: Potenziale di ossidoriduzione.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `pH[number]`: Acidità o basicità di una soluzione acquosa.  - `refPointOfInterest[*]`: Riferimento a un punto di interesse associato a questa osservazione.  - `salinity[number]`: Quantità di sali disciolti in acqua.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `tds[number]`: Solidi totali disciolti.  - `temperature[number]`: Temperatura  - `tss[number]`: Solidi sospesi totali.  - `turbidity[number]`: Quantità di luce diffusa dalle particelle nella colonna d'acqua  - `type[string]`: Tipo di entità NGSI. Deve essere WaterQualityObserved (Qualità dell'acqua osservata).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `dateObserved`  - `id`  - `location`  - `type`  ## Modello di dati descrizione delle proprietà  
+- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterQualityObserved:    
@@ -455,9 +469,14 @@ WaterQualityObserved:
   x-version: 0.0.4    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Esempi di payload  
 #### WaterQualityObserved NGSI-v2 valori-chiave Esempio  
 Ecco un esempio di WaterQualityObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -474,8 +493,10 @@ WaterQualityObserved:
   "NO3": 0.01  
 }  
 ```  
+</details>  
 #### AcquaQualitàOsservata NGSI-v2 normalizzato Esempio  
 Ecco un esempio di WaterQualityObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -508,8 +529,10 @@ WaterQualityObserved:
   }  
 }  
 ```  
+</details>  
 #### Qualità dell'acqua osservata Valori chiave NGSI-LD Esempio  
 Ecco un esempio di WaterQualityObserved in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
@@ -535,8 +558,10 @@ WaterQualityObserved:
     ]  
 }  
 ```  
+</details>  
 #### Qualità dell'acquaOsservata NGSI-LD normalizzato Esempio  
 Ecco un esempio di WaterQualityObserved in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
@@ -581,8 +606,17 @@ WaterQualityObserved:
         "value": 24.4  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
