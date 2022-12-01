@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ水質観測  
-==========  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**水質データモデルは、ある水塊（河川、湖沼、海など）の水質パラメータを表現するためのものである。  
 バージョン: 0.0.4  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `Chla`: クロロフィルAの濃度。  - `Cl-`: 塩化物の濃度  - `NH3`: アンモニアの濃度  - `NH4`: アンモニウムの濃度  - `NO3`: 硝酸塩の濃度  - `O2`: 遊離した非複合酸素の存在レベル。  - `PC`: 藍藻の濃度を具体的に推定するために測定することができる色素フィコシアニンの濃度。  - `PE`: 藍藻の濃度を具体的に推定するために測定することができる色素フィコエリトリン濃度。  - `PO4`: リン酸塩の濃度  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `bod`: 生物化学的酸素要求量（BOD）とは、ある温度で一定時間、ある水試料中の有機物を分解するために好気性生物によって必要とされる（すなわち要求される）溶存酸素の量のことである  - `cod`: 化学的酸素要求量（COD）は、測定された溶液中の反応によって消費されうる酸素の量を示す指標である  - `conductance`: 比誘電率。  - `conductivity`: 電気伝導度。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved`: この観測の日付と時刻をISO8601 UTCフォーマットで表したもの。これは、特定の時間の瞬間、またはISO8601の間隔で表すことができます。  - `description`: このアイテムの説明  - `enterococci`: 腸球菌の濃度  - `escherichiaColi`: 大腸菌の濃度  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurand`: この観測で得られた追加の測定値に関する詳細（以下の形式を参照）を含む文字列の配列。  - `name`: このアイテムの名称です。  - `orp`: 酸化還元電位。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `pH`: 水溶液の酸性度または塩基性度。  - `refPointOfInterest`: この観測に関連する注目点への参照。  - `salinity`: 水に溶けている塩の量。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tds`: 総溶解固形分。  - `temperature`: 温度  - `tss`: 総浮遊物質量。  - `turbidity`: 水柱中の粒子によって散乱される光の量  - `type`: NGSI Entity タイプ。これは WaterQualityObserved でなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `Chla[number]`: クロロフィルAの濃度。  - `Cl-[number]`: 塩化物の濃度  - `NH3[number]`: アンモニアの濃度  - `NH4[number]`: アンモニウムの濃度  - `NO3[number]`: 硝酸塩の濃度  - `O2[number]`: 遊離した非複合酸素の存在レベル。  - `PC[number]`: 藍藻の濃度を具体的に推定するために測定することができる色素フィコシアニンの濃度。  - `PE[number]`: 藍藻の濃度を具体的に推定するために測定することができる色素フィコエリトリン濃度。  - `PO4[number]`: リン酸塩の濃度  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: 生物化学的酸素要求量（BOD）とは、ある温度で一定時間、ある水試料に存在する有機物を分解するために好気性生物によって必要とされる（すなわち要求される）溶存酸素の量のことである  - `cod[number]`: 化学的酸素要求量（COD）は、測定された溶液中の反応によって消費されうる酸素の量を示す指標である  - `conductance[number]`: 比誘電率。  - `conductivity[number]`: 電気伝導度。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: この観測の日付と時刻をISO8601 UTCフォーマットで表したもの。これは、特定の時間の瞬間、またはISO8601の間隔で表すことができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `enterococci[number]`: 腸球菌の濃度  - `escherichiaColi[number]`: 大腸菌の濃度  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `measurand[array]`: この観測で得られた追加の測定値に関する詳細（以下の形式を参照）を含む文字列の配列。  - `name[string]`: このアイテムの名称です。  - `orp[number]`: 酸化還元電位。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pH[number]`: 水溶液の酸性度または塩基性度。  - `refPointOfInterest[*]`: この観測に関連する注目点への参照。  - `salinity[number]`: 水に溶けている塩の量。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `tds[number]`: 総溶解固形分。  - `temperature[number]`: 温度  - `tss[number]`: 総浮遊物質量。  - `turbidity[number]`: 水柱中の粒子によって散乱される光の量  - `type[string]`: NGSI Entity タイプ。これは WaterQualityObserved でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `dateObserved`  - `id`  - `location`  - `type`  ## プロパティのデータモデル記述  
+- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WaterQualityObserved:    
@@ -191,7 +205,7 @@ WaterQualityObserved:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -212,7 +226,7 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -236,7 +250,7 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -262,7 +276,7 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -285,7 +299,7 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -311,7 +325,7 @@ WaterQualityObserved:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -340,7 +354,7 @@ WaterQualityObserved:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     measurand:    
       description: 'An array of strings containing details (see format below) about extra measurands provided by this observation.'    
       items:    
@@ -455,9 +469,14 @@ WaterQualityObserved:
   x-version: 0.0.4    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### WaterQualityObserved NGSI-v2 key-value の例。  
 WaterQualityObservedをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -474,8 +493,10 @@ WaterQualityObserved:
   "NO3": 0.01  
 }  
 ```  
+</details>  
 #### WaterQualityObserved NGSI-v2 正規化例  
 WaterQualityObservedをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "waterqualityobserved:Sevilla:D1",  
@@ -508,8 +529,10 @@ WaterQualityObserved:
   }  
 }  
 ```  
+</details>  
 #### WaterQualityObserved NGSI-LD key-value 例  
 WaterQualityObservedをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
@@ -535,8 +558,10 @@ WaterQualityObserved:
     ]  
 }  
 ```  
+</details>  
 #### 水質観測 NGSI-LD 正規化例  
 WaterQualityObservedをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
@@ -581,8 +606,17 @@ WaterQualityObserved:
         "value": 24.4  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
