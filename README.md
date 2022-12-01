@@ -5,6 +5,8 @@
 The following entity types are available:
 - [WaterQualityObserved](https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/README.md). Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section
 
+- [WaterQualityPredicted](https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityPredicted/README.md). Water Quality Predicted data model is intended to represent predictions of water quality at a certain water mass (river,  lake, sea, etc.) section
+
 
 
 ### Contributors
