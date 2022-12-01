@@ -14,3 +14,24 @@ contributors:
   project: SCOREwater
   comments: Flow property of WaterQualityObserved
   year: 2022
+- name: Eunah Eunsook
+  surname: Kim
+  mail: eunah.kim@udgalliance.org
+  organization: UDGA
+  project: NAIADES
+  comments: New model for WaterQualityPrediction
+  year: 2022
+- name: Juan Manuel
+  surname: Fernández Montenegro
+  mail: juan.fernandez@aimen.es
+  organization: AIMEN
+  project: NAIADES
+  comments: New model for WaterQualityPrediction
+  year: 2022
+- name: Cédric
+  surname: Crettaz
+  mail: ccrettaz@udgalliance.org
+  organization: UDGA
+  project: NAIADES
+  comments: New model for WaterQualityPrediction
+  year: 2022
