@@ -7,16 +7,17 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **Water Quality Predicted data model is intended to represent predictions of water quality at a certain water mass (river,  lake, sea, etc.) section**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `datePredicted`: The date and time from which the prediction is valid in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `description`: A description of this item  - `expiryDate`: The date and time for when the prediction is not valid anymore in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `predictions`:   - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type. It has to be WaterQualityPredicted  - `waterQualityPredictionValue`: Describes a summary of the water quality prediction.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  - `waterQualityPredictionValue`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -351,18 +352,224 @@ WaterQualityPredicted:
 ## Example payloads    
 #### WaterQualityPredicted NGSI-v2 key-values Example    
 Here is an example of a WaterQualityPredicted in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
+  "type": "WaterQualityPredicted",  
+  "dateCreated": "2022-05-27T10:00:00Z",  
+  "datePredicted": "2022-05-20T14:00:00",  
+  "expiryDate": "2022-05-21T14:00:00",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      48.9159,  
+      2.21228  
+    ]  
+  },  
+  "predictions": {  
+    "value": [  
+      {  
+        "percentile": "2.5",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "50",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "90",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "95",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "97.5",  
+        "prediction": 0.3  
+      }  
+    ]  
+  },  
+  "waterQualityPredictionValue": "Excellent"  
+}  
+```  
 #### WaterQualityPredicted NGSI-v2 normalized Example    
 Here is an example of a WaterQualityPredicted in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
+  "type": "WaterQualityPredicted",  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "2022-05-27T10:00:00Z"  
+  },  
+  "datePredicted": {  
+    "type": "DateTime",  
+    "value": "2022-05-20T14:00:00"  
+  },  
+  "expiryDate": {  
+    "type": "DateTime",  
+    "value": "2022-05-21T14:00:00"  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        48.9159,  
+        2.21228  
+      ]  
+    }  
+  },  
+  "predictionValues": {  
+    "type": "StructuredValue",  
+    "value": [  
+      {  
+        "percentile": "2.5",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "50",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "90",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "95",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "97.5",  
+        "prediction": 0.3  
+      }  
+    ]  
+  },  
+  "waterQualityPredictionValue": {  
+    "type": "Text",  
+    "value": "Excellent"  
+  }  
+}  
+```  
 #### WaterQualityPredicted NGSI-LD key-values Example    
 Here is an example of a WaterQualityPredicted in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
+  "type": "WaterQualityPredicted",  
+  "dateCreated": "2022-05-27T10:00:00Z",  
+  "datePredicted": "2022-05-20T14:00:00",  
+  "expiryDate": "2022-05-21T14:00:00",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      48.9159,  
+      2.21228  
+    ]  
+  },  
+  "predictions": {  
+    "value": [  
+      {  
+        "percentile": "2.5",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "50",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "90",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "95",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "97.5",  
+        "prediction": 0.3  
+      }  
+    ]  
+  },  
+  "waterQualityPredictionValue": "Excellent",  
+  cccccccc  
+}  
+```  
 #### WaterQualityPredicted NGSI-LD normalized Example    
 Here is an example of a WaterQualityPredicted in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
+  "type": "WaterQualityPredicted",  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-05-27T10:00:00Z"  
+    }  
+  },  
+  "datePredicted": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-05-20T14:00:00"  
+    }  
+  },  
+  "expiryDate": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2022-05-21T14:00:00"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        48.9159,  
+        2.21228  
+      ]  
+    }  
+  },  
+  "predictionValues": {  
+    "type": "Property",  
+    "value": [  
+      {  
+        "percentile": "2.5",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "50",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "90",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "95",  
+        "prediction": 0.3  
+      },  
+      {  
+        "percentile": "97.5",  
+        "prediction": 0.3  
+      }  
+    ]  
+  },  
+  "waterQualityPredictionValue": {  
+    "type": "Property",  
+    "value": "Excellent"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"  
+  ]  
+}  
+```  
 <!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
 <!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
