@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WaterQualityPredicted of the subject dataModel.WaterQuality for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WaterQualityPredicted_type AS ENUM ('WaterQualityPredicted');CREATE TYPE waterQualityPredictionValue_type AS ENUM ('Excellent', 'Good', 'Sufficient', 'Poor');
+CREATE TABLE WaterQualityPredicted (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, datePredicted text, description text, expiryDate text, id text, location json, name text, owner json, predictions json, seeAlso json, source text, type WaterQualityPredicted_type, waterQualityPredictionValue waterQualityPredictionValue_type);
