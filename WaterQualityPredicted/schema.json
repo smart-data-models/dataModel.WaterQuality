@@ -32,6 +32,7 @@
         },
         "predictions": {
           "type": "object",
+          "description": "Property. List of predictions for water quality",
           "properties": {
             "value": {
               "type": "array",
