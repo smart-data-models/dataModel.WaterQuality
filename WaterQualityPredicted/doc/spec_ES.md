@@ -1,28 +1,29 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entidad: Calidad del aguaPrevisto  
-=================================<!-- /10-Header -->  
+Entidad: Calidad del aguaPrevisión  
+==================================<!-- /10-Header -->  
 <!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/WaterQualityPredicted/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **El modelo de datos de predicción de la calidad del agua está destinado a representar las predicciones de la calidad del agua en una determinada masa de agua (río, lago, mar, etc.) sección**  
+Descripción global: **El modelo de datos de predicción de la calidad del agua está destinado a representar predicciones de la calidad del agua en una determinada masa de agua (río, lago, mar, etc.) sección**  
 versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `datePredicted`: La fecha y hora a partir de la cual la predicción es válida en formato ISO8601 UTC. Puede estar representada por un instante de tiempo específico o por un intervalo ISO8601.  - `description`: Una descripción de este artículo  - `expiryDate`: La fecha y la hora en que la predicción deja de ser válida en formato ISO8601 UTC. Puede representarse por un instante de tiempo específico o por un intervalo ISO8601.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `predictions`:   - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Debe ser WaterQualityPredicted  - `waterQualityPredictionValue`: Describe un resumen de la predicción de la calidad del agua.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `datePredicted[string]`: Fecha y hora a partir de la cual es válida la predicción en formato ISO8601 UTC. Puede representarse por un instante de tiempo específico o por un intervalo ISO8601.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Descripción de este artículo  - `expiryDate[string]`: Fecha y hora en la que la predicción deja de ser válida en formato ISO8601 UTC. Puede representarse por un instante de tiempo específico o por un intervalo ISO8601.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `predictions`:   - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser WaterQualityPredicted  - `waterQualityPredictionValue[string]`: Describe un resumen de la predicción de la calidad del agua.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `type`  - `waterQualityPredictionValue`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -90,7 +91,7 @@ WaterQualityPredicted:
       x-ngsi:    
         type: Property    
     datePredicted:    
-      description: The date and time from which the prediction is valid in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.    
+      description: 'Property. Model:''https://schema.org/DateTime''. The date and time from which the prediction is valid in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
@@ -101,7 +102,7 @@ WaterQualityPredicted:
       x-ngsi:    
         type: Property    
     expiryDate:    
-      description: The date and time for when the prediction is not valid anymore in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.    
+      description: 'Property. Model:''https://schema.org/DateTime''. The date and time for when the prediction is not valid anymore in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
@@ -122,7 +123,7 @@ WaterQualityPredicted:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: Geoproperty. Geojson reference to the item. Point    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -143,7 +144,7 @@ WaterQualityPredicted:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. LineString    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -167,7 +168,7 @@ WaterQualityPredicted:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. Polygon    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -193,7 +194,7 @@ WaterQualityPredicted:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiPoint    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -216,7 +217,7 @@ WaterQualityPredicted:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -242,7 +243,7 @@ WaterQualityPredicted:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: Geoproperty. Geojson reference to the item. MultiLineString    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -271,7 +272,7 @@ WaterQualityPredicted:
           title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     name:    
       description: The name of this item.    
       type: string    
@@ -286,6 +287,7 @@ WaterQualityPredicted:
       x-ngsi:    
         type: Property    
     predictions:    
+      description: Property. List of predictions for water quality    
       properties:    
         value:    
           items:    
@@ -297,6 +299,8 @@ WaterQualityPredicted:
             type: object    
           type: array    
       type: object    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
@@ -315,14 +319,14 @@ WaterQualityPredicted:
       x-ngsi:    
         type: Property    
     type:    
-      description: NGSI Entity type. It has to be WaterQualityPredicted    
+      description: Property. NGSI Entity type. It has to be WaterQualityPredicted    
       enum:    
         - WaterQualityPredicted    
       type: string    
       x-ngsi:    
         type: Property    
     waterQualityPredictionValue:    
-      description: Describes a summary of the water quality prediction.    
+      description: 'Property. Model:''https://schema.org/Text''. Describes a summary of the water quality prediction.'    
       enum:    
         - Excellent    
         - Good    
@@ -341,7 +345,7 @@ WaterQualityPredicted:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityPredicted/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityPredicted/schema.json    
-  x-model-tags: ""    
+  x-model-tags: NAIADES    
   x-version: 0.0.1    
 ```  
 </details>    
@@ -351,7 +355,8 @@ WaterQualityPredicted:
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### WaterQualityPredicted NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de WaterQualityPredicted en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de WaterQualityPredicted en formato JSON-LD como valores clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
@@ -393,8 +398,10 @@ WaterQualityPredicted:
   "waterQualityPredictionValue": "Excellent"  
 }  
 ```  
-#### WaterQualityPredicted NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de WaterQualityPredicted en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+</details>  
+#### WaterQualityPredicted NGSI-v2 normalized Ejemplo  
+He aquí un ejemplo de WaterQualityPredicted en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
@@ -452,8 +459,10 @@ WaterQualityPredicted:
   }  
 }  
 ```  
+</details>  
 #### WaterQualityPredicted NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de WaterQualityPredicted en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de WaterQualityPredicted en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
@@ -492,12 +501,13 @@ WaterQualityPredicted:
       }  
     ]  
   },  
-  "waterQualityPredictionValue": "Excellent",  
-  cccccccc  
+  "waterQualityPredictionValue": "Excellent"  
 }  
 ```  
-#### Calidad del aguaPredicado NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de WaterQualityPredicted en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+</details>  
+#### WaterQualityPredicted NGSI-LD normalized Ejemplo  
+He aquí un ejemplo de WaterQualityPredicted en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "1024e64a-0283-472c-9b62-dbf77291503e",  
@@ -567,9 +577,12 @@ WaterQualityPredicted:
   ]  
 }  
 ```  
-<!-- /80-Examples -->  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
