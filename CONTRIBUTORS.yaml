@@ -35,14 +35,14 @@ contributors:
   project: NAIADES
   comments: New model for WaterQualityPrediction
   year: 2022
-  - name: Wolfgang
+- name: Wolfgang
   surname: Seis
   mail: wolfgang.seis@kompetenz-wasser.de
   organization: KWB
   project: Digitalwater.city
   comments: New model for WaterQualityPredicted
   year: 2022
-  - name: Audun
+- name: Audun
   surname: Vennesland
   mail: audun.vennesland@sintef.no
   organization: SINTEF
