@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.5",
-  "modelTags": "NAIADES",
+  "modelTags": "NAIADES, DigitalWater.city, B-WaterSmart",
   "$id": "https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json",
   "title": " - Water quality observed schema",
   "description": "Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section",
@@ -164,6 +164,161 @@
         "flow": {
           "type": "number",
           "description": "Property. Units:'cubic meters/hour'. Water Flow observed. "
+        },
+        "alkalinity": {
+          "type": "number",
+           "minimum": 0,
+          "description": "Property. The alkalinity of water is its acid-neutralizing capacity comprised of the total of all titratable bases. Units:'mg/l'"
+        },
+        "TKN": {
+          "type": "number",
+           "minimum": 0,
+          "description": "Property. Total Kjeldahl Nitrogen. A measure that determines both the organic and the inorganic forms of nitrogen. Units:'mg/l'"
+        },
+        "NO2": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Nitrite nitrogen. Concentration of a sample in nitrite nitrogen. Units:'mg/l'"
+        },
+        "N-TOT": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:'mg/l'"
+        },
+        "P-TOT": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:'mg/l'"
+        },
+        "P-PO4": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Phosphate-phosphorus. Concentration of phosphorus as phosphate. Units:'mg/l'"
+        },
+        "Al": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Aluminium. Concentration of aluminium. Units:'mg/l'"
+        },
+        "As": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Arsenic. Concentration of arsenic. Units:'mg/l'"
+        },
+        "B": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Boron. Concentration of boron. Units:'mg/l'"
+        },
+        "Ba": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Barium. Concentration of barium. Units:'mg/l'"
+        },
+        "Cd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Cadmium. Concentration of cadmium. Units:'mg/l'"
+        },
+        "Cr": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Chromium. Concentration of chromium. Units:'mg/l'"
+        },
+        "Cr-III": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Chromium III. Concentration of chromium at the oxidation state +3. Units:'mg/l'"
+        },
+        "Cr-VI": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:'mg/l'"
+        },
+        "Cu": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Copper. Concentration of copper. Units:'mg/l'"
+        },
+        "Fe": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Iron. Concentration of iron. Units:'mg/l'"
+        },
+        "fluoride": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Concentration of fluoride. Units:'mg/l'"
+        },
+        "Hg": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Mercury. Concentration of mercury. Units:'mg/l'"
+        },
+        "THC": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Total hydrocarbon. Concentration of total hydrocarbon. Units:'mg/l'"
+        },
+        "Ni": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Nickel. Concentration of Nickel. Units:'mg/l'"
+        },
+        "TO": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Total oil content. Concentration of oil. Units:'mg/l'"
+        },
+        "Pb": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Lead. Concentration of lead. Units:'mg/l'"
+        },
+        "Se": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Selenium. Concentration of selenium. Units:'mg/l'"
+        },
+        "Sn": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Tin. Concentration of tin. Units:'mg/l'"
+        },
+        "sulphate": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Concentration of sulfate. Units:'mg/l'"
+        },
+        "sulphite": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Concentration of sulfite. Units:'mg/l'"
+        },
+        "anionic-surfactants": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Concentration of anionic surfactants. Units:'mg/l'"
+        },
+        "cationic-surfactants": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Concentrtation of cationic surfactants. Units:'mg/l'"
+        },
+        "non-ionic-surfactants": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Concentration of non-ionic surfactants. Units:'mg/l'"
+        },
+        "total-surfactants": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Concentration of total surfactants. Units:'mg/l'"
+        }, 
+        "Zn": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Zinc. Concentration of zinc. Units:'mg/l'"
         }
       }
     }

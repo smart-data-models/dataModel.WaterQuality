@@ -16,3 +16,11 @@ currentAdopters:
  project: SCOREwater
  comments: Flow property of WaterQualityObserved
  startDate: 
+-
+ adopter: B-WaterSmart
+ description: The B-WaterSmart project uses the Water Quality Observed data model to collect and make available information about treated water and its potential reuse. 
+ mail: 
+ organization: Engineering, SINTEF
+ project: B-WaterSmart
+ comments: 
+ startDate: 
