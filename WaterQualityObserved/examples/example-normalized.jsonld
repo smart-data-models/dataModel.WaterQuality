@@ -45,130 +45,130 @@
     "value": 127.53
   },
   "alkalinity": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.1
   },
   "TKN": {
-    "type": "Number",
+    "type": "Property",
     "value": 1.0
   },
   "NO2": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.09
   },
   "N-TOT": {
-    "type": "Number",
+    "type": "Property",
     "value": 6.0
   },
   "P-TOT": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.6
   },
   "P-PO4": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.5
   },
   "Al": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.01
   }, 
   "As": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "B": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.2
   },
   "Ba": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Cd": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.001
   },
   "Cr": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Cr-III": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Cr-VI": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Cu": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Fe": {
-    "type": "Number",
+    "type": "Property",
     "value": 7.4
   },
   "fluoride": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Hg": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "THC": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Ni": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "TO": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.01
   },
   "Pb": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Se": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "Sn": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "sulphate": {
-    "type": "Number",
+    "type": "Property",
     "value": 143.3
   },
   "sulphite": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "anionic-surfactants": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.3
   },
   "cationic-surfactants": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.2
   },
   "non-ionic-surfactants": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.1
   },
   "total-surfactants": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.3
   },
   "Zn": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
-  "@context": [
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+   "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"
+    ]
 }
