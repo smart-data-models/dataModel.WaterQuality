@@ -1,79 +1,79 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
-- name: Stephane
-  surname: Roux
-  mail: stephane.roux@nicecotedazur.org
-  organization: Nice cote d'azur
-  project: 
-  comments: 
-  year: 2022
-- name: Bas
-  surname: Vanmeulebrouk
-  mail: bas@civity.nl
-  organization: Civity
-  project: SCOREwater
-  comments: Flow property of WaterQualityObserved
-  year: 2022
-- name: Eunah Eunsook
-  surname: Kim
-  mail: eunah.kim@udgalliance.org
-  organization: UDGA
-  project: NAIADES
-  comments: New model for WaterQualityPrediction
-  year: 2022
-- name: Juan Manuel
-  surname: Fernández Montenegro
-  mail: juan.fernandez@aimen.es
-  organization: AIMEN
-  project: NAIADES
-  comments: New model for WaterQualityPrediction
-  year: 2022
-- name: Cédric
-  surname: Crettaz
-  mail: ccrettaz@udgalliance.org
-  organization: UDGA
-  project: NAIADES
-  comments: New model for WaterQualityPrediction
-  year: 2022
-- name: Wolfgang
-  surname: Seis
-  mail: wolfgang.seis@kompetenz-wasser.de
-  organization: KWB
-  project: Digitalwater.city
-  comments: New model for WaterQualityPredicted
-  year: 2022
-- name: Audun
-  surname: Vennesland
-  mail: audun.vennesland@sintef.no
-  organization: SINTEF
-  project: Digitalwater.city, B-WaterSmart
-  comments: New model for WaterQualityPredicted
-  year: 2022
   - name: Kamal
-  surname: Azrague
-  mail: Kamal.Azrague@sintef.no
-  organization: SINTEF
-  project: B-WaterSmart
-  comments: New model for SludgeQualityPredicted
-  year: 2023
-- name: Davide
-  surname: Storelli
-  mail: davide.storelli@eng.it
-  organization: Engineering
-  project: B-WaterSmart
-  comments: New model for SludgeQualityPredicted
-  year: 2023
-- name: Andrea
-  surname: Vedrucci
-  mail: Andrea.Vedruccio@eng.it
-  organization: Engineering
-  project: B-WaterSmart
-  comments: New model for SludgeQualityPredicted
-  year: 2023
-- name: Simone
-  surname: Petrachi
-  mail: Simone.Petrachi@eng.it
-  organization: Engineering
-  project: B-WaterSmart
-  comments: New model for SludgeQualityPredicted
-  year: 2023
+    surname: Azrague
+    mail: Kamal.Azrague@sintef.no
+    organization: SINTEF
+    project: B-WaterSmart
+    comments: New model for SludgeQualityPredicted
+    year: 2023
+  - name: Cédric
+    surname: Crettaz
+    mail: ccrettaz@udgalliance.org
+    organization: UDGA
+    project: NAIADES
+    comments: New model for WaterQualityPrediction
+    year: 2022
+  - name: Eunah Eunsook
+    surname: Kim
+    mail: eunah.kim@udgalliance.org
+    organization: UDGA
+    project: NAIADES
+    comments: New model for WaterQualityPrediction
+    year: 2022
+  - name: Juan Manuel
+    surname: Fernández Montenegro
+    mail: juan.fernandez@aimen.es
+    organization: AIMEN
+    project: NAIADES
+    comments: New model for WaterQualityPrediction
+    year: 2022
+  - name: Simone
+    surname: Petrachi
+    mail: Simone.Petrachi@eng.it
+    organization: Engineering
+    project: B-WaterSmart
+    comments: New model for SludgeQualityPredicted
+    year: 2023
+  - name: Stephane
+    surname: Roux
+    mail: stephane.roux@nicecotedazur.org
+    organization: Nice cote d'azur
+    project:
+    comments:
+    year: 2022
+  - name: Wolfgang
+    surname: Seis
+    mail: wolfgang.seis@kompetenz-wasser.de
+    organization: KWB
+    project: Digitalwater.city
+    comments: New model for WaterQualityPredicted
+    year: 2022
+  - name: Davide
+    surname: Storelli
+    mail: davide.storelli@eng.it
+    organization: Engineering
+    project: B-WaterSmart
+    comments: New model for SludgeQualityPredicted
+    year: 2023
+  - name: Bas
+    surname: Vanmeulebrouk
+    mail: bas@civity.nl
+    organization: Civity
+    project: SCOREwater
+    comments: Flow property of WaterQualityObserved
+    year: 2022
+  - name: Andrea
+    surname: Vedrucci
+    mail: Andrea.Vedruccio@eng.it
+    organization: Engineering
+    project: B-WaterSmart
+    comments: New model for SludgeQualityPredicted
+    year: 2023
+  - name: Audun
+    surname: Vennesland
+    mail: audun.vennesland@sintef.no
+    organization: SINTEF
+    project: Digitalwater.city, B-WaterSmart
+    comments: New model for WaterQualityPredicted
+    year: 2022
