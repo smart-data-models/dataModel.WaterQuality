@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Global description: **Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section**  
-version: 0.0.4  
+version: 0.0.5  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `Chla[number]`: Concentration of chlorophyll A.  - `Cl-[number]`: Concentration of chlorides.  - `NH3[number]`: Concentration of ammonia.  - `NH4[number]`: Concentration of ammonium.  - `NO3[number]`: Concentration of nitrates.  - `O2[number]`: Level of free, non-compound oxygen present.  - `PC[number]`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE[number]`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `PO4[number]`: Concentration of phosphates.  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period  - `cod[number]`: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution  - `conductance[number]`: Specific Conductance.  - `conductivity[number]`: Electrical Conductivity.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `enterococci[number]`: Concentration of Enterococci  - `escherichiaColi[number]`: Concentration of Escherichia coli  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand[array]`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name[string]`: The name of this item.  - `orp[number]`: Oxidation-Reduction potential.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH[number]`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest[*]`: A reference to a point of interest associated to this observation.  - `salinity[number]`: Amount of salts dissolved in water.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds[number]`: Total dissolved solids.   - `temperature[number]`: Temperature  - `tss[number]`: Total suspended solids.  - `turbidity[number]`: Amount of light scattered by particles in the water column  - `type[string]`: NGSI Entity type. It has to be WaterQualityObserved  <!-- /30-PropertiesList -->  
+- `Chla[number]`: Concentration of chlorophyll A.  - `Cl-[number]`: Concentration of chlorides.  - `NH3[number]`: Concentration of ammonia.  - `NH4[number]`: Concentration of ammonium.  - `NO3[number]`: Concentration of nitrates.  - `O2[number]`: Level of free, non-compound oxygen present.  - `PC[number]`: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.  - `PE[number]`: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.  - `PO4[number]`: Concentration of phosphates.  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `bod[number]`: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period  - `cod[number]`: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution  - `conductance[number]`: Specific Conductance.  - `conductivity[number]`: Electrical Conductivity.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `enterococci[number]`: Concentration of Enterococci  - `escherichiaColi[number]`: Concentration of Escherichia coli  - `flow[number]`: Water Flow observed.   - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand[array]`: An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name[string]`: The name of this item.  - `orp[number]`: Oxidation-Reduction potential.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH[number]`: Acidity or basicity of an aqueous solution.  - `refPointOfInterest[*]`: A reference to a point of interest associated to this observation.  - `salinity[number]`: Amount of salts dissolved in water.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `tds[number]`: Total dissolved solids.   - `temperature[number]`: Temperature  - `tss[number]`: Total suspended solids.  - `turbidity[number]`: Amount of light scattered by particles in the water column  - `type[string]`: NGSI Entity type. It has to be WaterQualityObserved  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -31,62 +31,223 @@
 WaterQualityObserved:    
   description: 'Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section'    
   properties:    
+    Al:    
+      description: 'Property. Aluminium. Concentration of aluminium. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    As:    
+      description: 'Property. Arsenic. Concentration of arsenic. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    B:    
+      description: 'Property. Boron. Concentration of boron. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Ba:    
+      description: 'Property. Barium. Concentration of barium. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Cd:    
+      description: 'Property. Cadmium. Concentration of cadmium. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     Chla:    
-      description: 'Concentration of chlorophyll A.'    
+      description: Property. Concentration of chlorophyll A.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     Cl-:    
-      description: 'Concentration of chlorides.'    
+      description: Property. Concentration of chlorides.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
+    Cr:    
+      description: 'Property. Chromium. Concentration of chromium. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Cr-III:    
+      description: 'Property. Chromium III. Concentration of chromium at the oxidation state +3. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Cr-VI:    
+      description: 'Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Cu:    
+      description: 'Property. Copper. Concentration of copper. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Fe:    
+      description: 'Property. Iron. Concentration of iron. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Hg:    
+      description: 'Property. Mercury. Concentration of mercury. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    N-TOT:    
+      description: 'Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     NH3:    
-      description: 'Concentration of ammonia.'    
+      description: Property. Concentration of ammonia.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     NH4:    
-      description: 'Concentration of ammonium.'    
+      description: Property. Concentration of ammonium.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
+    NO2:    
+      description: 'Property. Nitrite nitrogen. Concentration of a sample in nitrite nitrogen. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     NO3:    
-      description: 'Concentration of nitrates.'    
+      description: Property. Concentration of nitrates.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
+    Ni:    
+      description: 'Property. Nickel. Concentration of Nickel. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     O2:    
-      description: 'Level of free, non-compound oxygen present.'    
+      description: 'Property. Level of free, non-compound oxygen present.'    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
+    P-PO4:    
+      description: 'Property. Phosphate-phosphorus. Concentration of phosphorus as phosphate. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    P-TOT:    
+      description: 'Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     PC:    
-      description: 'Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.'    
+      description: Property. Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     PE:    
-      description: 'Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.'    
+      description: Property. Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     PO4:    
-      description: 'Concentration of phosphates.'    
+      description: Property. Concentration of phosphates.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
+    Pb:    
+      description: 'Property. Lead. Concentration of lead. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Se:    
+      description: 'Property. Selenium. Concentration of selenium. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Sn:    
+      description: 'Property. Tin. Concentration of tin. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    THC:    
+      description: 'Property. Total hydrocarbon. Concentration of total hydrocarbon. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    TKN:    
+      description: 'Property. Total Kjeldahl Nitrogen. A measure that determines both the organic and the inorganic forms of nitrogen. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    TO:    
+      description: 'Property. Total oil content. Concentration of oil. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    Zn:    
+      description: 'Property. Zinc. Concentration of zinc. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -97,6 +258,9 @@ WaterQualityObserved:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -106,106 +270,143 @@ WaterQualityObserved:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
+    alkalinity:    
+      description: 'Property. The alkalinity of water is its acid-neutralizing capacity comprised of the total of all titratable bases. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
+    anionic-surfactants:    
+      description: 'Property. Concentration of anionic surfactants. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     bod:    
-      description: 'Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period'    
+      description: 'Property. Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    cationic-surfactants:    
+      description: 'Property. Concentrtation of cationic surfactants. Units:''mg/l'''    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/l    
     cod:    
-      description: 'Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution'    
+      description: 'Property. Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution. Units:''mg/l'''    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/l    
     conductance:    
-      description: 'Specific Conductance.'    
+      description: Property. Specific Conductance.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     conductivity:    
-      description: 'Electrical Conductivity.'    
+      description: Property. Electrical Conductivity.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateObserved:    
-      description: 'The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
+      description: 'Property. Model:''https://schema.org/DateTime''. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     enterococci:    
-      description: 'Concentration of Enterococci'    
+      description: 'Property. Concentration of Enterococci. Units:''Total number of bacteria/100mL'''    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
-        units: 'Total number of bacteria/100mL'    
+        units: Total number of bacteria/100mL    
     escherichiaColi:    
-      description: 'Concentration of Escherichia coli'    
+      description: 'Property. Concentration of Escherichia coli. Units:''Total number of bacteria/100mL'''    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
-        units: 'Total number of bacteria/100mL'    
+        units: Total number of bacteria/100mL    
+    flow:    
+      description: 'Property. Units:''cubic meters/hour''. Water Flow observed. '    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: cubic meters/hour    
+    fluoride:    
+      description: 'Property. Concentration of fluoride. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     id:    
       anyOf: &waterqualityobserved_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -224,9 +425,9 @@ WaterQualityObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -248,9 +449,9 @@ WaterQualityObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -274,9 +475,9 @@ WaterQualityObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -297,9 +498,9 @@ WaterQualityObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -323,9 +524,9 @@ WaterQualityObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -351,12 +552,12 @@ WaterQualityObserved:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
         type: GeoProperty    
     measurand:    
-      description: 'An array of strings containing details (see format below) about extra measurands provided by this observation.'    
+      description: Property. An array of strings containing details (see format below) about extra measurands provided by this observation.    
       items:    
         type: string    
       minItems: 1    
@@ -364,26 +565,33 @@ WaterQualityObserved:
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
+    non-ionic-surfactants:    
+      description: 'Property. Concentration of non-ionic surfactants. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     orp:    
-      description: 'Oxidation-Reduction potential.'    
+      description: Property. Oxidation-Reduction potential.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *waterqualityobserved_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     pH:    
-      description: 'Acidity or basicity of an aqueous solution.'    
+      description: Property. Acidity or basicity of an aqueous solution.    
       maximum: 14    
       minimum: 0    
       type: number    
@@ -391,25 +599,25 @@ WaterQualityObserved:
         type: Property    
     refPointOfInterest:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'A reference to a point of interest associated to this observation.'    
+      description: Relationship. A reference to a point of interest associated to this observation.    
       x-ngsi:    
         type: Relationship    
     salinity:    
-      description: 'Amount of salts dissolved in water.'    
+      description: Property. Amount of salts dissolved in water.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -425,31 +633,52 @@ WaterQualityObserved:
       type: string    
       x-ngsi:    
         type: Property    
+    sulphate:    
+      description: 'Property. Concentration of sulfate. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
+    sulphite:    
+      description: 'Property. Concentration of sulfite. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     tds:    
-      description: 'Total dissolved solids. '    
+      description: 'Property. Total dissolved solids. '    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     temperature:    
-      description: Temperature    
+      description: Property. Temperature    
       type: number    
       x-ngsi:    
         type: Property    
+    total-surfactants:    
+      description: 'Property. Concentration of total surfactants. Units:''mg/l'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/l    
     tss:    
-      description: 'Total suspended solids.'    
+      description: Property. Total suspended solids.    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     turbidity:    
-      description: 'Amount of light scattered by particles in the water column'    
+      description: Property. Amount of light scattered by particles in the water column    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be WaterQualityObserved'    
+      description: Property. NGSI Entity type. It has to be WaterQualityObserved    
       enum:    
         - WaterQualityObserved    
       type: string    
@@ -462,11 +691,11 @@ WaterQualityObserved:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json    
-  x-model-tags: ""    
-  x-version: 0.0.4    
+  x-model-tags: 'NAIADES, DigitalWater.city, B-WaterSmart'    
+  x-version: 0.0.5    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -479,18 +708,53 @@ WaterQualityObserved:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "waterqualityobserved:Sevilla:D1",  
-  "type": "WaterQualityObserved",  
-  "dateObserved": "2017-01-31T06:45:00Z",  
-  "measurand": ["NO3, 0.01, M1, Concentration of Nitrates"],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [-5.993307, 37.362882]  
-  },  
-  "temperature": 24.4,  
-  "conductivity": 0.005,  
-  "pH": 7.4,  
-  "NO3": 0.01  
+    "id": "waterqualityobserved:Sevilla:D1",  
+    "type": "WaterQualityObserved",  
+    "dateObserved": "2017-01-31T06:45:00Z",  
+    "measurand": ["NO3, 0.01, M1, Concentration of Nitrates"],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -5.993307,  
+            37.362882  
+        ]  
+    },  
+    "temperature": 24.4,  
+    "conductivity": 0.005,  
+    "pH": 7.4,  
+    "NO3": 0.01,  
+    "flow": 127.53,  
+    "alkalinity": 0.1,  
+    "TKN": 1.0,  
+    "NO2": 0.09,  
+    "N-TOT": 6.0,  
+    "P-TOT": 0.6,  
+    "P-PO4": 0.5,  
+    "Al": 0.01,  
+    "As": 0.0,  
+    "B": 0.2,  
+    "Ba": 0.0,  
+    "Cd": 0.001,  
+    "Cr": 0.0,  
+    "Cr-III": 0.0,  
+    "Cr-VI": 0.0,  
+    "Cu": 0.0,  
+    "Fe": 0.0,  
+    "fluoride": 0.1,  
+    "Hg": 0.0,  
+    "THC": 0.0,  
+    "Ni": 0.0,  
+    "TO": 0.01,  
+    "Pb": 0.0,  
+    "Se": 0.0,  
+    "Sn": 0.0,  
+    "sulphate": 143.3,  
+    "sulphite": 0.0,  
+    "anionic-surfactants": 0.3,  
+    "cationic-surfactants": 0.2,  
+    "non-ionic-surfactants": 0.1,  
+    "total-surfactants": 0.3,  
+    "Zn": 0.0  
 }  
 ```  
 </details>  
@@ -506,26 +770,164 @@ WaterQualityObserved:
     "value": "2017-01-31T06:45:00Z"  
   },  
   "temperature": {  
+    "type": "Number",  
     "value": 24.4  
   },  
   "NO3": {  
+    "type": "Number",  
     "value": 0.01  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-5.993307, 37.362882]  
+      "coordinates": [  
+        -5.993307,  
+        37.362882  
+      ]  
     }  
   },  
   "pH": {  
+    "type": "Number",  
     "value": 7.4  
   },  
   "measurand": {  
-    "value": ["NO3, 0.01, M1, Concentration of Nitrates"]  
+    "type": "array",  
+    "value": [  
+      "NO3, 0.01, M1, Concentration of Nitrates"  
+    ]  
   },  
   "conductivity": {  
+    "type": "Number",  
     "value": 0.005  
+  },  
+  "flow": {  
+    "type": "Number",  
+    "value": 127.53  
+  },  
+  "alkalinity": {  
+    "type": "Number",  
+    "value": 0.1  
+  },  
+  "TKN": {  
+    "type": "Number",  
+    "value": 1.0  
+  },  
+  "NO2": {  
+    "type": "Number",  
+    "value": 0.09  
+  },  
+  "N-TOT": {  
+    "type": "Number",  
+    "value": 6.0  
+  },  
+  "P-TOT": {  
+    "type": "Number",  
+    "value": 0.6  
+  },  
+  "P-PO4": {  
+    "type": "Number",  
+    "value": 0.5  
+  },  
+  "Al": {  
+    "type": "Number",  
+    "value": 0.01  
+  },   
+  "As": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "B": {  
+    "type": "Number",  
+    "value": 0.2  
+  },  
+  "Ba": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Cd": {  
+    "type": "Number",  
+    "value": 0.001  
+  },  
+  "Cr": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Cr-III": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Cr-VI": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Cu": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Fe": {  
+    "type": "Number",  
+    "value": 7.4  
+  },  
+  "fluoride": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Hg": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "THC": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Ni": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "TO": {  
+    "type": "Number",  
+    "value": 0.01  
+  },  
+  "Pb": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Se": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "Sn": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "sulphate": {  
+    "type": "Number",  
+    "value": 143.3  
+  },  
+  "sulphite": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "anionic-surfactants": {  
+    "type": "Number",  
+    "value": 0.3  
+  },  
+  "cationic-surfactants": {  
+    "type": "Number",  
+    "value": 0.2  
+  },  
+  "non-ionic-surfactants": {  
+    "type": "Number",  
+    "value": 0.1  
+  },  
+  "total-surfactants": {  
+    "type": "Number",  
+    "value": 0.3  
+  },  
+  "Zn": {  
+    "type": "Number",  
+    "value": 0.0  
   }  
 }  
 ```  
@@ -552,6 +954,38 @@ WaterQualityObserved:
     ],  
     "pH": 7.4,  
     "temperature": 24.4,  
+    "flow": 127.53,  
+    "alkalinity": 0.1,  
+    "TKN": 1.0,  
+    "NO2": 0.09,  
+    "N-TOT": 6,  
+    "P-TOT": 0.6,  
+    "P-PO4": 0.5,  
+    "Al": 0.01,  
+    "As": 0.0,  
+    "B": 0.2,  
+    "Ba": 0.0,  
+    "Cd": 0.001,  
+    "Cr": 0.0,  
+    "Cr-III": 0.0,  
+    "Cr-VI": 0.0,  
+    "Cu": 0.0,  
+    "Fe": 0.0,  
+    "fluoride": 0.1,  
+    "Hg": 0.0,  
+    "THC": 0.0,  
+    "Ni": 0.0,  
+    "TO": 0.01,  
+    "Pb": 0.0,  
+    "Se": 0.0,  
+    "Sn": 0.0,  
+    "sulphate": 143.3,  
+    "sulphite": 0,  
+    "anionic-surfactants": 0.3,  
+    "cationic-surfactants": 0.2,  
+    "non-ionic-surfactants": 0.1,  
+    "total-surfactants": 0.3,  
+    "Zn": 0.0,  
     "@context": [  
         "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"  
@@ -564,49 +998,176 @@ WaterQualityObserved:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
-    "type": "WaterQualityObserved",  
-    "NO3": {  
-        "type": "Property",  
-        "value": 0.01  
-    },  
-    "conductivity": {  
-        "type": "Property",  
-        "value": 0.005  
-    },  
-    "dateObserved": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2017-01-31T06:45:00Z"  
-        }  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -5.993307,  
-                37.362882  
-            ]  
-        }  
-    },  
-    "measurand": {  
-        "type": "Property",  
-        "value": [  
-            "NO3, 0.01, M1, Concentration of Nitrates"  
-        ]  
-    },  
-    "pH": {  
-        "type": "Property",  
-        "value": 7.4  
-    },  
-    "temperature": {  
-        "type": "Property",  
-        "value": 24.4  
-    },  
-    "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+  "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",  
+  "type": "WaterQualityObserved",  
+  "NO3": {  
+    "type": "Property",  
+    "value": 0.01  
+  },  
+  "conductivity": {  
+    "type": "Property",  
+    "value": 0.005  
+  },  
+  "dateObserved": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2017-01-31T06:45:00Z"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -5.993307,  
+        37.362882  
+      ]  
+    }  
+  },  
+  "measurand": {  
+    "type": "Property",  
+    "value": [  
+      "NO3, 0.01, M1, Concentration of Nitrates"  
+    ]  
+  },  
+  "pH": {  
+    "type": "Property",  
+    "value": 7.4  
+  },  
+  "temperature": {  
+    "type": "Property",  
+    "value": 24.4  
+  },  
+  "flow": {  
+    "type": "Property",  
+    "value": 127.53  
+  },  
+  "alkalinity": {  
+    "type": "Property",  
+    "value": 0.1  
+  },  
+  "TKN": {  
+    "type": "Property",  
+    "value": 1.0  
+  },  
+  "NO2": {  
+    "type": "Property",  
+    "value": 0.09  
+  },  
+  "N-TOT": {  
+    "type": "Property",  
+    "value": 6.0  
+  },  
+  "P-TOT": {  
+    "type": "Property",  
+    "value": 0.6  
+  },  
+  "P-PO4": {  
+    "type": "Property",  
+    "value": 0.5  
+  },  
+  "Al": {  
+    "type": "Property",  
+    "value": 0.01  
+  },   
+  "As": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "B": {  
+    "type": "Property",  
+    "value": 0.2  
+  },  
+  "Ba": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Cd": {  
+    "type": "Property",  
+    "value": 0.001  
+  },  
+  "Cr": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Cr-III": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Cr-VI": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Cu": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Fe": {  
+    "type": "Property",  
+    "value": 7.4  
+  },  
+  "fluoride": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Hg": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "THC": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Ni": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "TO": {  
+    "type": "Property",  
+    "value": 0.01  
+  },  
+  "Pb": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Se": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "Sn": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "sulphate": {  
+    "type": "Property",  
+    "value": 143.3  
+  },  
+  "sulphite": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+  "anionic-surfactants": {  
+    "type": "Property",  
+    "value": 0.3  
+  },  
+  "cationic-surfactants": {  
+    "type": "Property",  
+    "value": 0.2  
+  },  
+  "non-ionic-surfactants": {  
+    "type": "Property",  
+    "value": 0.1  
+  },  
+  "total-surfactants": {  
+    "type": "Property",  
+    "value": 0.3  
+  },  
+  "Zn": {  
+    "type": "Property",  
+    "value": 0.0  
+  },  
+   "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"  
     ]  
 }  
