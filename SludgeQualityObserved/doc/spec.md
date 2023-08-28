@@ -1,0 +1,534 @@
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: SludgeQualityObserved  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/SludgeQualityObserved/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
+
+## List of properties  
+
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Required properties  
+- No required properties  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
+Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+SludgeQualityObserved:    
+  description: Sludge Quality data model is intended to represent sludge quality parameters.    
+  properties:    
+    AOX:    
+      description: 'Property. Concentration of Adsorbable Organically bound halogens (AOX). Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    As:    
+      description: 'Property. Arsenic. Concentration of arsenic. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    B:    
+      description: 'Property. Boron. Concentration of boron. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Be:    
+      description: 'Property. Beryllium. Concentration of Beryllium. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    C-ORG:    
+      description: 'Property. Organic Carbon. Concentration of organic carbon. Units:''percentage of SS (min)'''    
+      maximum: 1    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: percentage of SS (min)    
+    C10-C40:    
+      description: 'Property. Concentration of Hydrocarbons C10-C40. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Cd:    
+      description: 'Property. Cadmium. Concentration of cadmium. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Cr:    
+      description: 'Property. Chromium. Concentration of chromium. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Cr-VI:    
+      description: 'Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Cu:    
+      description: 'Property. Copper. Concentration of copper. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    DEHP:    
+      description: 'Property. Diethylhexyl phthalate. Concentration of DEHP. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Hg:    
+      description: 'Property. Mercury. Concentration of mercury. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    IPA:    
+      description: 'Property. Sum of isopropyl alcohol Sum of content of isopropyl alcohol. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    K-TOT:    
+      description: 'Property. Total potassium. Total content of potassium. Units:''percentage of SS (min)'''    
+      maximum: 1    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: percentage of SS (min)    
+    N-TOT:    
+      description: 'Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:''percentage of SS (min)'''    
+      maximum: 1    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: percentage of SS (min)    
+    Ni:    
+      description: 'Property. Nickel. Concentration of Nickel. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    P-TOT:    
+      description: 'Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:''percentage of SS (min)'''    
+      maximum: 1    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: percentage of SS (min)    
+    PCB:    
+      description: 'Property. Polychlorinated biphenyls Concentration of polychlorinated biphenyls. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Se:    
+      description: 'Property. Selenium. Concentration of selenium. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    Zn:    
+      description: 'Property. Zinc. Concentration of zinc. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        district:    
+          description: 'Property. A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+        streetNr:    
+          description: Property. Number identifying a specific property on a public street    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateObserved:    
+      description: 'Property. Model:''https://schema.org/DateTime''. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/DateTime    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    faecal-coliforms:    
+      description: 'Property. Concentration of fecal coliforms (Most Probable Number per gram solids). Units:''MPN/g SS (max)'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: MPN/g SS (max)    
+    id:    
+      anyOf: &sludgequalityobserved_-_properties_-_owner_-_items_-_anyof    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: GeoProperty. Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+      x-ngsi:    
+        type: GeoProperty    
+    measurand:    
+      description: Property. An array of strings containing details (see format below) about extra measurands provided by this observation.    
+      items:    
+        description: Property. Every measurand provided by this observation.    
+        type: string    
+      minItems: 1    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    name:    
+      description: The name of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf: *sludgequalityobserved_-_properties_-_owner_-_items_-_anyof    
+        description: Property. Unique identifier of the entity    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    pH:    
+      description: Property. Acidity or basicity of an aqueous solution.    
+      maximum: 14    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    refPointOfInterest:    
+      anyOf:    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+      description: Relationship. A reference to a point of interest associated to this observation.    
+      x-ngsi:    
+        type: Relationship    
+    salmonella:    
+      description: 'Property. Concentration of Salmonella (Most Probable Number per gram solids). Units:''MPN/g SS (max)'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: MPN/g SS (max)    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    toluene:    
+      description: 'Property. Concentration of Toluene. Units:''mg/Kg SS'''    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        type: Property    
+        units: mg/Kg SS    
+    type:    
+      description: Property. NGSI Entity type. It has to be SludgeQualityObserved    
+      enum:    
+        - SludgeQualityObserved    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
+    - dateObserved    
+    - location    
+  type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/SludgeQualityObserved/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.WasteWater/SludgeQualityObserved/schema.json    
+  x-model-tags: B-WaterSmart    
+  x-version: 0.0.1    
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Example payloads    
+#### SludgeQualityObserved NGSI-v2 key-values Example    
+Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+#### SludgeQualityObserved NGSI-v2 normalized Example    
+Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### SludgeQualityObserved NGSI-LD key-values Example    
+Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### SludgeQualityObserved NGSI-LD normalized Example    
+Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
