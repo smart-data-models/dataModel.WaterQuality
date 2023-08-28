@@ -1,60 +1,221 @@
 WaterQualityObserved:
   description: 'Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section'
   properties:
+    Al:
+      description: 'Property. Aluminium. Concentration of aluminium. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    As:
+      description: 'Property. Arsenic. Concentration of arsenic. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    B:
+      description: 'Property. Boron. Concentration of boron. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Ba:
+      description: 'Property. Barium. Concentration of barium. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Cd:
+      description: 'Property. Cadmium. Concentration of cadmium. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     Chla:
-      description: Concentration of chlorophyll A.
+      description: Property. Concentration of chlorophyll A.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     Cl-:
-      description: Concentration of chlorides.
+      description: Property. Concentration of chlorides.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+    Cr:
+      description: 'Property. Chromium. Concentration of chromium. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Cr-III:
+      description: 'Property. Chromium III. Concentration of chromium at the oxidation state +3. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Cr-VI:
+      description: 'Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Cu:
+      description: 'Property. Copper. Concentration of copper. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Fe:
+      description: 'Property. Iron. Concentration of iron. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Hg:
+      description: 'Property. Mercury. Concentration of mercury. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    N-TOT:
+      description: 'Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     NH3:
-      description: Concentration of ammonia.
+      description: Property. Concentration of ammonia.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     NH4:
-      description: Concentration of ammonium.
+      description: Property. Concentration of ammonium.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+    NO2:
+      description: 'Property. Nitrite nitrogen. Concentration of a sample in nitrite nitrogen. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     NO3:
-      description: Concentration of nitrates.
+      description: Property. Concentration of nitrates.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+    Ni:
+      description: 'Property. Nickel. Concentration of Nickel. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     O2:
-      description: 'Level of free, non-compound oxygen present.'
+      description: 'Property. Level of free, non-compound oxygen present.'
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+    P-PO4:
+      description: 'Property. Phosphate-phosphorus. Concentration of phosphorus as phosphate. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    P-TOT:
+      description: 'Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     PC:
-      description: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.
+      description: Property. Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     PE:
-      description: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.
+      description: Property. Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     PO4:
-      description: Concentration of phosphates.
+      description: Property. Concentration of phosphates.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+    Pb:
+      description: 'Property. Lead. Concentration of lead. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Se:
+      description: 'Property. Selenium. Concentration of selenium. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Sn:
+      description: 'Property. Tin. Concentration of tin. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    THC:
+      description: 'Property. Total hydrocarbon. Concentration of total hydrocarbon. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    TKN:
+      description: 'Property. Total Kjeldahl Nitrogen. A measure that determines both the organic and the inorganic forms of nitrogen. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    TO:
+      description: 'Property. Total oil content. Concentration of oil. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    Zn:
+      description: 'Property. Zinc. Concentration of zinc. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     address:
       description: The mailing address
       properties:
@@ -86,11 +247,25 @@ WaterQualityObserved:
       x-ngsi:
         model: https://schema.org/address
         type: Property
+    alkalinity:
+      description: 'Property. The alkalinity of water is its acid-neutralizing capacity comprised of the total of all titratable bases. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+    anionic-surfactants:
+      description: 'Property. Concentration of anionic surfactants. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
@@ -98,27 +273,34 @@ WaterQualityObserved:
         model: https://schema.org/Text
         type: Property
     bod:
-      description: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period
+      description: 'Property. Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    cationic-surfactants:
+      description: 'Property. Concentrtation of cationic surfactants. Units:''mg/l'''
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: mg/l
     cod:
-      description: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution
+      description: 'Property. Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution. Units:''mg/l'''
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: mg/l
     conductance:
-      description: Specific Conductance.
+      description: Property. Specific Conductance.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     conductivity:
-      description: Electrical Conductivity.
+      description: Property. Electrical Conductivity.
       minimum: 0
       type: number
       x-ngsi:
@@ -141,7 +323,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
     dateObserved:
-      description: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.
+      description: 'Property. Model:''https://schema.org/DateTime''. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
@@ -152,25 +334,32 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
     enterococci:
-      description: Concentration of Enterococci
+      description: 'Property. Concentration of Enterococci. Units:''Total number of bacteria/100mL'''
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: Total number of bacteria/100mL
     escherichiaColi:
-      description: Concentration of Escherichia coli
+      description: 'Property. Concentration of Escherichia coli. Units:''Total number of bacteria/100mL'''
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: Total number of bacteria/100mL
     flow:
-      description: 'Water Flow observed. '
+      description: 'Property. Units:''cubic meters/hour''. Water Flow observed. '
       type: number
       x-ngsi:
         type: Property
         units: cubic meters/hour
+    fluoride:
+      description: 'Property. Concentration of fluoride. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     id:
       anyOf: &waterqualityobserved_-_properties_-_owner_-_items_-_anyof
         - description: Property. Identifier format of any NGSI entity
@@ -338,7 +527,7 @@ WaterQualityObserved:
       x-ngsi:
         type: GeoProperty
     measurand:
-      description: An array of strings containing details (see format below) about extra measurands provided by this observation.
+      description: Property. An array of strings containing details (see format below) about extra measurands provided by this observation.
       items:
         type: string
       minItems: 1
@@ -350,8 +539,15 @@ WaterQualityObserved:
       type: string
       x-ngsi:
         type: Property
+    non-ionic-surfactants:
+      description: 'Property. Concentration of non-ionic surfactants. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     orp:
-      description: Oxidation-Reduction potential.
+      description: Property. Oxidation-Reduction potential.
       minimum: 0
       type: number
       x-ngsi:
@@ -365,7 +561,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
     pH:
-      description: Acidity or basicity of an aqueous solution.
+      description: Property. Acidity or basicity of an aqueous solution.
       maximum: 14
       minimum: 0
       type: number
@@ -381,11 +577,11 @@ WaterQualityObserved:
         - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: A reference to a point of interest associated to this observation.
+      description: Relationship. A reference to a point of interest associated to this observation.
       x-ngsi:
         type: Relationship
     salinity:
-      description: Amount of salts dissolved in water.
+      description: Property. Amount of salts dissolved in water.
       minimum: 0
       type: number
       x-ngsi:
@@ -407,31 +603,52 @@ WaterQualityObserved:
       type: string
       x-ngsi:
         type: Property
+    sulphate:
+      description: 'Property. Concentration of sulfate. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+    sulphite:
+      description: 'Property. Concentration of sulfite. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     tds:
-      description: 'Total dissolved solids. '
+      description: 'Property. Total dissolved solids. '
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     temperature:
-      description: Temperature
+      description: Property. Temperature
       type: number
       x-ngsi:
         type: Property
+    total-surfactants:
+      description: 'Property. Concentration of total surfactants. Units:''mg/l'''
+      minimum: 0
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
     tss:
-      description: Total suspended solids.
+      description: Property. Total suspended solids.
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     turbidity:
-      description: Amount of light scattered by particles in the water column
+      description: Property. Amount of light scattered by particles in the water column
       minimum: 0
       type: number
       x-ngsi:
         type: Property
     type:
-      description: NGSI Entity type. It has to be WaterQualityObserved
+      description: Property. NGSI Entity type. It has to be WaterQualityObserved
       enum:
         - WaterQualityObserved
       type: string
@@ -447,5 +664,5 @@ WaterQualityObserved:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json
-  x-model-tags: NAIADES
+  x-model-tags: 'NAIADES, DigitalWater.city, B-WaterSmart'
   x-version: 0.0.5

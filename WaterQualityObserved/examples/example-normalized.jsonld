@@ -44,7 +44,131 @@
     "type": "Property",
     "value": 127.53
   },
-  "@context": [
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+  "alkalinity": {
+    "type": "Property",
+    "value": 0.1
+  },
+  "TKN": {
+    "type": "Property",
+    "value": 1.0
+  },
+  "NO2": {
+    "type": "Property",
+    "value": 0.09
+  },
+  "N-TOT": {
+    "type": "Property",
+    "value": 6.0
+  },
+  "P-TOT": {
+    "type": "Property",
+    "value": 0.6
+  },
+  "P-PO4": {
+    "type": "Property",
+    "value": 0.5
+  },
+  "Al": {
+    "type": "Property",
+    "value": 0.01
+  }, 
+  "As": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "B": {
+    "type": "Property",
+    "value": 0.2
+  },
+  "Ba": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Cd": {
+    "type": "Property",
+    "value": 0.001
+  },
+  "Cr": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Cr-III": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Cr-VI": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Cu": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Fe": {
+    "type": "Property",
+    "value": 7.4
+  },
+  "fluoride": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Hg": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "THC": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Ni": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "TO": {
+    "type": "Property",
+    "value": 0.01
+  },
+  "Pb": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Se": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "Sn": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "sulphate": {
+    "type": "Property",
+    "value": 143.3
+  },
+  "sulphite": {
+    "type": "Property",
+    "value": 0.0
+  },
+  "anionic-surfactants": {
+    "type": "Property",
+    "value": 0.3
+  },
+  "cationic-surfactants": {
+    "type": "Property",
+    "value": 0.2
+  },
+  "non-ionic-surfactants": {
+    "type": "Property",
+    "value": 0.1
+  },
+  "total-surfactants": {
+    "type": "Property",
+    "value": 0.3
+  },
+  "Zn": {
+    "type": "Property",
+    "value": 0.0
+  },
+   "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"
+    ]
 }
