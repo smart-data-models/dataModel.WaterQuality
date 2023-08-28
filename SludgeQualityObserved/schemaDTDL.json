@@ -1,0 +1,349 @@
+{
+    "@id": "dtmi:com:ngsi-ld:SludgeQualityObserved;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Sludge quality observed schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/SludgeQualityObserved/schema.json",
+    "description": "Sludge Quality data model is intended to represent sludge quality parameters.",
+    "displayName": "SludgeQualityObserved",
+    "contents": [
+        {
+            "name": "AOX",
+            "writable": true,
+            "displayName": "AOX",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Concentration of Adsorbable Organically bound halogens (AOX). Units:'mg/Kg SS'"
+        },
+        {
+            "name": "As",
+            "writable": true,
+            "displayName": "As",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Arsenic. Concentration of arsenic. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "B",
+            "writable": true,
+            "displayName": "B",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Boron. Concentration of boron. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Be",
+            "writable": true,
+            "displayName": "Be",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Beryllium. Concentration of Beryllium. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "C-ORG",
+            "writable": true,
+            "displayName": "C-ORG",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Organic Carbon. Concentration of organic carbon. Units:'percentage of SS (min)'"
+        },
+        {
+            "name": "C10-C40",
+            "writable": true,
+            "displayName": "C10-C40",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Concentration of Hydrocarbons C10-C40. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Cd",
+            "writable": true,
+            "displayName": "Cd",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Cadmium. Concentration of cadmium. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Cr",
+            "writable": true,
+            "displayName": "Cr",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Chromium. Concentration of chromium. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Cr-VI",
+            "writable": true,
+            "displayName": "Cr-VI",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Cu",
+            "writable": true,
+            "displayName": "Cu",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Copper. Concentration of copper. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "DEHP",
+            "writable": true,
+            "displayName": "DEHP",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Diethylhexyl phthalate. Concentration of DEHP. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Hg",
+            "writable": true,
+            "displayName": "Hg",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Mercury. Concentration of mercury. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "IPA",
+            "writable": true,
+            "displayName": "IPA",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Sum of isopropyl alcohol Sum of content of isopropyl alcohol. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "K-TOT",
+            "writable": true,
+            "displayName": "K-TOT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Total potassium. Total content of potassium. Units:'percentage of SS (min)'"
+        },
+        {
+            "name": "N-TOT",
+            "writable": true,
+            "displayName": "N-TOT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:'percentage of SS (min)'"
+        },
+        {
+            "name": "Ni",
+            "writable": true,
+            "displayName": "Ni",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nickel. Concentration of Nickel. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "P-TOT",
+            "writable": true,
+            "displayName": "P-TOT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:'percentage of SS (min)'"
+        },
+        {
+            "name": "PCB",
+            "writable": true,
+            "displayName": "PCB",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Polychlorinated biphenyls Concentration of polychlorinated biphenyls. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Se",
+            "writable": true,
+            "displayName": "Se",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Selenium. Concentration of selenium. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "Zn",
+            "writable": true,
+            "displayName": "Zn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Zinc. Concentration of zinc. Units:'mg/Kg SS'"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateObserved",
+            "writable": true,
+            "displayName": "dateObserved",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Model:'https://schema.org/DateTime'. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "faecal-coliforms",
+            "writable": true,
+            "displayName": "faecal-coliforms",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Concentration of fecal coliforms (Most Probable Number per gram solids). Units:'MPN/g SS (max)'"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "pH",
+            "writable": true,
+            "displayName": "pH",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Acidity or basicity of an aqueous solution."
+        },
+        {
+            "name": "refPointOfInterest",
+            "writable": true,
+            "displayName": "refPointOfInterest"
+        },
+        {
+            "name": "salmonella",
+            "writable": true,
+            "displayName": "salmonella",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Concentration of Salmonella (Most Probable Number per gram solids). Units:'MPN/g SS (max)'"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "toluene",
+            "writable": true,
+            "displayName": "toluene",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Concentration of Toluene. Units:'mg/Kg SS'"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "measurand",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Property. An array of strings containing details (see format below) about extra measurands provided by this observation.",
+            "displayName": "measurand"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
