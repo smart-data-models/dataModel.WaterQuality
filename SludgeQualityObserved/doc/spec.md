@@ -7,16 +7,18 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **Sludge Quality data model is intended to represent sludge quality parameters.**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `AOX[number]`: Property. Concentration of Adsorbable Organically bound halogens (AOX). Units:'mg/Kg SS'  - `As[number]`: Property. Arsenic. Concentration of arsenic. Units:'mg/Kg SS'  - `B[number]`: Property. Boron. Concentration of boron. Units:'mg/Kg SS'  - `Be[number]`: Property. Beryllium. Concentration of Beryllium. Units:'mg/Kg SS'  - `C-ORG[number]`: Property. Organic Carbon. Concentration of organic carbon. Units:'percentage of SS (min)'  - `C10-C40[number]`: Property. Concentration of Hydrocarbons C10-C40. Units:'mg/Kg SS'  - `Cd[number]`: Property. Cadmium. Concentration of cadmium. Units:'mg/Kg SS'  - `Cr[number]`: Property. Chromium. Concentration of chromium. Units:'mg/Kg SS'  - `Cr-VI[number]`: Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:'mg/Kg SS'  - `Cu[number]`: Property. Copper. Concentration of copper. Units:'mg/Kg SS'  - `DEHP[number]`: Property. Diethylhexyl phthalate. Concentration of DEHP. Units:'mg/Kg SS'  - `Hg[number]`: Property. Mercury. Concentration of mercury. Units:'mg/Kg SS'  - `IPA[number]`: Property. Sum of isopropyl alcohol Sum of content of isopropyl alcohol. Units:'mg/Kg SS'  - `K-TOT[number]`: Property. Total potassium. Total content of potassium. Units:'percentage of SS (min)'  - `N-TOT[number]`: Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:'percentage of SS (min)'  - `Ni[number]`: Property. Nickel. Concentration of Nickel. Units:'mg/Kg SS'  - `P-TOT[number]`: Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:'percentage of SS (min)'  - `PCB[number]`: Property. Polychlorinated biphenyls Concentration of polychlorinated biphenyls. Units:'mg/Kg SS'  - `Se[number]`: Property. Selenium. Concentration of selenium. Units:'mg/Kg SS'  - `Zn[number]`: Property. Zinc. Concentration of zinc. Units:'mg/Kg SS'  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObserved[string]`: Property. Model:'https://schema.org/DateTime'. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `faecal-coliforms[number]`: Property. Concentration of fecal coliforms (Most Probable Number per gram solids). Units:'MPN/g SS (max)'  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand[array]`: Property. An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH[number]`: Property. Acidity or basicity of an aqueous solution.  - `refPointOfInterest[*]`: Relationship. A reference to a point of interest associated to this observation.  - `salmonella[number]`: Property. Concentration of Salmonella (Most Probable Number per gram solids). Units:'MPN/g SS (max)'  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `toluene[number]`: Property. Concentration of Toluene. Units:'mg/Kg SS'  - `type[string]`: Property. NGSI Entity type. It has to be SludgeQualityObserved  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -517,13 +519,334 @@ SludgeQualityObserved:
 ## Example payloads    
 #### SludgeQualityObserved NGSI-v2 key-values Example    
 Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:SludgeQualityObserved:001",  
+    "type": "SludgeQualityObserved",  
+    "dateObserved": "2023-07-02T10:30:00Z",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [45.51970, 12.19351]  
+    },  
+    "pH": 7.5,  
+    "N-TOT": 0.063,  
+    "P-TOT": 0.024,  
+    "K-TOT": 0.002,  
+    "C-ORG": 0.397,  
+    "PCB": 0.0,  
+    "As": 33.4,  
+    "B": 50.8,  
+    "Be": 0.3,  
+    "Cd": 2.7,  
+    "Cr": 46.7,  
+    "Cr-VI": 0.05,  
+    "Cu": 264.8,  
+    "Hg": 1.6,  
+    "Ni": 33.1,  
+    "Se": 4.1,  
+    "Zn": 924.8,  
+    "IPA": 1.6,  
+    "toluene": 0.0,  
+    "AOX": 500.0,  
+    "DEHP": 100.0,  
+    "C10-C40": 5483.0,  
+    "salmonella": 100,  
+    "faecal-coliforms": 10000  
+}  
+```  
+</details>  
 #### SludgeQualityObserved NGSI-v2 normalized Example    
 Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "sludgequalityobserved:Venice:D1",  
+  "type": "SludgeQualityObserved",  
+  "dateObserved": {  
+    "type": "DateTime",  
+    "value": "2023-07-02T10:30:00Z"  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        45.51970,  
+        12.19351  
+      ]  
+    }  
+  },  
+  "pH": {  
+    "type": "Number",  
+    "value": 7.5  
+  },  
+  "N-TOT": {  
+    "type": "Number",  
+    "value": 0.063  
+  },  
+  "P-TOT": {  
+    "type": "Number",  
+    "value": 0.024  
+  },  
+  "K-TOT": {  
+    "type": "Number",  
+    "value": 0.002  
+  },  
+  "C-ORG": {  
+    "type": "Number",  
+    "value": 0.397  
+  },  
+  "PCB": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "As": {  
+    "type": "Number",  
+    "value": 33.4  
+  },  
+  "B": {  
+    "type": "Number",  
+    "value": 50.8  
+  },  
+  "Be": {  
+    "type": "Number",  
+    "value": 0.3  
+  },  
+  "Cd": {  
+    "type": "Number",  
+    "value": 2.7  
+  },   
+  "Cr": {  
+    "type": "Number",  
+    "value": 46.7  
+  },  
+  "Cr-VI": {  
+    "type": "Number",  
+    "value": 0.05  
+  },  
+  "Cu": {  
+    "type": "Number",  
+    "value": 264.8  
+  },  
+  "Hg": {  
+    "type": "Number",  
+    "value": 1.6  
+  },  
+  "Ni": {  
+    "type": "Number",  
+    "value": 33.1  
+  },  
+  "Se": {  
+    "type": "Number",  
+    "value": 4.1  
+  },  
+  "Zn": {  
+    "type": "Number",  
+    "value": 924.8  
+  },  
+  "IPA": {  
+    "type": "Number",  
+    "value": 1.6  
+  },  
+  "toluene": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "AOX": {  
+    "type": "Number",  
+    "value": 500.0  
+  },  
+  "DEHP": {  
+    "type": "Number",  
+    "value": 100.0  
+  },  
+  "C10-C40": {  
+    "type": "Number",  
+    "value": 5483.0  
+  },  
+  "salmonella": {  
+    "type": "Number",  
+    "value": 100  
+  },  
+  "faecal-coliforms": {  
+    "type": "Number",  
+    "value": 10000  
+  }  
+}  
+```  
+</details>  
 #### SludgeQualityObserved NGSI-LD key-values Example    
 Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:SludgeQualityObserved:sludgequalityobserved:Venice:D1",  
+    "type": "SludgeQualityObserved",  
+    "dateObserved": "2023-07-02T10:30:00Z",  
+    "location": {  
+        "coordinates": [  
+            45.51970,  
+            12.19351  
+        ],  
+        "type": "Point"  
+    },  
+    "pH": 7.5,  
+    "N-TOT": 0.063,  
+    "P-TOT": 0.024,  
+    "K-TOT": 0.002,  
+    "C-ORG": 0.397,  
+    "PCB": 0.0,  
+    "As": 33.4,  
+    "B": 50.8,  
+    "Be": 0.3,  
+    "Cd": 2.7,  
+    "Cr": 46.7,  
+    "Cr-VI": 0.05,  
+    "Cu": 264.8,  
+    "Hg": 1.6,  
+    "Ni": 33.1,  
+    "Se": 4.1,  
+    "Zn": 924.8,  
+    "IPA": 1.6,  
+    "toluene": 0.0,  
+    "AOX": 500.0,  
+    "DEHP": 100.0,  
+    "C10-C40": 5483.0,  
+    "salmonella": 100,  
+    "faecal-coliforms": 10000,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/incubated/SMARTWATER/SludgeQualityObserved/master/context.jsonld"  
+    ]  
+}  
+```  
+</details>  
 #### SludgeQualityObserved NGSI-LD normalized Example    
 Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:SludgeQualityObserved:sludgequalityobserved:Venice:D1",  
+   "type": "SludgeQualityObserved",  
+  "dateObserved": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2023-07-02T10:30:00Z"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        45.51970,  
+        12.19351  
+      ]  
+    }  
+  },  
+  "pH": {  
+    "type": "Number",  
+    "value": 7.5  
+  },  
+  "N-TOT": {  
+    "type": "Number",  
+    "value": 0.063  
+  },  
+  "P-TOT": {  
+    "type": "Number",  
+    "value": 0.024  
+  },  
+  "K-TOT": {  
+    "type": "Number",  
+    "value": 0.002  
+  },  
+  "C-ORG": {  
+    "type": "Number",  
+    "value": 0.397  
+  },  
+  "PCB": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "As": {  
+    "type": "Number",  
+    "value": 33.4  
+  },  
+  "B": {  
+    "type": "Number",  
+    "value": 50.8  
+  },  
+  "Be": {  
+    "type": "Number",  
+    "value": 0.3  
+  },  
+  "Cd": {  
+    "type": "Number",  
+    "value": 2.7  
+  },   
+  "Cr": {  
+    "type": "Number",  
+    "value": 46.7  
+  },  
+  "Cr-VI": {  
+    "type": "Number",  
+    "value": 0.05  
+  },  
+  "Cu": {  
+    "type": "Number",  
+    "value": 264.8  
+  },  
+  "Hg": {  
+    "type": "Number",  
+    "value": 1.6  
+  },  
+  "Ni": {  
+    "type": "Number",  
+    "value": 33.1  
+  },  
+  "Se": {  
+    "type": "Number",  
+    "value": 4.1  
+  },  
+  "Zn": {  
+    "type": "Number",  
+    "value": 924.8  
+  },  
+  "IPA": {  
+    "type": "Number",  
+    "value": 1.6  
+  },  
+  "toluene": {  
+    "type": "Number",  
+    "value": 0.0  
+  },  
+  "AOX": {  
+    "type": "Number",  
+    "value": 500.0  
+  },  
+  "DEHP": {  
+    "type": "Number",  
+    "value": 100.0  
+  },  
+  "C10-C40": {  
+    "type": "Number",  
+    "value": 5483.0  
+  },  
+  "salmonella": {  
+    "type": "Number",  
+    "value": 100  
+  },  
+  "faecal-coliforms": {  
+    "type": "Number",  
+    "value": 10000  
+  },  
+  "@context": [  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
