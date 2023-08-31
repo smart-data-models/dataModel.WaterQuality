@@ -31,7 +31,7 @@
                     "description": "Property. An array of strings containing details (see format below) about extra measurands provided by this observation",
                     "items": {
                         "type": "string",
-                        "description": "Property. Every measurand provided by this observation."
+                        "description": "Property. Every measurand provided by this observation"
                     },
                     "minItems": 1
                 },
