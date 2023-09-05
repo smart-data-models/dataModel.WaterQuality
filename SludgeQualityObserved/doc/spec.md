@@ -15,7 +15,14 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `AOX[number]`: Property. Concentration of Adsorbable Organically bound halogens (AOX). Units:'mg/Kg SS'  - `As[number]`: Property. Arsenic. Concentration of arsenic. Units:'mg/Kg SS'  - `B[number]`: Property. Boron. Concentration of boron. Units:'mg/Kg SS'  - `Be[number]`: Property. Beryllium. Concentration of Beryllium. Units:'mg/Kg SS'  - `C-ORG[number]`: Property. Organic Carbon. Concentration of organic carbon. Units:'percentage of SS (min)'  - `C10-C40[number]`: Property. Concentration of Hydrocarbons C10-C40. Units:'mg/Kg SS'  - `Cd[number]`: Property. Cadmium. Concentration of cadmium. Units:'mg/Kg SS'  - `Cr[number]`: Property. Chromium. Concentration of chromium. Units:'mg/Kg SS'  - `Cr-VI[number]`: Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:'mg/Kg SS'  - `Cu[number]`: Property. Copper. Concentration of copper. Units:'mg/Kg SS'  - `DEHP[number]`: Property. Diethylhexyl phthalate. Concentration of DEHP. Units:'mg/Kg SS'  - `Hg[number]`: Property. Mercury. Concentration of mercury. Units:'mg/Kg SS'  - `IPA[number]`: Property. Sum of isopropyl alcohol Sum of content of isopropyl alcohol. Units:'mg/Kg SS'  - `K-TOT[number]`: Property. Total potassium. Total content of potassium. Units:'percentage of SS (min)'  - `N-TOT[number]`: Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:'percentage of SS (min)'  - `Ni[number]`: Property. Nickel. Concentration of Nickel. Units:'mg/Kg SS'  - `P-TOT[number]`: Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:'percentage of SS (min)'  - `PCB[number]`: Property. Polychlorinated biphenyls Concentration of polychlorinated biphenyls. Units:'mg/Kg SS'  - `Se[number]`: Property. Selenium. Concentration of selenium. Units:'mg/Kg SS'  - `Zn[number]`: Property. Zinc. Concentration of zinc. Units:'mg/Kg SS'  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObserved[string]`: Property. Model:'https://schema.org/DateTime'. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `faecal-coliforms[number]`: Property. Concentration of fecal coliforms (Most Probable Number per gram solids). Units:'MPN/g SS (max)'  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand[array]`: Property. An array of strings containing details (see format below) about extra measurands provided by this observation.  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH[number]`: Property. Acidity or basicity of an aqueous solution.  - `refPointOfInterest[*]`: Relationship. A reference to a point of interest associated to this observation.  - `salmonella[number]`: Property. Concentration of Salmonella (Most Probable Number per gram solids). Units:'MPN/g SS (max)'  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `toluene[number]`: Property. Concentration of Toluene. Units:'mg/Kg SS'  - `type[string]`: Property. NGSI Entity type. It has to be SludgeQualityObserved  <!-- /30-PropertiesList -->  
+- `AOX[number]`: Concentration of Adsorbable Organically bound halogens (AOX)  - `As[number]`: Arsenic. Concentration of arsenic  - `B[number]`: Boron. Concentration of boron  - `Be[number]`: Beryllium. Concentration of Beryllium  - `C-ORG[number]`: Organic Carbon. Concentration of organic carbon  - `C10-C40[number]`: Concentration of Hydrocarbons C10-C40  - `Cd[number]`: Cadmium. Concentration of cadmium  - `Cr[number]`: Chromium. Concentration of chromium  - `Cr-VI[number]`: Chromium VI. Concentration of chromium at the oxidation state +6  - `Cu[number]`: Copper. Concentration of copper  - `DEHP[number]`: Diethylhexyl phthalate. Concentration of DEHP  - `Hg[number]`: Mercury. Concentration of mercury  - `IPA[number]`: Sum of isopropyl alcohol Sum of content of isopropyl alcohol  - `K-TOT[number]`: Total potassium. Total content of potassium  - `N-TOT[number]`: Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen  - `Ni[number]`: Nickel. Concentration of Nickel  - `P-TOT[number]`: Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic  - `PCB[number]`: Polychlorinated biphenyls Concentration of polychlorinated biphenyls  - `Se[number]`: Selenium. Concentration of selenium  - `Zn[number]`: Zinc. Concentration of zinc  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `faecal-coliforms[number]`: Concentration of fecal coliforms (Most Probable Number per gram solids)  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand[array]`: An array of strings containing details (see format below) about extra measurands provided by this observation  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH[number]`: Acidity or basicity of an aqueous solution  - `refPointOfInterest[*]`: A reference to a point of interest associated to this observation  - `salmonella[number]`: Concentration of Salmonella (Most Probable Number per gram solids)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `toluene[number]`: Concentration of Toluene  - `type[string]`: NGSI Entity type. It has to be SludgeQualityObserved  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -32,35 +39,35 @@ SludgeQualityObserved:
   description: Sludge Quality data model is intended to represent sludge quality parameters.    
   properties:    
     AOX:    
-      description: 'Property. Concentration of Adsorbable Organically bound halogens (AOX). Units:''mg/Kg SS'''    
+      description: Concentration of Adsorbable Organically bound halogens (AOX)    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     As:    
-      description: 'Property. Arsenic. Concentration of arsenic. Units:''mg/Kg SS'''    
+      description: Arsenic. Concentration of arsenic    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     B:    
-      description: 'Property. Boron. Concentration of boron. Units:''mg/Kg SS'''    
+      description: Boron. Concentration of boron    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Be:    
-      description: 'Property. Beryllium. Concentration of Beryllium. Units:''mg/Kg SS'''    
+      description: Beryllium. Concentration of Beryllium    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     C-ORG:    
-      description: 'Property. Organic Carbon. Concentration of organic carbon. Units:''percentage of SS (min)'''    
+      description: Organic Carbon. Concentration of organic carbon    
       maximum: 1    
       minimum: 0    
       type: number    
@@ -68,63 +75,63 @@ SludgeQualityObserved:
         type: Property    
         units: percentage of SS (min)    
     C10-C40:    
-      description: 'Property. Concentration of Hydrocarbons C10-C40. Units:''mg/Kg SS'''    
+      description: Concentration of Hydrocarbons C10-C40    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Cd:    
-      description: 'Property. Cadmium. Concentration of cadmium. Units:''mg/Kg SS'''    
+      description: Cadmium. Concentration of cadmium    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Cr:    
-      description: 'Property. Chromium. Concentration of chromium. Units:''mg/Kg SS'''    
+      description: Chromium. Concentration of chromium    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Cr-VI:    
-      description: 'Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:''mg/Kg SS'''    
+      description: Chromium VI. Concentration of chromium at the oxidation state +6    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Cu:    
-      description: 'Property. Copper. Concentration of copper. Units:''mg/Kg SS'''    
+      description: Copper. Concentration of copper    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     DEHP:    
-      description: 'Property. Diethylhexyl phthalate. Concentration of DEHP. Units:''mg/Kg SS'''    
+      description: Diethylhexyl phthalate. Concentration of DEHP    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Hg:    
-      description: 'Property. Mercury. Concentration of mercury. Units:''mg/Kg SS'''    
+      description: Mercury. Concentration of mercury    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     IPA:    
-      description: 'Property. Sum of isopropyl alcohol Sum of content of isopropyl alcohol. Units:''mg/Kg SS'''    
+      description: Sum of isopropyl alcohol Sum of content of isopropyl alcohol    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     K-TOT:    
-      description: 'Property. Total potassium. Total content of potassium. Units:''percentage of SS (min)'''    
+      description: Total potassium. Total content of potassium    
       maximum: 1    
       minimum: 0    
       type: number    
@@ -132,7 +139,7 @@ SludgeQualityObserved:
         type: Property    
         units: percentage of SS (min)    
     N-TOT:    
-      description: 'Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:''percentage of SS (min)'''    
+      description: 'Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen'    
       maximum: 1    
       minimum: 0    
       type: number    
@@ -140,14 +147,14 @@ SludgeQualityObserved:
         type: Property    
         units: percentage of SS (min)    
     Ni:    
-      description: 'Property. Nickel. Concentration of Nickel. Units:''mg/Kg SS'''    
+      description: Nickel. Concentration of Nickel    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     P-TOT:    
-      description: 'Property. Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic. Units:''percentage of SS (min)'''    
+      description: 'Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic'    
       maximum: 1    
       minimum: 0    
       type: number    
@@ -155,21 +162,21 @@ SludgeQualityObserved:
         type: Property    
         units: percentage of SS (min)    
     PCB:    
-      description: 'Property. Polychlorinated biphenyls Concentration of polychlorinated biphenyls. Units:''mg/Kg SS'''    
+      description: Polychlorinated biphenyls Concentration of polychlorinated biphenyls    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Se:    
-      description: 'Property. Selenium. Concentration of selenium. Units:''mg/Kg SS'''    
+      description: Selenium. Concentration of selenium    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     Zn:    
-      description: 'Property. Zinc. Concentration of zinc. Units:''mg/Kg SS'''    
+      description: Zinc. Concentration of zinc    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -179,29 +186,51 @@ SludgeQualityObserved:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'Property. A district is a type of administrative division that, in some countries, is managed by the local government'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Property. Number identifying a specific property on a public street    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -235,7 +264,7 @@ SludgeQualityObserved:
       x-ngsi:    
         type: Property    
     dateObserved:    
-      description: 'Property. Model:''https://schema.org/DateTime''. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.'    
+      description: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
@@ -246,29 +275,33 @@ SludgeQualityObserved:
       x-ngsi:    
         type: Property    
     faecal-coliforms:    
-      description: 'Property. Concentration of fecal coliforms (Most Probable Number per gram solids). Units:''MPN/g SS (max)'''    
+      description: Concentration of fecal coliforms (Most Probable Number per gram solids)    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: MPN/g SS (max)    
     id:    
-      anyOf: &sludgequalityobserved_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -289,7 +322,9 @@ SludgeQualityObserved:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -313,7 +348,9 @@ SludgeQualityObserved:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -339,7 +376,9 @@ SludgeQualityObserved:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -362,7 +401,9 @@ SludgeQualityObserved:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -388,7 +429,9 @@ SludgeQualityObserved:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -416,13 +459,17 @@ SludgeQualityObserved:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     measurand:    
-      description: Property. An array of strings containing details (see format below) about extra measurands provided by this observation.    
+      description: An array of strings containing details (see format below) about extra measurands provided by this observation    
       items:    
-        description: Property. Every measurand provided by this observation.    
+        description: Every measurand provided by this observation    
         type: string    
+        x-ngsi:    
+          type: Property    
       minItems: 1    
       type: array    
       x-ngsi:    
@@ -435,13 +482,27 @@ SludgeQualityObserved:
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *sludgequalityobserved_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     pH:    
-      description: Property. Acidity or basicity of an aqueous solution.    
+      description: Acidity or basicity of an aqueous solution    
       maximum: 14    
       minimum: 0    
       type: number    
@@ -449,19 +510,23 @@ SludgeQualityObserved:
         type: Property    
     refPointOfInterest:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: Relationship. A reference to a point of interest associated to this observation.    
+          x-ngsi:    
+            type: Property    
+      description: A reference to a point of interest associated to this observation    
       x-ngsi:    
         type: Relationship    
     salmonella:    
-      description: 'Property. Concentration of Salmonella (Most Probable Number per gram solids). Units:''MPN/g SS (max)'''    
+      description: Concentration of Salmonella (Most Probable Number per gram solids)    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -485,14 +550,14 @@ SludgeQualityObserved:
       x-ngsi:    
         type: Property    
     toluene:    
-      description: 'Property. Concentration of Toluene. Units:''mg/Kg SS'''    
+      description: Concentration of Toluene    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
         units: mg/Kg SS    
     type:    
-      description: Property. NGSI Entity type. It has to be SludgeQualityObserved    
+      description: NGSI Entity type. It has to be SludgeQualityObserved    
       enum:    
         - SludgeQualityObserved    
       type: string    
