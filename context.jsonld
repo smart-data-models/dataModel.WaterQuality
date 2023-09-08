@@ -51,11 +51,19 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "anionic-surfactants": "https://smartdatamodels.org/dataModel.WaterQuality/anionic-surfactants",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "bod": "https://smartdatamodels.org/dataModel.WaterQuality/bod",
         "cationic-surfactants": "https://smartdatamodels.org/dataModel.WaterQuality/cationic-surfactants",
         "cod": "https://smartdatamodels.org/dataModel.WaterQuality/cod",
         "conductance": "https://smartdatamodels.org/dataModel.WaterQuality/conductance",
         "conductivity": "https://smartdatamodels.org/dataModel.WaterQuality/conductivity",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
@@ -78,8 +86,10 @@
         "orp": "https://smartdatamodels.org/dataModel.WaterQuality/orp",
         "owner": "https://smartdatamodels.org/owner",
         "pH": "https://smartdatamodels.org/dataModel.WaterQuality/pH",
+        "percentile": "https://smartdatamodels.org/dataModel.WaterQuality/percentile",
         "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
         "postalCode": "https://smartdatamodels.org/postalCode",
+        "prediction": "https://smartdatamodels.org/dataModel.WaterQuality/prediction",
         "predictions": "https://smartdatamodels.org/dataModel.WaterQuality/predictions",
         "refPointOfInterest": "https://smartdatamodels.org/dataModel.WaterQuality/refPointOfInterest",
         "salinity": "https://smartdatamodels.org/dataModel.WaterQuality/salinity",
