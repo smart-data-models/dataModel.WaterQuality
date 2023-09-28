@@ -72,7 +72,7 @@ contributors:
     year: 2023
   - name: Audun
     surname: Vennesland
-    mail: audun.vennesland@sintef.no
+    mail:
     organization: SINTEF
     project: Digitalwater.city, B-WaterSmart
     comments: New model for WaterQualityPredicted
