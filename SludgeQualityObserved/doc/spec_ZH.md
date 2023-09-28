@@ -1,36 +1,36 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: SludgeQualityObserved  
-=============================<!-- /10-Header -->  
+实体：污泥质量观测  
+=========<!-- /10-Header -->  
 <!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/SludgeQualityObserved/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/SludgeQualityObserved/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Global description: **Sludge Quality data model is intended to represent sludge quality parameters.**  
-version: 0.0.1  
+全局描述：**污泥质量数据模型旨在表示污泥质量参数。  
+版本： 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## List of properties  
+## 属性列表  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `AOX[number]`: Concentration of Adsorbable Organically bound halogens (AOX)  - `As[number]`: Arsenic. Concentration of arsenic  - `B[number]`: Boron. Concentration of boron  - `Be[number]`: Beryllium. Concentration of Beryllium  - `C-ORG[number]`: Organic Carbon. Concentration of organic carbon  - `C10-C40[number]`: Concentration of Hydrocarbons C10-C40  - `Cd[number]`: Cadmium. Concentration of cadmium  - `Cr[number]`: Chromium. Concentration of chromium  - `Cr-VI[number]`: Chromium VI. Concentration of chromium at the oxidation state +6  - `Cu[number]`: Copper. Concentration of copper  - `DEHP[number]`: Diethylhexyl phthalate. Concentration of DEHP  - `Hg[number]`: Mercury. Concentration of mercury  - `IPA[number]`: Sum of isopropyl alcohol Sum of content of isopropyl alcohol  - `K-TOT[number]`: Total potassium. Total content of potassium  - `N-TOT[number]`: Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen  - `Ni[number]`: Nickel. Concentration of Nickel  - `P-TOT[number]`: Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic  - `PCB[number]`: Polychlorinated biphenyls Concentration of polychlorinated biphenyls  - `Se[number]`: Selenium. Concentration of selenium  - `Zn[number]`: Zinc. Concentration of zinc  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `faecal-coliforms[number]`: Concentration of fecal coliforms (Most Probable Number per gram solids)  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand[array]`: An array of strings containing details (see format below) about extra measurands provided by this observation  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH[number]`: Acidity or basicity of an aqueous solution  - `refPointOfInterest[*]`: A reference to a point of interest associated to this observation  - `salmonella[number]`: Concentration of Salmonella (Most Probable Number per gram solids)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `toluene[number]`: Concentration of Toluene  - `type[string]`: NGSI Entity type. It has to be SludgeQualityObserved  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `AOX[number]`: 可吸附有机结合卤素（AOX）的浓度  - `As[number]`: 砷。砷浓度  - `B[number]`: 硼。硼的浓度  - `Be[number]`: 铍。铍的浓度  - `C-ORG[number]`: 有机碳有机碳浓度  - `C10-C40[number]`: 碳氢化合物 C10-C40 的浓度  - `Cd[number]`: 镉。镉的浓度  - `Cr[number]`: 铬。铬的浓度  - `Cr-VI[number]`: 铬 VI。氧化态 +6 的铬浓度  - `Cu[number]`: 铜。铜的浓度  - `DEHP[number]`: 邻苯二甲酸二乙基己酯。DEHP 的浓度  - `Hg[number]`: 汞。汞浓度  - `IPA[number]`: 异丙醇含量之和 异丙醇含量之和  - `K-TOT[number]`: 总钾钾的总含量  - `N-TOT[number]`: 总氮。总氮 (TN) 是硝酸盐氮 (NO3-N)、亚硝酸盐氮 (NO2-N)、氨氮 (NH3-N) 和有机结合氮的总和。  - `Ni[number]`: 镍镍的浓度  - `P-TOT[number]`: 总磷。总磷是对水中所有形式的磷的测量，包括溶解磷和颗粒磷、有机磷和无机磷。  - `PCB[number]`: 多氯联苯 多氯联苯的浓度  - `Se[number]`: 硒。硒的浓度  - `Zn[number]`: 锌锌浓度  - `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateObserved[string]`: 以 ISO8601 UTC 格式表示的观测日期和时间。可以用一个特定的时间瞬间或一个 ISO8601 时间间隔来表示  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 项目描述  - `faecal-coliforms[number]`: 粪大肠菌群浓度（每克固体的最大可能数量）  - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `measurand[array]`: 一个字符串数组，包含该观测值提供的额外测量值的详细信息（格式见下文）。  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `pH[number]`: 水溶液的酸碱性  - `refPointOfInterest[*]`: 与该观测点相关的兴趣点参考文献  - `salmonella[number]`: 沙门氏菌浓度（每克固体中的最大可能数量）  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `toluene[number]`: 甲苯浓度  - `type[string]`: NGSI 实体类型。必须是 SludgeQualityObserved  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Required properties  
+所需属性  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -581,9 +581,9 @@ SludgeQualityObserved:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Example payloads    
-#### SludgeQualityObserved NGSI-v2 key-values Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## 有效载荷示例  
+#### 污泥质量观测 NGSI-v2 关键值 示例  
+下面是一个以 JSON-LD 格式作为键值的 SludgeQualityObserved 示例。当使用 "options=keyValues "时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -621,8 +621,8 @@ SludgeQualityObserved:
 }  
 ```  
 </details>  
-#### SludgeQualityObserved NGSI-v2 normalized Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### 污泥质量观测 NGSI-v2 归一化示例  
+下面是一个以 JSON-LD 格式规范化的 SludgeQualityObserved 示例。在不使用选项的情况下，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -741,8 +741,8 @@ SludgeQualityObserved:
 }  
 ```  
 </details>  
-#### SludgeQualityObserved NGSI-LD key-values Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### 污泥质量观测 NGSI-LD 关键值 示例  
+下面是一个以 JSON-LD 格式作为键值的 SludgeQualityObserved 示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -786,8 +786,8 @@ SludgeQualityObserved:
 }  
 ```  
 </details>  
-#### SludgeQualityObserved NGSI-LD normalized Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### 污泥质量观测 NGSI-LD 归一化示例  
+下面是一个以 JSON-LD 格式规范化的 SludgeQualityObserved 示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -915,7 +915,7 @@ SludgeQualityObserved:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

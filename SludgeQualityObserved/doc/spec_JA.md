@@ -1,36 +1,36 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: SludgeQualityObserved  
-=============================<!-- /10-Header -->  
+エンティティ汚泥品質観測  
+============<!-- /10-Header -->  
 <!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/SludgeQualityObserved/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.WaterQuality/blob/master/SludgeQualityObserved/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Global description: **Sludge Quality data model is intended to represent sludge quality parameters.**  
-version: 0.0.1  
+グローバルな記述：**汚泥の品質データモデルは、汚泥の品質パラメータを表すためのものである。  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## List of properties  
+## プロパティのリスト  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `AOX[number]`: Concentration of Adsorbable Organically bound halogens (AOX)  - `As[number]`: Arsenic. Concentration of arsenic  - `B[number]`: Boron. Concentration of boron  - `Be[number]`: Beryllium. Concentration of Beryllium  - `C-ORG[number]`: Organic Carbon. Concentration of organic carbon  - `C10-C40[number]`: Concentration of Hydrocarbons C10-C40  - `Cd[number]`: Cadmium. Concentration of cadmium  - `Cr[number]`: Chromium. Concentration of chromium  - `Cr-VI[number]`: Chromium VI. Concentration of chromium at the oxidation state +6  - `Cu[number]`: Copper. Concentration of copper  - `DEHP[number]`: Diethylhexyl phthalate. Concentration of DEHP  - `Hg[number]`: Mercury. Concentration of mercury  - `IPA[number]`: Sum of isopropyl alcohol Sum of content of isopropyl alcohol  - `K-TOT[number]`: Total potassium. Total content of potassium  - `N-TOT[number]`: Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen  - `Ni[number]`: Nickel. Concentration of Nickel  - `P-TOT[number]`: Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic  - `PCB[number]`: Polychlorinated biphenyls Concentration of polychlorinated biphenyls  - `Se[number]`: Selenium. Concentration of selenium  - `Zn[number]`: Zinc. Concentration of zinc  - `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: A description of this item  - `faecal-coliforms[number]`: Concentration of fecal coliforms (Most Probable Number per gram solids)  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `measurand[array]`: An array of strings containing details (see format below) about extra measurands provided by this observation  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pH[number]`: Acidity or basicity of an aqueous solution  - `refPointOfInterest[*]`: A reference to a point of interest associated to this observation  - `salmonella[number]`: Concentration of Salmonella (Most Probable Number per gram solids)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `toluene[number]`: Concentration of Toluene  - `type[string]`: NGSI Entity type. It has to be SludgeQualityObserved  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `AOX[number]`: 吸着性有機結合ハロゲン（AOX）濃度  - `As[number]`: ヒ素ヒ素の濃度  - `B[number]`: ホウ素ホウ素の濃度  - `Be[number]`: ベリリウムベリリウムの濃度  - `C-ORG[number]`: 有機炭素。有機炭素の濃度  - `C10-C40[number]`: C10-C40炭化水素の濃度  - `Cd[number]`: カドミウムカドミウムの濃度  - `Cr[number]`: クロムクロム濃度  - `Cr-VI[number]`: 六価クロム。酸化状態+6のクロム濃度。  - `Cu[number]`: 銅銅の濃度  - `DEHP[number]`: フタル酸ジエチルヘキシルDEHPの濃度  - `Hg[number]`: 水銀水銀の濃度  - `IPA[number]`: イソプロピルアルコール合計 イソプロピルアルコール合計  - `K-TOT[number]`: カリウムの総量。カリウムの総含有量  - `N-TOT[number]`: 全窒素。全窒素（TN）は、硝酸性窒素（NO3-N）、亜硝酸性窒素（NO2-N）、アンモニア性窒素（NH3-N）、有機結合窒素の合計である。  - `Ni[number]`: ニッケルニッケル濃度  - `P-TOT[number]`: 全リン。全リンとは、溶存リン、粒子状リン、有機リン、無機リンを含む、水中のあらゆる形態のリンを測定したものである。  - `PCB[number]`: ポリ塩化ビフェニル ポリ塩化ビフェニル ポリ塩化ビフェニル ポリ塩化ビフェニル ポリ塩化ビフェニル濃度 濃度 濃度 濃度  - `Se[number]`: セレンセレンの濃度  - `Zn[number]`: 亜鉛亜鉛の濃度  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTCフォーマットによる観測日時。特定の時刻を表すことも、ISO8601のインターバルで表すこともできます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: この商品の説明  - `faecal-coliforms[number]`: 糞便性大腸菌群濃度（固形物1グラムあたりの最確数）  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `measurand[array]`: このオブザベーションが提供する追加測定値に関する詳細(以下のフォーマットを参照)を含む文字列の配列。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `pH[number]`: 水溶液の酸性度または塩基性度  - `refPointOfInterest[*]`: この観測に関連する注目点への参照。  - `salmonella[number]`: サルモネラ菌の濃度（固形物1グラムあたりの最確数）  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `toluene[number]`: トルエンの濃度  - `type[string]`: NGSI エンティティタイプ。SludgeQualityObserved でなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Required properties  
+必須プロパティ  
 - `dateObserved`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -581,9 +581,9 @@ SludgeQualityObserved:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Example payloads    
-#### SludgeQualityObserved NGSI-v2 key-values Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## ペイロードの例  
+#### SludgeQualityObserved NGSI-v2 キー値の例  
+以下はSludgeQualityObservedをJSON-LD形式でkey-valuesとした例である。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -621,8 +621,8 @@ SludgeQualityObserved:
 }  
 ```  
 </details>  
-#### SludgeQualityObserved NGSI-v2 normalized Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### SludgeQualityObserved NGSI-v2 正規化例  
+以下は、正規化された JSON-LD 形式の SludgeQualityObserved の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -741,8 +741,8 @@ SludgeQualityObserved:
 }  
 ```  
 </details>  
-#### SludgeQualityObserved NGSI-LD key-values Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### SludgeQualityObserved NGSI-LD キー値の例  
+以下はSludgeQualityObservedをJSON-LD形式でkey-valuesとした例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -786,8 +786,8 @@ SludgeQualityObserved:
 }  
 ```  
 </details>  
-#### SludgeQualityObserved NGSI-LD normalized Example    
-Here is an example of a SludgeQualityObserved in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### スラッジ品質観測 NGSI-LD 正規化例  
+以下は、正規化された JSON-LD 形式の SludgeQualityObserved の例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -915,7 +915,7 @@ SludgeQualityObserved:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
