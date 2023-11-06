@@ -35,5 +35,8 @@
       }
     ]
   },
-  "waterQualityPredictionValue": "Excellent"
+  "waterQualityPredictionValue": "Excellent",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"
+  ]
 }
