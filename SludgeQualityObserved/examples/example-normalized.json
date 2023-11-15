@@ -10,7 +10,7 @@
     "value": {
       "type": "Point",
       "coordinates": [
-        45.51970,
+        45.5197,
         12.19351
       ]
     }
@@ -36,8 +36,8 @@
     "value": 0.397
   },
   "PCB": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "As": {
     "type": "Number",
@@ -54,7 +54,7 @@
   "Cd": {
     "type": "Number",
     "value": 2.7
-  }, 
+  },
   "Cr": {
     "type": "Number",
     "value": 46.7
@@ -88,8 +88,8 @@
     "value": 1.6
   },
   "toluene": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "AOX": {
     "type": "Number",
