@@ -28,7 +28,7 @@
     "value": 7.4
   },
   "measurand": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "NO3, 0.01, M1, Concentration of Nitrates"
     ]
@@ -46,8 +46,8 @@
     "value": 0.1
   },
   "TKN": {
-    "type": "Number",
-    "value": 1.0
+    "type": "Boolean",
+    "value": true
   },
   "NO2": {
     "type": "Number",
@@ -68,82 +68,82 @@
   "Al": {
     "type": "Number",
     "value": 0.01
-  }, 
+  },
   "As": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "B": {
     "type": "Number",
     "value": 0.2
   },
   "Ba": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Cd": {
     "type": "Number",
     "value": 0.001
   },
   "Cr": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Cr-III": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Cr-VI": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Cu": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Fe": {
     "type": "Number",
     "value": 7.4
   },
   "fluoride": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Hg": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "THC": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Ni": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "TO": {
     "type": "Number",
     "value": 0.01
   },
   "Pb": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Se": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "Sn": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "sulphate": {
     "type": "Number",
     "value": 143.3
   },
   "sulphite": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   },
   "anionic-surfactants": {
     "type": "Number",
@@ -162,7 +162,7 @@
     "value": 0.3
   },
   "Zn": {
-    "type": "Number",
-    "value": 0.0
+    "type": "Boolean",
+    "value": false
   }
 }
