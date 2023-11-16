@@ -1,55 +1,55 @@
 {
-    "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",
-    "type": "WaterQualityObserved",
-    "NO3": 0.01,
-    "conductivity": 0.005,
-    "dateObserved": "2017-01-31T06:45:00Z",
-    "location": {
-        "coordinates": [
-            -5.993307,
-            37.362882
-        ],
-        "type": "Point"
-    },
-    "measurand": [
-        "NO3, 0.01, M1, Concentration of Nitrates"
+  "id": "urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D1",
+  "type": "WaterQualityObserved",
+  "NO3": 0.01,
+  "conductivity": 0.005,
+  "dateObserved": "2017-01-31T06:45:00Z",
+  "location": {
+    "coordinates": [
+      -5.993307,
+      37.362882
     ],
-    "pH": 7.4,
-    "temperature": 24.4,
-    "flow": 127.53,
-    "alkalinity": 0.1,
-    "TKN": 1.0,
-    "NO2": 0.09,
-    "N-TOT": 6,
-    "P-TOT": 0.6,
-    "P-PO4": 0.5,
-    "Al": 0.01,
-    "As": 0.0,
-    "B": 0.2,
-    "Ba": 0.0,
-    "Cd": 0.001,
-    "Cr": 0.0,
-    "Cr-III": 0.0,
-    "Cr-VI": 0.0,
-    "Cu": 0.0,
-    "Fe": 0.0,
-    "fluoride": 0.1,
-    "Hg": 0.0,
-    "THC": 0.0,
-    "Ni": 0.0,
-    "TO": 0.01,
-    "Pb": 0.0,
-    "Se": 0.0,
-    "Sn": 0.0,
-    "sulphate": 143.3,
-    "sulphite": 0,
-    "anionic-surfactants": 0.3,
-    "cationic-surfactants": 0.2,
-    "non-ionic-surfactants": 0.1,
-    "total-surfactants": 0.3,
-    "Zn": 0.0,
-    "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"
-    ]
+    "type": "Point"
+  },
+  "measurand": [
+    "NO3, 0.01, M1, Concentration of Nitrates"
+  ],
+  "pH": 7.4,
+  "temperature": 24.4,
+  "flow": 127.53,
+  "alkalinity": 0.1,
+  "TKN": 1.0,
+  "NO2": 0.09,
+  "N-TOT": 6,
+  "P-TOT": 0.6,
+  "P-PO4": 0.5,
+  "Al": 0.01,
+  "As": 0.0,
+  "B": 0.2,
+  "Ba": 0.0,
+  "Cd": 0.001,
+  "Cr": 0.0,
+  "Cr-III": 0.0,
+  "Cr-VI": 0.0,
+  "Cu": 0.0,
+  "Fe": 0.0,
+  "fluoride": 0.1,
+  "Hg": 0.0,
+  "THC": 0.0,
+  "Ni": 0.0,
+  "TO": 0.01,
+  "Pb": 0.0,
+  "Se": 0.0,
+  "Sn": 0.0,
+  "sulphate": 143.3,
+  "sulphite": 0,
+  "anionic-surfactants": 0.3,
+  "cationic-surfactants": 0.2,
+  "non-ionic-surfactants": 0.1,
+  "total-surfactants": 0.3,
+  "Zn": 0.0,
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"
+  ]
 }
