@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
     "modelTags": "B-WaterSmart",
-    "$id": "https://smart-data-models.github.io/dataModel.WasteWater/SludgeQualityObserved/schema.json",
+    "$id": "https://smart-data-models.github.io/dataModel.WaterQuality/SludgeQualityObserved/schema.json",
     "title": "Sludge quality observed schema",
     "description": "Sludge Quality data model is intended to represent sludge quality parameters.",
     "type": "object",
