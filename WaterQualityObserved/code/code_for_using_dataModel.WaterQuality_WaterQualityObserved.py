@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "WaterQualityObserved"
 subject = "dataModel.WaterQuality"
-NO3 = {'type': 'Property', 'value': 0.01}
+NO3 = 0.01
 attribute = "NO3"
 value = NO3
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-conductivity = {'type': 'Property', 'value': 0.005}
+conductivity = 0.005
 attribute = "conductivity"
 value = conductivity
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateObserved = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2017-01-31T06:45:00Z'}}"
+dateObserved = "2017-01-31T06:45:00Z"
 attribute = "dateObserved"
 value = dateObserved
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-measurand = {'type': 'Property', 'value': ['NO3, 0.01, M1, Concentration of Nitrates']}
+measurand = ['NO3, 0.01, M1, Concentration of Nitrates']
 attribute = "measurand"
 value = measurand
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
