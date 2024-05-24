@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "SludgeQualityObserved"
 subject = "dataModel.WaterQuality"
-dateObserved = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2023-07-02T10:30:00Z'}}"
+dateObserved = "2023-07-02T10:30:00Z"
 attribute = "dateObserved"
 value = dateObserved
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-pH = {'type': 'Number', 'value': 7.5}
+pH = 7.5
 attribute = "pH"
 value = pH
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-N-TOT = {'type': 'Number', 'value': 0.063}
+N-TOT = 0.063
 attribute = "N-TOT"
 value = N-TOT
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-P-TOT = {'type': 'Number', 'value': 0.024}
+P-TOT = 0.024
 attribute = "P-TOT"
 value = P-TOT
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
