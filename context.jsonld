@@ -53,7 +53,7 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "bod": "https://smartdatamodels.org/dataModel.WaterQuality/bod",
         "cationic-surfactants": "https://smartdatamodels.org/dataModel.WaterQuality/cationic-surfactants",
@@ -62,7 +62,7 @@
         "conductivity": "https://smartdatamodels.org/dataModel.WaterQuality/conductivity",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -78,7 +78,7 @@
         "flow": "https://smartdatamodels.org/dataModel.WaterQuality/flow",
         "fluoride": "https://smartdatamodels.org/dataModel.WaterQuality/fluoride",
         "id": "@id",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "measurand": "https://smartdatamodels.org/dataModel.WaterQuality/measurand",
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
@@ -107,7 +107,7 @@
         "tss": "https://smartdatamodels.org/dataModel.WaterQuality/tss",
         "turbidity": "https://smartdatamodels.org/dataModel.WaterQuality/turbidity",
         "type": "@type",
-        "value": "ngsi-ld:hasValue",
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue",
         "waterQualityPredictionValue": "https://smartdatamodels.org/dataModel.WaterQuality/waterQualityPredictionValue"
     }
 }
