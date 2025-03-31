@@ -29,7 +29,8 @@
         "measurand": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "description": "Each string represents a specific measurand with its associated details."
           },
           "minItems": 1,
           "description": "Property. An array of strings containing details (see format below) about extra measurands provided by this observation"
