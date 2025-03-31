@@ -77,3 +77,10 @@ contributors:
     project: Digitalwater.city, B-WaterSmart
     comments: New model for WaterQualityPredicted
     year: 2022
+  - name: Dimitris
+    surname: Karamouslis
+    mail: dkaram@iti.gr
+    organization: CERTH-ITI. https://www.iti.gr/
+    project: WATERVERSE (https://waterverse.eu/)
+    comments: Added "componentAnalyzed", "componentName" and "concentration" fields to meet the requirements of the "Waterverse" project.
+    year: 2025
