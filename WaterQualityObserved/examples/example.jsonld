@@ -48,6 +48,9 @@
   "non-ionic-surfactants": 0.1,
   "total-surfactants": 0.3,
   "Zn": 0.0,
+  "componentAnalyzed": "Cl",
+  "componentName": "Chlorine",
+  "concentration": 20,
   "@context": [
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
     "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"

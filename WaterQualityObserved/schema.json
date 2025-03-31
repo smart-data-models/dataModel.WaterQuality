@@ -319,6 +319,18 @@
           "type": "number",
           "minimum": 0,
           "description": "Property. Zinc. Concentration of zinc. Units:'mg/l'"
+        },
+        "componentAnalyzed": {
+          "type": "string",
+          "description": "Property. The component symbol analyzed in the sample"
+        },
+        "componentName": {
+          "type": "string",
+          "description": "Property. The component full name analyzed in the sample"
+        },
+        "concentration": {
+          "type": "number",
+          "description": "Property. The concentration of the component analyzed in the sample. Units:'mg/l'"
         }
       }
     }
