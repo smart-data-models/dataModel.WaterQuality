@@ -30,7 +30,7 @@
           "type": "array",
           "items": {
             "type": "string"
-            "description": "Property. Every element of the array of strings containing details (see format below) about extra measurands provided by this observation""
+            "description": "Property. Every element of the array of strings containing details (see format below) about extra measurands provided by this observation"
           },
           "minItems": 1,
           "description": "Property. An array of strings containing details (see format below) about extra measurands provided by this observation"
