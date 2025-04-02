@@ -2,7 +2,7 @@
     "@id": "dtmi:com:ngsi-ld:WaterQualityObserved;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": " - Water quality observed schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/WaterQualityObserved/schema.json",
+    "comment": "Water quality observed schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/WaterQualityObserved/schema.json",
     "description": "Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section",
     "displayName": "WaterQualityObserved",
     "contents": [
@@ -12,7 +12,7 @@
             "displayName": "Al",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Aluminium. Concentration of aluminium. Units:'mg/l'"
+            "comment": "Aluminium. Concentration of aluminium"
         },
         {
             "name": "As",
@@ -20,7 +20,7 @@
             "displayName": "As",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Arsenic. Concentration of arsenic. Units:'mg/l'"
+            "comment": "Arsenic. Concentration of arsenic"
         },
         {
             "name": "B",
@@ -28,7 +28,7 @@
             "displayName": "B",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Boron. Concentration of boron. Units:'mg/l'"
+            "comment": "Boron. Concentration of boron"
         },
         {
             "name": "Ba",
@@ -36,7 +36,7 @@
             "displayName": "Ba",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Barium. Concentration of barium. Units:'mg/l'"
+            "comment": "Barium. Concentration of barium"
         },
         {
             "name": "Cd",
@@ -44,7 +44,7 @@
             "displayName": "Cd",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Cadmium. Concentration of cadmium. Units:'mg/l'"
+            "comment": "Cadmium. Concentration of cadmium"
         },
         {
             "name": "Chla",
@@ -52,7 +52,7 @@
             "displayName": "Chla",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of chlorophyll A."
+            "comment": "Concentration of chlorophyll A"
         },
         {
             "name": "Cl-",
@@ -60,7 +60,7 @@
             "displayName": "Cl-",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of chlorides."
+            "comment": "Concentration of chlorides"
         },
         {
             "name": "Cr",
@@ -68,7 +68,7 @@
             "displayName": "Cr",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Chromium. Concentration of chromium. Units:'mg/l'"
+            "comment": "Chromium. Concentration of chromium"
         },
         {
             "name": "Cr-III",
@@ -76,7 +76,7 @@
             "displayName": "Cr-III",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Chromium III. Concentration of chromium at the oxidation state +3. Units:'mg/l'"
+            "comment": "Chromium III. Concentration of chromium at the oxidation state +3"
         },
         {
             "name": "Cr-VI",
@@ -84,7 +84,7 @@
             "displayName": "Cr-VI",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Chromium VI. Concentration of chromium at the oxidation state +6. Units:'mg/l'"
+            "comment": "Chromium VI. Concentration of chromium at the oxidation state +6"
         },
         {
             "name": "Cu",
@@ -92,7 +92,7 @@
             "displayName": "Cu",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Copper. Concentration of copper. Units:'mg/l'"
+            "comment": "Copper. Concentration of copper"
         },
         {
             "name": "Fe",
@@ -100,7 +100,7 @@
             "displayName": "Fe",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Iron. Concentration of iron. Units:'mg/l'"
+            "comment": "Iron. Concentration of iron"
         },
         {
             "name": "Hg",
@@ -108,7 +108,7 @@
             "displayName": "Hg",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Mercury. Concentration of mercury. Units:'mg/l'"
+            "comment": "Mercury. Concentration of mercury"
         },
         {
             "name": "N-TOT",
@@ -116,7 +116,7 @@
             "displayName": "N-TOT",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen. Units:'mg/l'"
+            "comment": "Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen"
         },
         {
             "name": "NH3",
@@ -124,7 +124,7 @@
             "displayName": "NH3",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of ammonia."
+            "comment": "Concentration of ammonia"
         },
         {
             "name": "NH4",
@@ -132,7 +132,7 @@
             "displayName": "NH4",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of ammonium."
+            "comment": "Concentration of ammonium"
         },
         {
             "name": "NO2",
@@ -140,7 +140,7 @@
             "displayName": "NO2",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Nitrite nitrogen. Concentration of a sample in nitrite nitrogen. Units:'mg/l'"
+            "comment": "Nitrite nitrogen. Concentration of a sample in nitrite nitrogen"
         },
         {
             "name": "NO3",
@@ -148,7 +148,7 @@
             "displayName": "NO3",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of nitrates."
+            "comment": "Concentration of nitrates"
         },
         {
             "name": "Ni",
@@ -156,7 +156,7 @@
             "displayName": "Ni",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Nickel. Concentration of Nickel. Units:'mg/l'"
+            "comment": "Nickel. Concentration of Nickel"
         },
         {
             "name": "O2",
@@ -164,7 +164,7 @@
             "displayName": "O2",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Level of free, non-compound oxygen present."
+            "comment": "Level of free, non-compound oxygen present"
         },
         {
             "name": "P-PO4",
@@ -172,7 +172,7 @@
             "displayName": "P-PO4",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Phosphate-phosphorus. Concentration of phosphorus as phosphate. Units:'mg/l'"
+            "comment": "Phosphate-phosphorus. Concentration of phosphorus as phosphate"
         },
         {
             "name": "P-TOT",
@@ -180,7 +180,7 @@
             "displayName": "P-TOT",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Total Phosphorus. Total phosphorus is a measure of all forms of\u00a0phosphorus\u00a0in the water, including dissolved and particulate, organic and inorganic. Units:'mg/l'"
+            "comment": "Total Phosphorus. Total phosphorus is a measure of all forms of\u00a0phosphorus\u00a0in the water, including dissolved and particulate, organic and inorganic"
         },
         {
             "name": "PC",
@@ -188,7 +188,7 @@
             "displayName": "PC",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically."
+            "comment": "Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically"
         },
         {
             "name": "PE",
@@ -196,7 +196,7 @@
             "displayName": "PE",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically."
+            "comment": "Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically"
         },
         {
             "name": "PO4",
@@ -204,7 +204,7 @@
             "displayName": "PO4",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of phosphates."
+            "comment": "Concentration of phosphates"
         },
         {
             "name": "Pb",
@@ -212,7 +212,7 @@
             "displayName": "Pb",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Lead. Concentration of lead. Units:'mg/l'"
+            "comment": "Lead. Concentration of lead"
         },
         {
             "name": "Se",
@@ -220,7 +220,7 @@
             "displayName": "Se",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Selenium. Concentration of selenium. Units:'mg/l'"
+            "comment": "Selenium. Concentration of selenium"
         },
         {
             "name": "Sn",
@@ -228,7 +228,7 @@
             "displayName": "Sn",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Tin. Concentration of tin. Units:'mg/l'"
+            "comment": "Tin. Concentration of tin"
         },
         {
             "name": "THC",
@@ -236,7 +236,7 @@
             "displayName": "THC",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Total hydrocarbon. Concentration of total hydrocarbon. Units:'mg/l'"
+            "comment": "Total hydrocarbon. Concentration of total hydrocarbon"
         },
         {
             "name": "TKN",
@@ -244,7 +244,7 @@
             "displayName": "TKN",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Total Kjeldahl Nitrogen. A measure that determines both the organic and the inorganic forms of nitrogen. Units:'mg/l'"
+            "comment": "Total Kjeldahl Nitrogen. A measure that determines both the organic and the inorganic forms of nitrogen"
         },
         {
             "name": "TO",
@@ -252,7 +252,7 @@
             "displayName": "TO",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Total oil content. Concentration of oil. Units:'mg/l'"
+            "comment": "Total oil content. Concentration of oil"
         },
         {
             "name": "Zn",
@@ -260,7 +260,7 @@
             "displayName": "Zn",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Zinc. Concentration of zinc. Units:'mg/l'"
+            "comment": "Zinc. Concentration of zinc"
         },
         {
             "name": "alkalinity",
@@ -268,7 +268,7 @@
             "displayName": "alkalinity",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. The alkalinity of water is its acid-neutralizing capacity comprised of the total of all titratable bases. Units:'mg/l'"
+            "comment": "The alkalinity of water is its acid-neutralizing capacity comprised of the total of all titratable bases"
         },
         {
             "name": "alternateName",
@@ -284,7 +284,7 @@
             "displayName": "anionic-surfactants",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of anionic surfactants. Units:'mg/l'"
+            "comment": "Concentration of anionic surfactants"
         },
         {
             "name": "areaServed",
@@ -300,7 +300,7 @@
             "displayName": "bod",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period. Units:'mg/l'"
+            "comment": "Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period"
         },
         {
             "name": "cationic-surfactants",
@@ -308,7 +308,7 @@
             "displayName": "cationic-surfactants",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentrtation of cationic surfactants. Units:'mg/l'"
+            "comment": "Concentrtation of cationic surfactants"
         },
         {
             "name": "cod",
@@ -316,7 +316,31 @@
             "displayName": "cod",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution. Units:'mg/l'"
+            "comment": "Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution"
+        },
+        {
+            "name": "componentAnalyzed",
+            "writable": true,
+            "displayName": "componentAnalyzed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The component symbol analyzed in the sample"
+        },
+        {
+            "name": "componentName",
+            "writable": true,
+            "displayName": "componentName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The component full name analyzed in the sample"
+        },
+        {
+            "name": "concentration",
+            "writable": true,
+            "displayName": "concentration",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The concentration of the component analyzed in the sample"
         },
         {
             "name": "conductance",
@@ -324,7 +348,7 @@
             "displayName": "conductance",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Specific Conductance."
+            "comment": "Specific Conductance"
         },
         {
             "name": "conductivity",
@@ -332,7 +356,7 @@
             "displayName": "conductivity",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Electrical Conductivity."
+            "comment": "Electrical Conductivity"
         },
         {
             "name": "dataProvider",
@@ -340,7 +364,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -348,7 +372,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateModified",
@@ -356,7 +380,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateObserved",
@@ -364,7 +388,7 @@
             "displayName": "dateObserved",
             "@type": "Property",
             "schema": "string",
-            "comment": "Property. Model:'https://schema.org/DateTime'. The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
+            "comment": "The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval"
         },
         {
             "name": "description",
@@ -380,7 +404,7 @@
             "displayName": "enterococci",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of Enterococci. Units:'Total number of bacteria/100mL'"
+            "comment": "Concentration of Enterococci"
         },
         {
             "name": "escherichiaColi",
@@ -388,7 +412,7 @@
             "displayName": "escherichiaColi",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of Escherichia coli. Units:'Total number of bacteria/100mL'"
+            "comment": "Concentration of Escherichia coli"
         },
         {
             "name": "flow",
@@ -396,7 +420,7 @@
             "displayName": "flow",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Units:'cubic meters/hour'. Water Flow observed. "
+            "comment": "Water Flow observed. "
         },
         {
             "name": "fluoride",
@@ -404,12 +428,7 @@
             "displayName": "fluoride",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of fluoride. Units:'mg/l'"
-        },
-        {
-            "name": "location",
-            "writable": true,
-            "displayName": "location"
+            "comment": "Concentration of fluoride"
         },
         {
             "name": "name",
@@ -417,7 +436,7 @@
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "non-ionic-surfactants",
@@ -425,7 +444,7 @@
             "displayName": "non-ionic-surfactants",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of non-ionic surfactants. Units:'mg/l'"
+            "comment": "Concentration of non-ionic surfactants"
         },
         {
             "name": "orp",
@@ -433,7 +452,7 @@
             "displayName": "orp",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Oxidation-Reduction potential."
+            "comment": "Oxidation-Reduction potential"
         },
         {
             "name": "pH",
@@ -441,7 +460,7 @@
             "displayName": "pH",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Acidity or basicity of an aqueous solution."
+            "comment": "Acidity or basicity of an aqueous solution"
         },
         {
             "name": "refPointOfInterest",
@@ -454,7 +473,7 @@
             "displayName": "salinity",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Amount of salts dissolved in water."
+            "comment": "Amount of salts dissolved in water"
         },
         {
             "name": "seeAlso",
@@ -467,7 +486,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "name": "sulphate",
@@ -475,7 +494,7 @@
             "displayName": "sulphate",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of sulfate. Units:'mg/l'"
+            "comment": "Concentration of sulfate"
         },
         {
             "name": "sulphite",
@@ -483,7 +502,7 @@
             "displayName": "sulphite",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of sulfite. Units:'mg/l'"
+            "comment": "Concentration of sulfite"
         },
         {
             "name": "tds",
@@ -491,7 +510,7 @@
             "displayName": "tds",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Total dissolved solids. "
+            "comment": "Total dissolved solids. "
         },
         {
             "name": "temperature",
@@ -499,7 +518,7 @@
             "displayName": "temperature",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Temperature"
+            "comment": "Temperature"
         },
         {
             "name": "total-surfactants",
@@ -507,7 +526,7 @@
             "displayName": "total-surfactants",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Concentration of total surfactants. Units:'mg/l'"
+            "comment": "Concentration of total surfactants"
         },
         {
             "name": "tss",
@@ -515,7 +534,7 @@
             "displayName": "tss",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Total suspended solids."
+            "comment": "Total suspended solids"
         },
         {
             "name": "turbidity",
@@ -523,7 +542,7 @@
             "displayName": "turbidity",
             "@type": "Property",
             "schema": "long",
-            "comment": "Property. Amount of light scattered by particles in the water column"
+            "comment": "Amount of light scattered by particles in the water column"
         },
         {
             "@type": "Telemetry",
@@ -532,7 +551,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "Property. An array of strings containing details (see format below) about extra measurands provided by this observation.",
+            "comment": "An array of strings containing details (see format below) about extra measurands provided by this observation",
             "displayName": "measurand"
         },
         {
@@ -584,6 +603,36 @@
                     "schema": "string"
                 }
             ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
         }
     ]
 }
