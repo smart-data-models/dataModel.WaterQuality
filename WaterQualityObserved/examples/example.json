@@ -47,5 +47,8 @@
   "cationic-surfactants": 0.2,
   "non-ionic-surfactants": 0.1,
   "total-surfactants": 0.3,
-  "Zn": 0.0
+  "Zn": 0.0,
+  "componentAnalyzed": "Cl",
+  "componentName": "Chlorine",
+  "concentration": 20
 }

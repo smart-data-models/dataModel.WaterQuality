@@ -1,9 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.0.5",
-  "modelTags": "NAIADES, DigitalWater.city, B-WaterSmart",
+  "$schemaVersion": "0.0.6",
+  "modelTags": "NAIADES, DigitalWater.city, B-WaterSmart, Waterverse",
   "$id": "https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json",
-  "title": " - Water quality observed schema",
+  "title": "Water quality observed schema",
   "description": "Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section",
   "type": "object",
   "allOf": [
@@ -30,6 +30,7 @@
           "type": "array",
           "items": {
             "type": "string"
+            "description": "Property. Every element of the array of strings containing details (see format below) about extra measurands provided by this observation""
           },
           "minItems": 1,
           "description": "Property. An array of strings containing details (see format below) about extra measurands provided by this observation"
@@ -319,6 +320,18 @@
           "type": "number",
           "minimum": 0,
           "description": "Property. Zinc. Concentration of zinc. Units:'mg/l'"
+        },
+        "componentAnalyzed": {
+          "type": "string",
+          "description": "Property. The component symbol analyzed in the sample"
+        },
+        "componentName": {
+          "type": "string",
+          "description": "Property. The component full name analyzed in the sample"
+        },
+        "concentration": {
+          "type": "number",
+          "description": "Property. The concentration of the component analyzed in the sample. Units:'mg/l'"
         }
       }
     }

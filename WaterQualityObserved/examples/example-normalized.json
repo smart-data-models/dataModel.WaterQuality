@@ -164,5 +164,17 @@
   "Zn": {
     "type": "Boolean",
     "value": false
+  },
+  "componentAnalyzed": {
+    "type": "Text",
+    "value": "Cl"
+  },
+  "componentName": {
+    "type": "Text",
+    "value": "Chlorine"
+  },
+  "concentration": {
+    "type": "Number",
+    "value": 20
   }
 }

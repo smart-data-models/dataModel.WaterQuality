@@ -168,6 +168,18 @@
     "type": "Property",
     "value": 0.0
   },
+  "componentAnalyzed": {
+    "type": "Property",
+    "value": "Cl"
+  },
+  "componentName": {
+    "type": "Property",
+    "value": "Chlorine"
+  },
+  "concentration": {
+    "type": "Property",
+    "value": 20
+  },
    "@context": [
         "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld"
     ]
