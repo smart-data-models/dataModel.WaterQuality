@@ -1,6 +1,6 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
 # WaterQualityObserved
-Version: 0.0.5
+Version: 0.0.6
 
 ## Description 
 
