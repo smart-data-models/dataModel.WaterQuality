@@ -58,6 +58,9 @@
         "bod": "https://smartdatamodels.org/dataModel.WaterQuality/bod",
         "cationic-surfactants": "https://smartdatamodels.org/dataModel.WaterQuality/cationic-surfactants",
         "cod": "https://smartdatamodels.org/dataModel.WaterQuality/cod",
+        "componentAnalyzed": "https://smartdatamodels.org/dataModel.WaterQuality/componentAnalyzed",
+        "componentName": "https://smartdatamodels.org/dataModel.WaterQuality/componentName",
+        "concentration": "https://smartdatamodels.org/dataModel.WaterQuality/concentration",
         "conductance": "https://smartdatamodels.org/dataModel.WaterQuality/conductance",
         "conductivity": "https://smartdatamodels.org/dataModel.WaterQuality/conductivity",
         "coordinates": {
