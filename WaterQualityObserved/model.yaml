@@ -1,6 +1,9 @@
 WaterQualityObserved:
-  description: 'Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section'
+
+  description: Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section
+
   properties:
+
     Al:
       description: Aluminium. Concentration of aluminium
       minimum: 0
@@ -8,6 +11,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     As:
       description: Arsenic. Concentration of arsenic
       minimum: 0
@@ -15,6 +19,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     B:
       description: Boron. Concentration of boron
       minimum: 0
@@ -22,6 +27,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Ba:
       description: Barium. Concentration of barium
       minimum: 0
@@ -29,6 +35,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Cd:
       description: Cadmium. Concentration of cadmium
       minimum: 0
@@ -36,18 +43,21 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Chla:
       description: Concentration of chlorophyll A
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     Cl-:
       description: Concentration of chlorides
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     Cr:
       description: Chromium. Concentration of chromium
       minimum: 0
@@ -55,6 +65,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Cr-III:
       description: Chromium III. Concentration of chromium at the oxidation state +3
       minimum: 0
@@ -62,6 +73,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Cr-VI:
       description: Chromium VI. Concentration of chromium at the oxidation state +6
       minimum: 0
@@ -69,6 +81,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Cu:
       description: Copper. Concentration of copper
       minimum: 0
@@ -76,6 +89,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Fe:
       description: Iron. Concentration of iron
       minimum: 0
@@ -83,6 +97,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Hg:
       description: Mercury. Concentration of mercury
       minimum: 0
@@ -90,25 +105,29 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     N-TOT:
-      description: 'Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen'
+      description: Total Nitrogen. Total Nitrogen (TN) is the sum of nitrate-nitrogen (NO3-N), nitrite-nitrogen (NO2-N), ammonia-nitrogen (NH3-N) and organically bonded nitrogen
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: mg/l
+
     NH3:
       description: Concentration of ammonia
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     NH4:
       description: Concentration of ammonium
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     NO2:
       description: Nitrite nitrogen. Concentration of a sample in nitrite nitrogen
       minimum: 0
@@ -116,12 +135,14 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     NO3:
       description: Concentration of nitrates
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     Ni:
       description: Nickel. Concentration of Nickel
       minimum: 0
@@ -129,12 +150,14 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     O2:
-      description: 'Level of free, non-compound oxygen present'
+      description: Level of free, non-compound oxygen present
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     P-PO4:
       description: Phosphate-phosphorus. Concentration of phosphorus as phosphate
       minimum: 0
@@ -142,31 +165,36 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     P-TOT:
-      description: 'Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic'
+      description: Total Phosphorus. Total phosphorus is a measure of all forms of phosphorus in the water, including dissolved and particulate, organic and inorganic
       minimum: 0
       type: number
       x-ngsi:
         type: Property
         units: mg/l
+
     PC:
       description: Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     PE:
       description: Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     PO4:
       description: Concentration of phosphates
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     Pb:
       description: Lead. Concentration of lead
       minimum: 0
@@ -174,6 +202,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Se:
       description: Selenium. Concentration of selenium
       minimum: 0
@@ -181,6 +210,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Sn:
       description: Tin. Concentration of tin
       minimum: 0
@@ -188,6 +218,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     THC:
       description: Total hydrocarbon. Concentration of total hydrocarbon
       minimum: 0
@@ -195,6 +226,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     TKN:
       description: Total Kjeldahl Nitrogen. A measure that determines both the organic and the inorganic forms of nitrogen
       minimum: 0
@@ -202,6 +234,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     TO:
       description: Total oil content. Concentration of oil
       minimum: 0
@@ -209,6 +242,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     Zn:
       description: Zinc. Concentration of zinc
       minimum: 0
@@ -216,59 +250,73 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     address:
+
       description: The mailing address
+
       properties:
+
         addressCountry:
-          description: 'The country. For example, Spain'
+          description: The country. For example, Spain
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
+
         addressLocality:
-          description: 'The locality in which the street address is, and which is in the region'
+          description: The locality in which the street address is, and which is in the region
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
+
         addressRegion:
-          description: 'The region in which the locality is, and which is in the country'
+          description: The region in which the locality is, and which is in the country
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
+
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
           type: string
           x-ngsi:
             type: Property
+
         postOfficeBoxNumber:
-          description: 'The post office box number for PO box addresses. For example, 03578'
+          description: The post office box number for PO box addresses. For example, 03578
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
+
         postalCode:
-          description: 'The postal code. For example, 24004'
+          description: The postal code. For example, 24004
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
+
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
+
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
+
       type: object
+
       x-ngsi:
         model: https://schema.org/address
         type: Property
+
     alkalinity:
       description: The alkalinity of water is its acid-neutralizing capacity comprised of the total of all titratable bases
       minimum: 0
@@ -276,11 +324,13 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
+
     anionic-surfactants:
       description: Concentration of anionic surfactants
       minimum: 0
@@ -288,12 +338,14 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+
     bod:
       description: Biochemical oxygen demand (BOD) is the amount of dissolved oxygen (DO) needed (i.e. demanded) by aerobic biological organisms to break down organic material present in a given water sample at certain temperature over a specific time period
       minimum: 0
@@ -301,6 +353,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     cationic-surfactants:
       description: Concentrtation of cationic surfactants
       minimum: 0
@@ -308,6 +361,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     cod:
       description: Chemical oxygen demand (COD) is an indicative measure of the amount of oxygen that can be consumed by reactions in a measured solution
       minimum: 0
@@ -315,46 +369,73 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
+    componentAnalyzed:
+      description: The component symbol analyzed in the sample
+      type: string
+      x-ngsi:
+        type: Property
+
+    componentName:
+      description: The component full name analyzed in the sample
+      type: string
+      x-ngsi:
+        type: Property
+
+    concentration:
+      description: The concentration of the component analyzed in the sample
+      type: number
+      x-ngsi:
+        type: Property
+        units: mg/l
+
     conductance:
       description: Specific Conductance
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     conductivity:
       description: Electrical Conductivity
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
+
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
+
     dateObserved:
       description: The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
+
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
+
     enterococci:
       description: Concentration of Enterococci
       minimum: 0
@@ -362,6 +443,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: Total number of bacteria/100mL
+
     escherichiaColi:
       description: Concentration of Escherichia coli
       minimum: 0
@@ -369,12 +451,14 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: Total number of bacteria/100mL
+
     flow:
       description: 'Water Flow observed. '
       type: number
       x-ngsi:
         type: Property
         units: cubic meters/hour
+
     fluoride:
       description: Concentration of fluoride
       minimum: 0
@@ -382,6 +466,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -398,22 +483,32 @@ WaterQualityObserved:
             type: Property
       description: Unique identifier of the entity
       x-ngsi:
-        type: Property
+        type: Relationship
+
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+
       oneOf:
+
         - description: Geojson reference to the item. Point
           properties:
             bbox:
+              description: BBox of the  Point
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the Point
               items:
                 type: number
               minItems: 2
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - Point
@@ -425,14 +520,19 @@ WaterQualityObserved:
           type: object
           x-ngsi:
             type: GeoProperty
+
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the LineString
               items:
                 items:
                   type: number
@@ -440,6 +540,8 @@ WaterQualityObserved:
                 type: array
               minItems: 2
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - LineString
@@ -451,14 +553,19 @@ WaterQualityObserved:
           type: object
           x-ngsi:
             type: GeoProperty
+
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
+              description: BBox coordinates of the Polygon
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the Polygon
               items:
                 items:
                   items:
@@ -468,6 +575,8 @@ WaterQualityObserved:
                 minItems: 4
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - Polygon
@@ -479,20 +588,27 @@ WaterQualityObserved:
           type: object
           x-ngsi:
             type: GeoProperty
+
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the MulitPoint
               items:
                 items:
                   type: number
                 minItems: 2
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiPoint
@@ -504,14 +620,19 @@ WaterQualityObserved:
           type: object
           x-ngsi:
             type: GeoProperty
+
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the MultiLineString
               items:
                 items:
                   items:
@@ -521,6 +642,8 @@ WaterQualityObserved:
                 minItems: 2
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiLineString
@@ -532,6 +655,7 @@ WaterQualityObserved:
           type: object
           x-ngsi:
             type: GeoProperty
+
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -540,6 +664,7 @@ WaterQualityObserved:
               minItems: 4
               type: array
             coordinates:
+              description: Coordinates of the MultiPolygon
               items:
                 items:
                   items:
@@ -551,6 +676,8 @@ WaterQualityObserved:
                   type: array
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiPolygon
@@ -562,21 +689,28 @@ WaterQualityObserved:
           type: object
           x-ngsi:
             type: GeoProperty
+
       x-ngsi:
         type: GeoProperty
+
     measurand:
       description: An array of strings containing details (see format below) about extra measurands provided by this observation
       items:
+        description: Every element of the array of strings containing details (see format below) about extra measurands provided by this observation
         type: string
+        x-ngsi:
+          type: Property
       minItems: 1
       type: array
       x-ngsi:
         type: Property
+
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
+
     non-ionic-surfactants:
       description: Concentration of non-ionic surfactants
       minimum: 0
@@ -584,12 +718,14 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     orp:
       description: Oxidation-Reduction potential
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -608,10 +744,11 @@ WaterQualityObserved:
               type: Property
         description: Unique identifier of the entity
         x-ngsi:
-          type: Property
+          type: Relationship
       type: array
       x-ngsi:
         type: Property
+
     pH:
       description: Acidity or basicity of an aqueous solution
       maximum: 14
@@ -619,6 +756,7 @@ WaterQualityObserved:
       type: number
       x-ngsi:
         type: Property
+
     refPointOfInterest:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -636,12 +774,14 @@ WaterQualityObserved:
       description: A reference to a point of interest associated to this observation
       x-ngsi:
         type: Relationship
+
     salinity:
       description: Amount of salts dissolved in water
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -654,11 +794,13 @@ WaterQualityObserved:
           type: string
       x-ngsi:
         type: Property
+
     source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
       type: string
       x-ngsi:
         type: Property
+
     sulphate:
       description: Concentration of sulfate
       minimum: 0
@@ -666,6 +808,7 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     sulphite:
       description: Concentration of sulfite
       minimum: 0
@@ -673,17 +816,20 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     tds:
       description: 'Total dissolved solids. '
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     temperature:
       description: Temperature
       type: number
       x-ngsi:
         type: Property
+
     total-surfactants:
       description: Concentration of total surfactants
       minimum: 0
@@ -691,18 +837,21 @@ WaterQualityObserved:
       x-ngsi:
         type: Property
         units: mg/l
+
     tss:
       description: Total suspended solids
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     turbidity:
       description: Amount of light scattered by particles in the water column
       minimum: 0
       type: number
       x-ngsi:
         type: Property
+
     type:
       description: NGSI Entity type. It has to be WaterQualityObserved
       enum:
@@ -710,15 +859,23 @@ WaterQualityObserved:
       type: string
       x-ngsi:
         type: Property
+
   required:
     - id
     - type
     - dateObserved
     - location
+
   type: object
-  x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+
+  x-derived-from: ''
+
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2025 Contributors to Smart Data Models Program
+
   x-license-url: https://github.com/smart-data-models/dataModel.WaterQuality/blob/master/WaterQualityObserved/LICENSE.md
+
   x-model-schema: https://smart-data-models.github.io/dataModel.WaterQuality/WaterQualityObserved/schema.json
-  x-model-tags: 'NAIADES, DigitalWater.city, B-WaterSmart'
-  x-version: 0.0.5
+
+  x-model-tags: NAIADES, DigitalWater.city, B-WaterSmart, Waterverse
+
+  x-version: 0.0.6
