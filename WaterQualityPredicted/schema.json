@@ -36,14 +36,18 @@
           "properties": {
             "value": {
               "type": "array",
+              "description": "Property. Each one of the predictions for water quality",
               "items": {
                 "type": "object",
+                "description": "Property. Object describing the predictions for water quality",
                 "properties": {
                   "percentile": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Property. Percentile of the predictions for water quality"
                   },
                   "prediction": {
-                    "type": "number"
+                    "type": "number",
+                    "description": "Property. Actual value of the prediction for water quality"
                   }
                 }
               }

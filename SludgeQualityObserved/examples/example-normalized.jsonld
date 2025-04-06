@@ -19,99 +19,99 @@
     }
   },
   "pH": {
-    "type": "Number",
+    "type": "Property",
     "value": 7.5
   },
   "N-TOT": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.063
   },
   "P-TOT": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.024
   },
   "K-TOT": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.002
   },
   "C-ORG": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.397
   },
   "PCB": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "As": {
-    "type": "Number",
+    "type": "Property",
     "value": 33.4
   },
   "B": {
-    "type": "Number",
+    "type": "Property",
     "value": 50.8
   },
   "Be": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.3
   },
   "Cd": {
-    "type": "Number",
+    "type": "Property",
     "value": 2.7
   }, 
   "Cr": {
-    "type": "Number",
+    "type": "Property",
     "value": 46.7
   },
   "Cr-VI": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.05
   },
   "Cu": {
-    "type": "Number",
+    "type": "Property",
     "value": 264.8
   },
   "Hg": {
-    "type": "Number",
+    "type": "Property",
     "value": 1.6
   },
   "Ni": {
-    "type": "Number",
+    "type": "Property",
     "value": 33.1
   },
   "Se": {
-    "type": "Number",
+    "type": "Property",
     "value": 4.1
   },
   "Zn": {
-    "type": "Number",
+    "type": "Property",
     "value": 924.8
   },
   "IPA": {
-    "type": "Number",
+    "type": "Property",
     "value": 1.6
   },
   "toluene": {
-    "type": "Number",
+    "type": "Property",
     "value": 0.0
   },
   "AOX": {
-    "type": "Number",
+    "type": "Property",
     "value": 500.0
   },
   "DEHP": {
-    "type": "Number",
+    "type": "Property",
     "value": 100.0
   },
   "C10-C40": {
-    "type": "Number",
+    "type": "Property",
     "value": 5483.0
   },
   "salmonella": {
-    "type": "Number",
+    "type": "Property",
     "value": 100
   },
   "faecal-coliforms": {
-    "type": "Number",
+    "type": "Property",
     "value": 10000
   },
   "@context": [
