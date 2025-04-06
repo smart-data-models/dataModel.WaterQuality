@@ -28,7 +28,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -36,7 +36,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateModified",
@@ -44,7 +44,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "datePredicted",
@@ -52,7 +52,7 @@
             "displayName": "datePredicted",
             "@type": "Property",
             "schema": "string",
-            "comment": "Property. Model:'https://schema.org/DateTime'. The date and time from which the prediction is valid in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
+            "comment": "The date and time from which the prediction is valid in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval"
         },
         {
             "name": "description",
@@ -68,12 +68,7 @@
             "displayName": "expiryDate",
             "@type": "Property",
             "schema": "string",
-            "comment": "Property. Model:'https://schema.org/DateTime'. The date and time for when the prediction is not valid anymore in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval."
-        },
-        {
-            "name": "location",
-            "writable": true,
-            "displayName": "location"
+            "comment": "The date and time for when the prediction is not valid anymore in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval"
         },
         {
             "name": "name",
@@ -81,7 +76,7 @@
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "seeAlso",
@@ -94,7 +89,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "@type": "Telemetry",
@@ -149,7 +144,7 @@
         {
             "@type": "object",
             "name": "predictions",
-            "comment": "Property. List of predictions for water quality",
+            "comment": "List of predictions for water quality",
             "displayName": "predictions",
             "fields": [
                 {
@@ -157,6 +152,36 @@
                     "schema": "array"
                 }
             ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
         },
         {
             "@type": "Telemetry",
